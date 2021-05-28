@@ -10,34 +10,34 @@ $url = 'http://phpsocial.com';
 
 $LNG['lang_direction'] = 'ltr';
 
-$LNG['user_success'] = 'User succesfully created';
-$LNG['user_exists'] = 'This username already exists';
-$LNG['email_exists'] = 'This email is already in use';
-$LNG['all_fields'] = 'All fields are required';
-$LNG['user_alnum'] = 'The username must consists only from letters and numbers';
-$LNG['user_too_short'] = 'The username must be between 3 and 32 characters';
-$LNG['user_limit'] = 'Too many accounts created from this IP';
-$LNG['invalid_email'] = 'Invalid email';
-$LNG['invalid_user_pw'] = 'Invalid username or password';
-$LNG['invalid_captcha'] = 'Invalid captcha';
-$LNG['activate_email'] = 'An activation link has been sent to your email';
-$LNG['account_activated'] = 'Your account has been activated';
-$LNG['log_out'] = 'Log Out';
-$LNG['hello'] = 'Hello';
-$LNG['register'] = 'Register';
-$LNG['login'] = 'Login';
-$LNG['connect'] = 'Connect';
-$LNG['password'] = 'Password';
-$LNG['username'] = 'Username';
-$LNG['email'] = 'Email';
+$LNG['user_success'] = 'Usuario creado exitosamente';
+$LNG['user_exists'] = 'Este usuario ya existe';
+$LNG['email_exists'] = 'Este email ya esta en uso';
+$LNG['all_fields'] = 'Todos los campos son requeridos';
+$LNG['user_alnum'] = 'El usuario debe estar formado sólo por letras y números';
+$LNG['user_too_short'] = 'El usuario debe tener entre 3 y 32 caracteres';
+$LNG['user_limit'] = 'Demasiadas cuentas credas desde esta dirección IP';
+$LNG['invalid_email'] = 'Email invalido';
+$LNG['invalid_user_pw'] = 'Usuario y/o contraseña incorrectos';
+$LNG['invalid_captcha'] = 'Captcha invalido';
+$LNG['activate_email'] = 'Un link de activación fue enviado a tu email';
+$LNG['account_activated'] = 'Su cuenta ha sido activada';
+$LNG['log_out'] = 'Cerrar la sesión';
+$LNG['hello'] = 'Hola';
+$LNG['register'] = 'Registrar';
+$LNG['login'] = 'Iniciar sesión';
+$LNG['connect'] = 'Conectar';
+$LNG['password'] = 'Contraseña';
+$LNG['username'] = 'Usuario';
+$LNG['email'] = 'Correo electrónico';
 $LNG['captcha'] = 'Captcha';
-$LNG['username_or_email'] = 'Username or email';
-$LNG['welcome_title'] = 'Welcome';
-$LNG['welcome_desc'] = 'to our social network';
-$LNG['welcome_about'] = 'share your memories, connect with others, make new friends.';
-$LNG['forgot_password'] = 'Forgot your password?';
-$LNG['remember_me'] = 'Remember me';
-$LNG['all_rights_reserved'] = 'All rights reserved';
+$LNG['username_or_email'] = 'Usuario o correo electrónico';
+$LNG['welcome_title'] = 'Bienvenido';
+$LNG['welcome_desc'] = 'a nuestra pagina web';
+$LNG['welcome_about'] = 'comparte tus proyectos, visita a otros que te parezcan interesantes y reacciona a ellos';
+$LNG['forgot_password'] = 'Olvidaste tu contraseña?';
+$LNG['remember_me'] = 'Recordarme';
+$LNG['all_rights_reserved'] = 'Todos los derechos reservados';
 
 $LNG['welcome_one'] = 'Connect';
 $LNG['welcome_two'] = 'Share';
@@ -148,36 +148,36 @@ $LNG['shared_title'] = 'shared <a href="%s" rel="loadpage"><strong>%s</strong></
 $LNG['group_title'] = 'posted in <a href="%s" rel="loadpage"><strong>%s</strong></a> group.';
 $LNG['form_title'] = 'Update your status';
 $LNG['comment_wrong'] = 'Something went wrong, please refresh the page and try again.';
-$LNG['comment_too_long'] = 'Sorry, the maximum characters allowed per comment is <strong>%s</strong>.';
-$LNG['comment_error'] = 'Sorry, we couldn\'t post the comment, please refresh the page and try again.';
-$LNG['message_private'] = 'Sorry, this message is private, only the author of the message can see it.';
-$LNG['message_private_ttl'] = 'Private Message';
-$LNG['message_semi_private'] = 'Sorry, this message is private, only the friends and the author of this message can see it.';
-$LNG['message_semi_private_ttl'] = 'Private Message';
-$LNG['login_to_lcs'] = 'Log-in to Like, Comment or Share';
-$LNG['message'] = 'Message';
-$LNG['comment'] = 'Comment';
-$LNG['share'] = 'Share';
-$LNG['camera'] = 'Camera';
-$LNG['capture'] = 'Capture';
-$LNG['send'] = 'Send';
-$LNG['shared_success'] = 'The post has been successfully shared on your <a href="%s" rel="loadpage"><strong>timeline</strong></a>.';
-$LNG['no_shared'] = 'Sorry but this message can\'t be shared.';
-$LNG['share_desc'] = 'Are you sure do you want to share this message on your timeline?';
-$LNG['cancel'] = 'Cancel';
-$LNG['close'] = 'Close';
-$LNG['download'] = 'Download';
+$LNG['comment_too_long'] = 'Lo sentimos, el máximo de caracteres permitido por comentario es <strong>%s</strong>.';
+$LNG['comment_error'] = 'Lo sentimos, no pudimos publicar el comentario, actualice la página y vuelva a intentarlo.';
+$LNG['message_private'] = 'Lo sentimos, este mensaje es privado, solo el autor del mensaje puede verlo.';
+$LNG['message_private_ttl'] = 'Mensaje privado';
+$LNG['message_semi_private'] = 'Lo sentimos, este mensaje es privado, solo los amigos y el autor de este mensaje pueden verlo.';
+$LNG['message_semi_private_ttl'] = 'Mensaje privado';
+$LNG['login_to_lcs'] = 'Inicie sesión para dar me gusta, comentar o compartir';
+$LNG['message'] = 'Mensaje';
+$LNG['comment'] = 'Comentario';
+$LNG['share'] = 'Compartir';
+$LNG['camera'] = 'Camara';
+$LNG['capture'] = 'Captura';
+$LNG['send'] = 'Enviar';
+$LNG['shared_success'] = 'La publicación se ha compartido correctamente en tu <a href="%s" rel="loadpage"><strong>cronología</strong></a>.';
+$LNG['no_shared'] = 'Lo siento, pero este mensaje no se puede compartir.';
+$LNG['share_desc'] = '¿Estás seguro de que deseas compartir este mensaje en tu línea de tiempo?';
+$LNG['cancel'] = 'Cancelar';
+$LNG['close'] = 'Cerrar';
+$LNG['download'] = 'Descargar';
 
 // REPORT
-$LNG['1_not_exists'] = 'The reported message does not exist.';
-$LNG['0_not_exists'] = 'The reported comment does not exist.';
-$LNG['1_already_reported'] = 'This message has already been reported and it will be reviewed in the shortest time, thank you.';
-$LNG['0_already_reported'] = 'This comment has already been reported and it will be reviewed in the shortest time, thank you.';
-$LNG['1_is_safe'] = 'This message is marked as <strong>safe</strong> by an administrator, thank you for your feedback.';
-$LNG['0_is_safe'] = 'This comment is marked as <strong>safe</strong> by an administrator, thank you for your feedback.';
-$LNG['1_report_added'] = 'The message has been reported, thank you for your feedback.';
-$LNG['0_report_added'] = 'The comment has been reported, thank you for your feedback.';
-$LNG['1_report_error'] = 'Sorry but something went wrong while reporting this message, please refresh the page and try again.';
+$LNG['1_not_exists'] = 'El mensaje informado no existe.';
+$LNG['0_not_exists'] = 'El comentario informado no existe.';
+$LNG['1_already_reported'] = 'Este mensaje ya ha sido reportado y será revisado en el menor tiempo posible, gracias.';
+$LNG['0_already_reported'] = 'Este comentario ya ha sido reportado y será revisado en el menor tiempo posible, gracias.';
+$LNG['1_is_safe'] = 'Este mensaje está marcado como <strong>seguro</strong> por un administrador, gracias por sus comentarios.';
+$LNG['0_is_safe'] = 'Este comentario está marcado como <strong> seguro </strong> por un administrador. Gracias por tus comentarios.';
+$LNG['1_report_added'] = 'El mensaje ha sido informado, gracias por sus comentarios.';
+$LNG['0_report_added'] = 'El comentario ha sido informado, gracias por sus comentarios.';
+$LNG['1_report_error'] = 'Lo sentimos, pero se produjo un error al informar de este mensaje. Actualice la página y vuelva a intentarlo.';
 $LNG['0_report_error'] = 'Sorry but something went wrong while reporting this comment, please refresh the page and try again.';
 $LNG['1_is_deleted'] = 'The message has been removed, thank you for your feedback.';
 $LNG['0_is_deleted'] = 'The comment has been removed, thank you for your feedback.';
@@ -298,47 +298,47 @@ $LNG['sub_website'] = 'Your website, blog or personal page';
 $LNG['ttl_gender'] = 'Gender';
 $LNG['sub_gender'] = 'Select your gender';
 
-$LNG['interests'] = 'Interests';
-$LNG['sub_interested_in'] = 'Persons you\'re interested in';
+$LNG['interests'] = 'Intereses';
+$LNG['sub_interested_in'] = 'Personas que te interesan';
 
-$LNG['ttl_country'] = 'Country';
-$LNG['sub_country'] = 'The country you live in';
+$LNG['ttl_country'] = 'País';
+$LNG['sub_country'] = 'El pais en el que vives';
 
-$LNG['ttl_work'] = 'Workplace';
-$LNG['sub_work'] = 'Enter the company name where you\'re working';
+$LNG['ttl_work'] = 'Lugar de trabajo';
+$LNG['sub_work'] = 'Ingrese el nombre de la empresa donde está trabajando';
 
-$LNG['ttl_school'] = 'School';
-$LNG['sub_school'] = 'Enter the school name you attended';
+$LNG['ttl_school'] = 'Escuela';
+$LNG['sub_school'] = 'Ingrese el nombre de la escuela a la que asistió';
 
-$LNG['ttl_profile'] = 'Profile';
-$LNG['sub_profile'] = 'Profile visibility';
+$LNG['ttl_profile'] = 'Perfil';
+$LNG['sub_profile'] = 'Visibilidad del perfil';
 
-$LNG['ttl_messages'] = 'Message';
-$LNG['sub_messages'] = 'The default way of posting messages';
+$LNG['ttl_messages'] = 'Mensaje';
+$LNG['sub_messages'] = 'La forma predeterminada de publicar mensajes';
 
-$LNG['ttl_offline'] = 'Chat Status';
-$LNG['sub_offline'] = 'The visibility status for the Chat';
+$LNG['ttl_offline'] = 'Estado del chat';
+$LNG['sub_offline'] = 'El estado de visibilidad del chat';
 
 $LNG['ttl_facebook'] = 'Facebook';
-$LNG['sub_facebook'] = 'Your facebook profile ID.';
+$LNG['sub_facebook'] = 'Su ID de perfil de Facebook.';
 
 $LNG['ttl_twitter'] = 'Twitter';
-$LNG['sub_twitter'] = 'Your twitter profile ID.';
+$LNG['sub_twitter'] = 'Su ID de perfil de Twitter.';
 
 $LNG['ttl_google'] = 'Google+';
-$LNG['sub_google'] = 'Your google+ profile ID.';
+$LNG['sub_google'] = 'Su ID de perfil de google +.';
 
 $LNG['ttl_bio'] = 'Bio';
-$LNG['sub_bio'] = 'About you (160 characters or less)';
+$LNG['sub_bio'] = 'Acerca de ti (160 caracteres o menos)';
 
-$LNG['ttl_birthdate'] = 'Birth Date';
-$LNG['sub_birthdate'] = 'Select the date you were born';
+$LNG['ttl_birthdate'] = 'Fecha de nacimiento';
+$LNG['sub_birthdate'] = 'Seleccione la fecha en que nació';
 
-$LNG['ttl_upload_avatar'] = 'Upload the selected profile image';
-$LNG['ttl_delete_avatar'] = 'Delete your current profile image';
+$LNG['ttl_upload_avatar'] = 'Sube la imagen de perfil seleccionada';
+$LNG['ttl_delete_avatar'] = 'Elimina tu imagen de perfil actual';
 
-$LNG['privacy'] = 'Privacy';
-$LNG['public'] = 'Public';
+$LNG['privacy'] = 'Privacidad';
+$LNG['public'] = 'Pública';
 $LNG['private'] = 'Private';
 $LNG['report'] = 'Report';
 $LNG['delete_message'] = 'Delete Message';

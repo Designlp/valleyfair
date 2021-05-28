@@ -5,15 +5,15 @@ $CONF = $TMPL = array();
 
 // The MySQL credentials
 $CONF['host'] = 'localhost';
-$CONF['user'] = 'YOURDBUSER';
-$CONF['pass'] = 'YOURDBPASS';
-$CONF['name'] = 'YOURDBNAME';
+$CONF['user'] = 'u532654912_valleyfair';
+$CONF['pass'] = 'gtaV19921963';
+$CONF['name'] = 'u532654912_valleyfair';
 
 // The Installation URL
-$CONF['url'] = 'http://yourdomain.com';
+$CONF['url'] = 'http://valleyfair.ml';
 
 // The Notifications e-mail
-$CONF['email'] = 'notifications@yourdomain.com';
+$CONF['email'] = 'dmercadoff@gmail.com';
 
 // The themes directory
 $CONF['theme_path'] = 'themes';
