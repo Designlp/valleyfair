@@ -502,13 +502,13 @@ input[type="submit"]:active {
 }
 
 .menu-dd-content {
-	background: #FFF;
+	background: var(--backgroundSearch);
 	min-width: 200px;
 	width: auto;
 	float: right;
 	border-bottom-left-radius: 3px;
 	border-bottom-right-radius: 3px;
-	border: 1px solid #BFBFBF;
+	border: 1px solid var(--colorBorder);
 	border-top: 0;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
 }
@@ -3453,8 +3453,6 @@ a.facebook-button:active {
 }
 
 .bc-friends-header {
-	border: 1px solid #BFBFBF;
-	border-bottom: 1px solid #EEE;
 	height: 14px;
 	background: var(--backgroundVentana);
 	padding: 10px;
@@ -3473,7 +3471,6 @@ a.facebook-button:active {
 .bc-friends-content {
 	background: var(--backgroundVentana);
 	height: 288px;
-	border: 1px solid var(--colorBorder);
 	border-top: none;
 	border-bottom: none;
 	overflow: auto;
@@ -3500,11 +3497,10 @@ a.facebook-button:active {
 
 .bc-friends-content .sidebar-users a {
 	color: #fff;
-	border-bottom: 1px solid #fff;
 }
 
 .bc-friends-chat {
-	background: var (--backgroundVentana);
+	background: var(--backgroundVentana);
 	height: 228px;
 	border: 1px solid var(--colorBorder);
 	border-top: none;
@@ -3534,7 +3530,7 @@ a.facebook-button:active {
 	height: 50px;
 	width: 248px;
 	bottom: 0;
-	background: #FFF;
+	background: var(--backgroundVentana);
 }
 
 .c-w-input input {
