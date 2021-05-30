@@ -23,6 +23,10 @@ ol {
 
 a {
   text-decoration: none;
+}
+
+.a-login {
+  text-decoration: none;
   color: #a0a0a0 !important;
 }
 
