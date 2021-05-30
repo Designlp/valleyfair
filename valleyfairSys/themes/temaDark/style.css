@@ -684,7 +684,7 @@ input[type="submit"]:active {
 }
 
 .cover-content {
-	background: #fff;
+	background: var(--backgroundVentana);
 	color: #6B6B6B;
 	border-radius: 15px;
 	overflow: auto;
@@ -724,7 +724,6 @@ input[type="submit"]:active {
 a.cover-button {
 	line-height: 47px;
 	margin-right: 20px;
-	font-weight: bold;
 	text-decoration: none;
 	color: #898F9C;
 	padding: 13px 0;
@@ -1700,7 +1699,6 @@ a.cover-button-active {
 	background: var(--backgroundVentana);
 	padding: 10px;
 	font-size: 13px;
-	font-weight: bold;
 	color: var(--color);
 }
 
@@ -1930,7 +1928,6 @@ img.sidebar-status-icon {
 .sidebar-list {
 	margin-top: -1px;
 	padding: 7px 10px;
-	border-top: 1px solid #EEE;
 	font-size: 12px;
 	word-wrap: break-word;
 }
@@ -3414,7 +3411,7 @@ a.facebook-button:active {
 	left: -6px;
 	width: 0;
 	height: 3px;
-	background: #E8EBED;
+	background: var(--color);
 	border-radius: 1px;
 	-moz-transition: width 500ms ease-out, opacity 400ms linear;
 	-ms-transition: width 500ms ease-out, opacity 400ms linear;
