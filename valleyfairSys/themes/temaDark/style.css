@@ -860,17 +860,17 @@ padding: 0 0 5px 42px;
 }
 .comment-reply-textarea {
 padding: 5px;
-color: #6B6B6B;
+color: var(--colorOpaco);
 font-size: 13px;
 overflow: hidden;
 width: 100%;
 resize: none;
 box-sizing: border-box;
-border: 1px solid #ccc;
 max-width: 100%;
 min-height: 30px;
-border-radius: 0px;
+border-radius: 10px;
 height: 25px;
+background: var(--backgroundVentana);
 }
 .comment-reply-textarea:focus {
 border: 1px solid #AAA;
@@ -1309,7 +1309,7 @@ padding: 0 10px 10px 0;
 }
 .sidebar-content {
 box-shadow: 0px 1px 1px #CCC;
-border: 1px solid #BFBFBF;
+border: 1px solid var(--colorBorder);
 background: var(--background);
 color: #6B6B6B;
 border-radius: 3px;
