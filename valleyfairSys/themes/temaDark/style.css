@@ -31,7 +31,7 @@ h1, h3, h4, h5 {
 }
 
 a {
-	color: va;
+	color: var(--colorWhiteM);
 	text-decoration: none;
 }
 
