@@ -709,6 +709,7 @@ input[type="submit"]:active {
 	float: left;
 	overflow: auto;
 	min-height: 47px;
+	background: var(--backgroundVentana);
 }
 
 .cover-buttons {
