@@ -2654,17 +2654,19 @@ select {
 }
 
 .register-button{
-    font-family: Arial, Helvetica, sans-serif;
     position: relative;
     display: inline-flex;
-    padding: 10px 30px;
+    padding: 10px 15px;
     background: var(--color);
     color: #fff;
     text-decoration: none;
     letter-spacing: 1px;
     overflow: hidden;
+	border: none;
+	border-radius: 25px;
+	cursor: pointer;
 }
-.register-button{
+.register-button span{
     position: relative;
     z-index: 1;
 }
