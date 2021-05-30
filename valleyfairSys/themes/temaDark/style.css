@@ -1797,7 +1797,7 @@ a.cover-button-active {
 }
 
 .sidebar-link a:hover {
-	background: var(--colorOpaco);
+	background: var(--backgroundSearch);
 	color: var(--colorWhiteM);
 }
 
