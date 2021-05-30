@@ -1903,8 +1903,8 @@ img.sidebar-status-icon {
 }
 
 .sidebar-users a:hover {
-	background: #f7f7f7;
-	color: #666;
+	background: var(--backgroundSearch);
+	color: var(--colorWhiteM);
 }
 
 .sidebar-chat-list {
@@ -2729,7 +2729,7 @@ a.facebook-button:active {
 }
 
 .notification-content {
-	background: #fff;
+	background: var(--);
 	border-bottom-left-radius: 3px;
 	border-bottom-right-radius: 3px;
 	border: 1px solid #BFBFBF;
