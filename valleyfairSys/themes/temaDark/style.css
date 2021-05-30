@@ -538,7 +538,7 @@ input[type="submit"]:active {
 }
 
 .menu-dd-content a {
-	color: #666;
+	color:rgb(240, 240, 240);
 	text-decoration: none;
 	width: 100%;
 }
@@ -600,16 +600,17 @@ input[type="submit"]:active {
 }
 
 .search-input input {
-	border-radius: 3px;
-	border: 1px solid #3B4E7C;
+	border-radius: 10px;
+	border: 1px solid var(--backgroundVentana);
 	padding: 5px;
 	margin-top: 8px;
-	background: var (--backgroundVentana);
-	width: 261px;
+	background: var(--backgroundVentana);
+	width: 655px;
+	color: var(--colorWhiteM);
 }
 
 .search-input input:hover, .search-input input:focus {
-	background: #FFF;
+	background: var(--backgroundSearch);
 }
 
 .search-container {
