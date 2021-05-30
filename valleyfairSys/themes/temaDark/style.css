@@ -601,16 +601,17 @@ input[type="submit"]:active {
 
 .search-input input {
 	border-radius: 10px;
-	border: 1px solid var(--background);
-	padding: 5px;
-	margin-top: 8px;
-	background: var(--background);
-	width: 655px;
+	border: 1px solid var(--backgroundSearch);
+	padding: 10px;
+	margin-top: 5px;
+	background: var(--backgroundSearch);
+	width: 600px;
 	color: var(--colorWhiteM);
 }
 
 .search-input input:hover, .search-input input:focus {
-	background: var(--backgroundSearch);
+	background: var(--background);
+	border: 1px solid var(--background);
 }
 
 .search-container {
@@ -633,7 +634,7 @@ input[type="submit"]:active {
 }
 
 .search-results {
-	background: var (--backgroundVentana);
+	background: var(--backgroundVentana);
 	border-bottom-left-radius: 3px;
 	border-bottom-right-radius: 3px;
 	border: 1px solid #BFBFBF;
