@@ -15,7 +15,7 @@ $CONF['name'] = 'u532654912_valleyfair';
 // $CONF['name'] = 'valleyfairp';
 
 // The Installation URL
-$CONF['url'] = 'http://valleyfair.ml/valleyfairSys';
+$CONF['url'] = 'https://valleyfair.ml/valleyfairSys';
 // $CONF['url'] = 'http://localhost/valleyfair';
 
 // The Notifications e-mail
