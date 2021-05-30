@@ -2732,14 +2732,14 @@ a.facebook-button:active {
 .register-button::before{
     content: '';
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 18px;
+    left: 70px;
     transform: translate(-50%, -50%);
     width: 0;
     height: 0;
     border-radius: 50%;
     background: var(--colorCO);
-    transition: width 0.5s, height 0.5s;
+    transition: width 0.8s, height 0.8s;
 }
 .register-button:hover::before{
     width: 100px;
