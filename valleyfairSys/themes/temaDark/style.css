@@ -2733,7 +2733,7 @@ a.facebook-button:active {
     content: '';
     position: absolute;
     top: 18px;
-    left: 70px;
+    left: 55px;
     transform: translate(-50%, -50%);
     width: 0;
     height: 0;
@@ -2742,8 +2742,8 @@ a.facebook-button:active {
     transition: width 0.8s, height 0.8s;
 }
 .register-button:hover::before{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 }
 .notification-container {
 	max-width: 920px;
