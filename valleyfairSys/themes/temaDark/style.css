@@ -2696,8 +2696,8 @@ a.facebook-button:active {
 .login-button::before{
     content: '';
     position: absolute;
-    top: 30px;
-    left: 30px;
+    top: 18px;
+    left: 70px;
     transform: translate(-50%, -50%);
     width: 0;
     height: 0;
@@ -2706,8 +2706,8 @@ a.facebook-button:active {
     transition: width 0.5s, height 0.5s;
 }
 .login-button:hover::before{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 }
 
 .register-button{
