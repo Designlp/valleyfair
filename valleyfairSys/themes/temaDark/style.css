@@ -1841,7 +1841,7 @@ a.cover-button-active {
 }
 
 .sidebar-group img, .sidebar-page img {
-	border-radius: 3px;
+	border-radius: 50%;
 }
 
 .sidebar-link-active {
@@ -1956,7 +1956,7 @@ img.sidebar-status-icon {
 
 .sidebar-avatar img {
 	width: 100%;
-	border-radius: 3px;
+	border-radius: 50%;
 }
 
 .sidebar-avatar-desc {
@@ -2758,7 +2758,6 @@ a.facebook-button:active {
 .notification-row {
 	float: left;
 	width: 100%;
-	border-top: 1px solid #dee0e3;
 }
 
 .notification-image {
