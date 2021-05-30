@@ -10,9 +10,8 @@ body {
   height: 100%;
   overflow: hidden;
   color: #fff;
-  background-color: var(--background);
-  font-family: "Montserrat", "Roboto", "Droid Sans", "Helvetica Neue",
- sans-serif;
+  background-color: #121519;
+  font-family: "Montserrat", "Roboto", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 ul,
@@ -345,7 +344,7 @@ p {
   height: 0;
   border-style: solid;
   border-width: 10px 0 10px 15px;
-  border-color: transparent transparent transparent var(--background);
+  border-color: transparent transparent transparent #121519;
   margin-left: 2px;
 }
 
