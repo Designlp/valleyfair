@@ -1695,6 +1695,7 @@ a.cover-button-active {
 	color: var(--colorWhiteM);
 	border-radius: 10px;
 	overflow: hidden;
+	padding: 8px;
 }
 
 .sidebar-header {
@@ -1810,7 +1811,6 @@ a.cover-button-active {
 	position: absolute;
 	right: 11px;
 	margin-top: -34px;
-	border-top: 1px solid #EEE;
 	cursor: pointer;
 	width: 16px;
 }
