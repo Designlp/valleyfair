@@ -635,7 +635,6 @@ color: var(--color);
 -webkit-box-shadow: var(--boxShadow);
 -moz-box-shadow: var(--boxShadow);
 box-shadow: var(--boxShadow);
-border: 1px solid var(--colorBorder);
 background: var(--background);
 color: var(--colorWhiteM);
 border-radius: 16px;
@@ -659,7 +658,6 @@ width: 100%;
 float: left;
 }
 .message-actions {
-border-bottom: 1px solid #EEE;
 float: left;
 width: 100%;
 }
@@ -1323,7 +1321,7 @@ color: #777;
 border-bottom: 1px solid #EEE;
 }
 .sidebar-header a {
-color: #777;
+color: var(--color);
 }
 .sidebar-header a:hover {
 color: var(--color);
@@ -1559,11 +1557,12 @@ float: none;
 margin: 2px auto 0 auto;
 }
 .message-form-content {
-box-shadow: 0px 1px 1px #CCC;
-border: 1px solid #BFBFBF;
-background: #fff;
-color: #6B6B6B;
-border-radius: 3px;
+-webkit-box-shadow: var(--boxShadow);
+-moz-box-shadow: var(--boxShadow);
+box-shadow: var(--boxShadow);
+background: var(--backgroundVentana);
+color: var(--colorWhiteM);
+border-radius: 16px;
 overflow: auto;
 }
 .message-form-header, .page-header {
