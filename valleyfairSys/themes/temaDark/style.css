@@ -631,7 +631,7 @@ input[type="submit"]:active {
 }
 
 .search-results {
-	background: #FFF;
+	background: var (--backgroundVentana);
 	border-bottom-left-radius: 3px;
 	border-bottom-right-radius: 3px;
 	border: 1px solid #BFBFBF;
