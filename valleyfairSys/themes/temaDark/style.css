@@ -1799,6 +1799,7 @@ a.cover-button-active {
 .sidebar-link a:hover {
 	background: var(--backgroundSearch);
 	color: var(--colorWhiteM);
+	border-radius: 10px;
 }
 
 .sidebar-settings-container {
