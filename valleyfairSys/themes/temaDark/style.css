@@ -1997,7 +1997,7 @@ img.sidebar-status-icon {
 }
 
 .message-form-header, .page-header {
-	background: var(--background);
+	background: var(--backgroundVentana);
 	padding: 20px;
 	font-size: 13px;
 	font-weight: bold;
