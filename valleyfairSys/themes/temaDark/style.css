@@ -635,10 +635,10 @@ color: var(--color);
 -webkit-box-shadow: var(--boxShadow);
 -moz-box-shadow: var(--boxShadow);
 box-shadow: var(--boxShadow);
-border: 1px solid #BFBFBF;
+border: 1px solid var(--colorBorder);
 background: var(--background);
 color: var(--colorWhiteM);
-border-radius: 3px;
+border-radius: 18px;
 overflow: auto;
 }
 .message-header {
