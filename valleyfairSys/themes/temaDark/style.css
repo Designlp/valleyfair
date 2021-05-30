@@ -2227,8 +2227,8 @@ textarea {
 
 .page-input-container input, .page-input-container select, .page-input-container textarea {
 	padding: 5px;
-	border: 1px solid #ccc;
-	border-radius: 2px;
+	border: 1px solid var(--backgroundVentana);
+	border-radius: 20px;
 	margin: 0;
 	max-width: 200px;
 }
@@ -2280,11 +2280,11 @@ select {
 	display: inline-block;
 	vertical-align: top;
 	float: left;
-	color: #444;
+	color: var(--colorWhiteM);
 }
 
 .page-input-sub {
-	color: #666;
+	color: var(--colorWhiteM);
 	font-size: 11px;
 	padding-top: 3px;
 }
@@ -3488,8 +3488,8 @@ a.facebook-button:active {
 	margin-left: 10px;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
 	pointer-events: all;
-	border-top-right-radius: 10px;
-	border-top-left-radius: 10px;
+	border-top-right-radius: 14px;
+	border-top-left-radius: 14px;
 }
 
 .bc-friends-content .sidebar-users a {
