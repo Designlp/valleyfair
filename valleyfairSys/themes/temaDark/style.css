@@ -860,12 +860,13 @@ padding: 0 0 5px 42px;
 }
 .comment-reply-textarea {
 padding: 5px;
-color: var(--colorOpaco);
+color: var(--colorWhiteM);
 font-size: 13px;
 overflow: hidden;
 width: 100%;
 resize: none;
 box-sizing: border-box;
+border: 1px solid var(--backgroundVentana);
 max-width: 100%;
 min-height: 30px;
 border-radius: 10px;
