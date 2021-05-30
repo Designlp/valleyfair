@@ -2681,7 +2681,7 @@ select {
     width: 0;
     height: 0;
     border-radius: 50%;
-    background: var(--colorCO);
+    background: var(--backgroundVentana);
     transition: width 0.5s, height 0.5s;
 }
 .register-button:hover::before{
@@ -2738,7 +2738,7 @@ a.facebook-button:active {
     width: 0;
     height: 0;
     border-radius: 50%;
-    background: var(--colorCO);
+    background: var(--backgroundVentana);
     transition: width 0.5s, height 0.5s;
 }
 .login-button:hover::before{
