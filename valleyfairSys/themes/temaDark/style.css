@@ -1693,17 +1693,16 @@ a.cover-button-active {
 	box-shadow: var(--boxShadow);
 	background: var(--backgroundVentana);
 	color: var(--colorWhiteM);
-	border-radius: 16px;
+	border-radius: 10px;
 	overflow: hidden;
 }
 
 .sidebar-header {
-	background: var(--background);
+	background: var(--backgroundVentana);
 	padding: 10px;
 	font-size: 13px;
 	font-weight: bold;
 	color: var(--color);
-	border-bottom: 1px solid #EEE;
 }
 
 .sidebar-header a {
@@ -1792,7 +1791,6 @@ a.cover-button-active {
 .sidebar-link a {
 	margin-top: -1px;
 	padding: 5px 10px 5px 10px;
-	border-top: 1px solid #EEE;
 	display: block;
 	text-decoration: none;
 	color: var(--colorWhiteM);
@@ -1802,7 +1800,7 @@ a.cover-button-active {
 }
 
 .sidebar-link a:hover {
-	background: #f7f7f7;
+	background: var(--colorOpaco);
 	color: var(--colorWhiteM);
 }
 
@@ -2870,12 +2868,16 @@ a.facebook-button:active {
 .sidebar-fa-image img {
 	width: 30px;
 	height: 30px;
-	border-radius: 3px;
+	border-radius: 50%;
 }
 
 .sidebar-fa-text {
 	font-size: 11px;
 	padding-left: 35px;
+}
+
+.sidebar-fa-text a{
+	color:var(--color);
 }
 
 .sidebar-fa-text .timeago {
