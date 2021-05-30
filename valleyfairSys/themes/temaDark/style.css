@@ -341,7 +341,7 @@ text-align: right;
 background: #EEE;
 }
 .menu-dd-extra {
-color: #3A5796;
+color: var(--color);
 }
 .menu-dd-mobile {
 display: none;
@@ -681,14 +681,14 @@ float: left;
 overflow:auto;
 }
 .message-avatar img {
-border-radius: 3px;
+border-radius: 50%;
 width: 42px;
 }
 .message-author {
 word-break: break-all;
 }
 .message-author a {
-color: #3A5796;
+color: var(--color);
 cursor: pointer;
 font-weight: bold;
 }
@@ -823,7 +823,7 @@ display: block;
 border-bottom: none;
 }
 .message-reply-author a {
-color: #3A5796;
+color: var(--color);
 cursor: pointer;
 font-weight: bold;
 }
@@ -852,7 +852,7 @@ border-bottom: 3px solid var(--color) !important;
 }
 .message-comment-box-container {
 padding: 10px;
-background: transparent;
+background: var(--background);
 overflow: auto;
 }
 .message-comment-box-form {
@@ -1232,7 +1232,7 @@ float: left;
 overflow:auto;
 }
 .message-reply-avatar img {
-border-radius: 3px;
+border-radius: 50%;
 width: 32px;
 height: 32px;
 }
@@ -1310,13 +1310,13 @@ padding: 0 10px 10px 0;
 .sidebar-content {
 box-shadow: 0px 1px 1px #CCC;
 border: 1px solid #BFBFBF;
-background: #565758;
+background: var(--background);
 color: #6B6B6B;
 border-radius: 3px;
 overflow: hidden;
 }
 .sidebar-header {
-background: #f8f8f8;
+background: var(--background);
 padding: 10px;
 font-size: 13px;
 font-weight: bold;
@@ -2268,7 +2268,7 @@ float: none;
 text-decoration: none;
 }
 #notifications-page .message-top a {
-color: #3A5796;
+color: var(--color);
 cursor: pointer;
 font-weight: bold;
 }

@@ -339,7 +339,7 @@ text-align: right;
 background: #EEE;
 }
 .menu-dd-extra {
-color: #3A5796;
+color: var(--color);
 }
 .menu-dd-mobile {
 display: none;
@@ -684,7 +684,7 @@ width: 42px;
 word-break: break-all;
 }
 .message-author a {
-color: #3A5796;
+color: var(--color);
 cursor: pointer;
 font-weight: bold;
 }
@@ -728,7 +728,7 @@ overflow: auto;
 word-wrap: break-word;
 }
 .message-replies {
-background: #F9F9F9;
+background: var(--background);
 width: 100%;
 float: left;
 overflow: auto;
@@ -819,7 +819,7 @@ display: block;
 border-bottom: none;
 }
 .message-reply-author a {
-color: #3A5796;
+color: var(--color);
 cursor: pointer;
 font-weight: bold;
 }
@@ -1306,8 +1306,8 @@ padding: 0 10px 10px 0;
 .sidebar-content {
 box-shadow: 0px 1px 1px #CCC;
 border: 1px solid #BFBFBF;
-background: #fff;
-color: var(--backgroundVentana);
+background: var(--backgroundVentana);
+color: #777;
 border-radius: 3px;
 overflow: hidden;
 }
@@ -2264,7 +2264,7 @@ float: none;
 text-decoration: none;
 }
 #notifications-page .message-top a {
-color: #3A5796;
+color: var(--color);
 cursor: pointer;
 font-weight: bold;
 }
