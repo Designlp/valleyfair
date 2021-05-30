@@ -41,8 +41,8 @@
 </div> -->
 
 
-<div class="container">
-	<div class="forms-container">
+<div class="containerForm">
+	<div class="forms-containerForm">
 	  <div class="signin-signup">
 		<form action="{$welcome_url}" method="POST" autocomplete="off" class="sign-in-form">
             <h2 class="title">{$loginMsg}</h2>
@@ -97,7 +97,7 @@
 	  </div>
 	</div>
 
-	<div class="panels-container">
+	<div class="panels-containerForm">
 	  <div class="panel left-panel">
 		<div class="content">
 		  <h3>Nuevo aqui?</h3>
@@ -139,14 +139,14 @@
   <script>
 	  const sign_in_btn = document.querySelector("#sign-in-btn");
 		const sign_up_btn = document.querySelector("#sign-up-btn");
-		const container = document.querySelector(".container");
+		const containerForm = document.querySelector(".containerForm");
 
 		sign_up_btn.addEventListener("click", () => {
-		container.classList.add("sign-up-mode");
+		containerForm.classList.add("sign-up-mode");
 		});
 
 		sign_in_btn.addEventListener("click", () => {
-		container.classList.remove("sign-up-mode");
+		containerForm.classList.remove("sign-up-mode");
 		});
 
   </script>
