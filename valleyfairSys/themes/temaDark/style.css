@@ -418,10 +418,11 @@ input[type="submit"]:active {
 	z-index: 1000;
 	height: 45px;
 	background: var(--backgroundVentana);
+	padding: 12px;
 }
 
 #content {
-	padding: 65px 0 10px 0;
+	padding: 90px 0 10px 0;
 	background: var(--background);
 }
 
@@ -3469,7 +3470,7 @@ a.facebook-button:active {
 }
 
 .bc-friends-content {
-	background: var(--background);
+	background: var(--backgroundVentana);
 	height: 288px;
 	border: 1px solid var(--colorBorder);
 	border-top: none;
@@ -3497,6 +3498,7 @@ a.facebook-button:active {
 }
 
 .bc-friends-content .sidebar-users a {
+	color: #fff;
 	border-bottom: 1px solid #fff;
 }
 
