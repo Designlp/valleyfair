@@ -3503,9 +3503,9 @@ a.facebook-button:active {
 }
 
 .bc-friends-chat {
-	background: #FFF;
+	background: var (--backgroundVentana);
 	height: 228px;
-	border: 1px solid #BFBFBF;
+	border: 1px solid var(--colorBorder);
 	border-top: none;
 	border-bottom: none;
 	padding: 0 5px;
