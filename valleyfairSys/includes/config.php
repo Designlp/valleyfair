@@ -9,8 +9,13 @@ $CONF['user'] = 'u532654912_valleyfair';
 $CONF['pass'] = 'gtaV19921963';
 $CONF['name'] = 'u532654912_valleyfair';
 
+// $CONF['host'] = 'localhost';
+// $CONF['user'] = 'root';
+// $CONF['pass'] = '';
+// $CONF['name'] = 'valleyfairp';
+
 // The Installation URL
-$CONF['url'] = 'http://valleyfair.ml';
+$CONF['url'] = 'http://localhost/valleyfair';
 
 // The Notifications e-mail
 $CONF['email'] = 'dmercadoff@gmail.com';
