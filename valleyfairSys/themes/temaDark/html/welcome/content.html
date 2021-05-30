@@ -41,24 +41,6 @@
 			  </div>
 			<button type="submit" name="register"  class="register-button"><span>{$lng->register}</span></button>{$fblogin}
 		</form>
-		<script>
-			const loginButton = document.querySelector('.login-button');
-			const registerButton = document.querySelector('.register-button');
-			loginButton.onmousemove = function(e){
-				const x = e.pageX - loginButton.offsetLeft;
-				const y = e.pageY- loginButton.offsetTop;
-		
-				loginButton.style.setProperty('--x', x + 'px');
-				loginButton.style.setProperty('--y', y + 'px');
-			}
-			registerButton.onmousemove = function(e){
-				const x = e.pageX - registerButton.offsetLeft;
-				const y = e.pageY- registerButton.offsetTop;
-		
-				registerButton.style.setProperty('--x', x + 'px');
-				registerButton.style.setProperty('--y', y + 'px');
-			}
-		</script>
 	  </div>
 	</div>
 
