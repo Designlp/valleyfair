@@ -31,7 +31,7 @@ h1, h3, h4, h5 {
 }
 
 a {
-	color: #333;
+	color: va;
 	text-decoration: none;
 }
 
@@ -511,6 +511,7 @@ input[type="submit"]:active {
 	border: 1px solid var(--colorBorder);
 	border-top: 0;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+	color:var(--colorWhiteM);
 }
 
 .menu-dd-row {
@@ -1089,7 +1090,6 @@ a.cover-button-active {
 	width: 100%;
 	padding-top: 7px;
 	overflow: auto;
-	border-bottom: 1px solid #EEE;
 }
 
 .message-reply-container:hover .comment-menu {
@@ -2729,16 +2729,17 @@ a.facebook-button:active {
 }
 
 .notification-content {
-	background: var(--);
+	background: var(--backgroundVentana);
 	border-bottom-left-radius: 3px;
 	border-bottom-right-radius: 3px;
-	border: 1px solid #BFBFBF;
+	border: 1px solid var(--backgroundVentana);
 	border-top: 0;
 	max-width: 400px;
 	width: 100%;
 	float: right;
 	box-sizing: border-box;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+	color: var(--colorWhiteM);
 }
 
 .notification-inner {
