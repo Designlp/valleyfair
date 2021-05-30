@@ -2872,7 +2872,7 @@ a.facebook-button:active {
 .sidebar-fa-text {
 	font-size: 11px;
 	padding-left: 35px;
-	color:#777;
+	color:rgb(145, 145, 145);
 }
 
 .sidebar-fa-text a{
@@ -3534,9 +3534,6 @@ a.facebook-button:active {
 	height: 50px;
 	width: 248px;
 	bottom: 0;
-	border: 1px solid #BFBFBF;
-	border-top: 1px solid #EEE;
-	border-bottom: none;
 	background: #FFF;
 }
 
