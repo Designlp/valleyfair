@@ -1115,6 +1115,7 @@ a.cover-button-active {
 .message-reply-footer a {
 	color: #666;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 .message-reply-footer a:hover {
@@ -1667,10 +1668,11 @@ a.cover-button-active {
 .timeago, .timeago-standard {
 	color: #999;
 	float: left;
+	text-decoration: none;
 }
 
 .timeago:hover, .timeago-standard:hover {
-	color: #666
+	color: var(--colorWhiteM);
 }
 
 .verified-small img {
@@ -2283,7 +2285,7 @@ select {
 }
 
 .page-input-sub {
-	color: var(--colorOpaco);
+	color: var(--backgroundSearch);
 	font-size: 11px;
 	padding-top: 3px;
 }
