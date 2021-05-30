@@ -2696,8 +2696,8 @@ a.facebook-button:active {
 .login-button::before{
     content: '';
     position: absolute;
-    top: var(--y);
-    left: var(--x);
+    top: 30px;
+    left: 30px;
     transform: translate(-50%, -50%);
     width: 0;
     height: 0;
