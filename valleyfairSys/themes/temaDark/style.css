@@ -2872,6 +2872,7 @@ a.facebook-button:active {
 .sidebar-fa-text {
 	font-size: 11px;
 	padding-left: 35px;
+	color:#777;
 }
 
 .sidebar-fa-text a{
@@ -3540,11 +3541,13 @@ a.facebook-button:active {
 }
 
 .c-w-input input {
-	border: 0;
+	border: 1px solid var(--backgroundSearch);
 	width: 240px;
 	height: 17px;
 	padding: 4px;
 	font-size: 12px;
+	background: var(--backgroundSearch);
+	color: var(--colorWhiteM);
 }
 
 .c-w-input-search input {
