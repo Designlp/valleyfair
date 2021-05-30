@@ -1118,7 +1118,7 @@ a.cover-button-active {
 }
 
 .message-reply-footer a:hover {
-	color: #333;
+	color: var(--colorWhiteM);
 }
 
 .like-comment {
@@ -2217,7 +2217,6 @@ textarea {
 	overflow: auto;
 }
 
-.page-header a {}
 
 .page-input-container {
 	width: 100%;
@@ -2227,8 +2226,8 @@ textarea {
 
 .page-input-container input, .page-input-container select, .page-input-container textarea {
 	padding: 5px;
-	border: 1px solid var(--backgroundVentana);
-	border-radius: 20px;
+	border: 1px solid var(--backgroundSearch);
+	border-radius: 5px;
 	margin: 0;
 	max-width: 200px;
 }
@@ -2239,7 +2238,7 @@ textarea {
 }
 
 .page-input-container input:hover, .page-input-container input:focus, .page-input-container select:hover, .page-input-container select:focus, .page-input-container textarea:hover, .page-input-container textarea:focus {
-	border-color: #ADADAD;
+	border-color: var(--backgroundSearch);
 }
 
 .page-input-container input[type="submit"] {
@@ -2284,7 +2283,7 @@ select {
 }
 
 .page-input-sub {
-	color: var(--colorWhiteM);
+	color: var(--colorOpaco);
 	font-size: 11px;
 	padding-top: 3px;
 }
