@@ -2694,25 +2694,39 @@ a.facebook-button:active {
 	background: #374C80;
 }
 
-.login-button {
-	margin: 0 10px 0 0;
-	color: #FFF;
-	border-radius: 5px;
-	padding: 10px;
+.login-button{
 	text-transform: uppercase;
-	background: #4d67a7;
-	border: 0;
-	cursor: pointer;
+    position: relative;
+    display: inline-flex;
+    padding: 10px 30px;
+    background: #363636;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    overflow: hidden;
 	height: 37px;
 }
-
-.login-button:hover {
-	background: #5A89D0;
+.login-button span{
+    position: relative;
+    z-index: 1;
+}
+.login-button::before{
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #2196f3;
+    transition: width 0.5s, height 0.5s;
+}
+.login-button:hover::before{
+    width: 100px;
+    height: 100px;
 }
 
-.login-button:active {
-	background: #374C80;
-}
 
 .notification-container {
 	max-width: 920px;
