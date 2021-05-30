@@ -556,7 +556,7 @@ input[type="submit"]:active {
 .menu_img img {
 	width: 26px;
 	height: 26px;
-	border-radius: 3px;
+	border-radius: 50%;
 }
 
 .topbar-button {
@@ -603,7 +603,7 @@ input[type="submit"]:active {
 	border: 1px solid #3B4E7C;
 	padding: 5px;
 	margin-top: 8px;
-	background: #F6F6F6;
+	background: var (--backgroundVentana);
 	width: 261px;
 }
 
