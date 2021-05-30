@@ -520,7 +520,7 @@ input[type="submit"]:active {
 }
 
 .menu-dd-row:hover {
-	background: #EEE;
+	background: var(--backgroundSearch);
 }
 
 .menu-dd-extra {
@@ -570,7 +570,7 @@ input[type="submit"]:active {
 }
 
 .topbar-button:hover {
-	background: #FFF;
+	background: var(--backgroundSearch);
 	border: 1px solid #FFF;
 	color: var(--color);
 }
@@ -668,7 +668,7 @@ input[type="submit"]:active {
 }
 
 .hashtag a:hover {
-	background: #f2f2f2;
+	background: var(--backgroundSearch);
 	text-decoration: none;
 }
 
@@ -909,11 +909,11 @@ a.cover-button-active {
 }
 
 .message-actions-content a {
-	color: #666;
+	color:var(--colorOpaco);
 }
 
 .message-actions-content a:hover {
-	color: #333;
+	color: var(--colorWhiteM);
 }
 
 .message-actions a {
@@ -1273,7 +1273,8 @@ a.cover-button-active {
 }
 
 .message-menu-row:hover {
-	background: var(--colorOpaco);
+	background: var(--backgroundSearch);
+	border-radius: 10px;
 }
 
 .message-menu-divider {
@@ -2060,9 +2061,7 @@ img.sidebar-status-icon {
 
 .button-active a, .plugin-button-active {
 	display: block;
-	background: #4d67a7;
-	/* Old browsers */
-	background: linear-gradient(to bottom, #4d67a7 0%, #3b5998 100%);
+	background: var(--color);
 	border-radius: 3px;
 	padding: 4px 5px;
 	color: #fff !important;
@@ -2206,9 +2205,9 @@ textarea {
 
 .page-content {
 	box-shadow: 0px 1px 1px #CCC;
-	border: 1px solid #BFBFBF;
-	background: #fff;
-	color: #6B6B6B;
+	border: 1px solid var(--backgroundVentana);
+	background: var(--backgroundVentana);
+	color: var(--colorWhiteM);
 	border-radius: 3px;
 	overflow: auto;
 }
@@ -2930,7 +2929,7 @@ a.facebook-button:active {
 }
 
 .button-image:hover {
-	background-color: #efefef;
+	background-color: var(--backgroundSearch);
 }
 
 .inputImage {
@@ -3141,7 +3140,7 @@ a.facebook-button:active {
 }
 
 .modal-listing-load-more a:hover {
-	color: #666;
+	color: var(--backgroundSearch);
 }
 
 .edit-menu {
@@ -3489,6 +3488,8 @@ a.facebook-button:active {
 	margin-left: 10px;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
 	pointer-events: all;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
 }
 
 .bc-friends-content .sidebar-users a {
@@ -3617,7 +3618,7 @@ a.facebook-button:active {
 }
 
 .search-sidebar:hover, .search-sidebar:focus {
-	border-color: #b9b9b9;
+	border-color: var(--backgroundSearch);
 }
 
 #search-sidebar-btn {
@@ -3732,7 +3733,7 @@ a.facebook-button:active {
 }
 
 .admin-stats-container:hover {
-	background: #EEE;
+	background: var(--backgroundSearch);
 }
 
 .page-input-content-stats {
