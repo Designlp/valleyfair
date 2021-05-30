@@ -638,7 +638,7 @@ box-shadow: var(--boxShadow);
 border: 1px solid var(--colorBorder);
 background: var(--background);
 color: var(--colorWhiteM);
-border-radius: 18px;
+border-radius: 16px;
 overflow: auto;
 }
 .message-header {
@@ -655,7 +655,7 @@ padding: 10px;
 .message-divider {
 height:1px;
 width: 100%;
-background: #dee0e3;
+/* background: #dee0e3; */
 float: left;
 }
 .message-actions {
@@ -852,7 +852,7 @@ border-bottom: 3px solid var(--color) !important;
 }
 .message-comment-box-container {
 padding: 10px;
-background: #F9F9F9;
+background: transparent;
 overflow: auto;
 }
 .message-comment-box-form {
