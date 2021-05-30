@@ -1545,7 +1545,7 @@ color: #000;
 }
 .sidebar-avatar-edit a {
 font-size: 12px;
-color: #666;
+color: var(--colorWhiteM);
 font-weight: normal;
 }
 .sidebar-more {

@@ -417,8 +417,7 @@ input[type="submit"]:active {
 	left: 0;
 	z-index: 1000;
 	height: 45px;
-	background: #4c66a4;
-	background: linear-gradient(to bottom, #4d67a7 0%, #3b5998 100%);
+	background: var(--backgroundVentana);
 	border-bottom: 1px solid #1e346a;
 }
 
@@ -1796,15 +1795,15 @@ a.cover-button-active {
 	border-top: 1px solid #EEE;
 	display: block;
 	text-decoration: none;
-	color: var(--color);
+	color: var(--colorWhiteM);
 	height: 23px;
 	line-height: 23px;
 	cursor: pointer;
 }
 
 .sidebar-link a:hover {
-	background: var(--colorWhiteM);
-	color: var(--color);
+	background: #f7f7f7;
+	color: var(--colorWhiteM);
 }
 
 .sidebar-settings-container {
@@ -1972,9 +1971,7 @@ img.sidebar-status-icon {
 	color: var(--color);
 }
 
-.sidebar-avatar-desc a:hover {
-	color: #000;
-}
+
 
 .sidebar-avatar-edit a {
 	font-size: 12px;
@@ -3458,7 +3455,7 @@ a.facebook-button:active {
 	border: 1px solid #BFBFBF;
 	border-bottom: 1px solid #EEE;
 	height: 14px;
-	background: #f8f8f8;
+	background: var(--backgroundVentana);
 	padding: 10px;
 	font-size: 13px;
 	font-weight: bold;
@@ -3482,7 +3479,7 @@ a.facebook-button:active {
 }
 
 .bc-friends-username {
-	color: #666;
+	color: #fff;
 	float: left;
 	line-height: 15px;
 	text-overflow: ellipsis;
