@@ -2698,7 +2698,7 @@ a.facebook-button:active {
 	text-transform: uppercase;
     position: relative;
     display: inline-flex;
-    padding: 10px 10px;
+    padding: 10px 15px;
     background: #363636;
     color: #fff;
     text-decoration: none;
