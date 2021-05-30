@@ -601,10 +601,10 @@ input[type="submit"]:active {
 
 .search-input input {
 	border-radius: 10px;
-	border: 1px solid var(--backgroundVentana);
+	border: 1px solid var(--background);
 	padding: 5px;
 	margin-top: 8px;
-	background: var(--backgroundVentana);
+	background: var(--background);
 	width: 655px;
 	color: var(--colorWhiteM);
 }
