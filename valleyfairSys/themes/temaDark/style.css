@@ -3814,7 +3814,7 @@ a.facebook-button:active {
 	}
 }
 
-/* ------------------- !MOBILE ----------------------- */
+/* ------------------- !CELULAR ----------------------- */
 
 @media only screen and (max-device-width: 600px), only screen and (device-width: 600px) and (device-height: 600px), only screen and (width: 600px) and (orientation: landscape), only screen and (device-width: 600px), only screen and (max-width: 600px) {
 	body {
@@ -4014,5 +4014,11 @@ a.facebook-button:active {
 @media only screen and (max-device-width: 360px), only screen and (device-width: 360px) and (device-height: 360px), only screen and (width: 360px) and (orientation: landscape), only screen and (device-width: 360px), only screen and (max-width: 360px) {
 	#search {
 		width: 59px;
+	}
+}
+
+@media only screen and (max-device-width: 808px){
+	.search-input input{
+		width: 388px;
 	}
 }
