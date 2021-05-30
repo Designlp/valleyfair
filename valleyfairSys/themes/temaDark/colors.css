@@ -1,5 +1,12 @@
 :root {
     --background: #121519;
+    --backgroundVentana: #1C232D;
+
+
     --colorBorder: rgba(255, 255, 255, 0.1);
     --color: #149FFE;
+    --colorWhiteM: #D7D7D7;
+
+
+    --boxShadow: 11px 14px 35px 9px rgba(0,0,0,0.28)
 }
