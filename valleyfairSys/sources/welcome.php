@@ -3,7 +3,7 @@ function PageMain() {
 	global $TMPL, $LNG, $CONF, $db, $loggedIn, $settings, $plugins;
 	
 	if($settings['captcha']) {
-		$TMPL['captcha'] = '<input type="text" name="captcha" placeholder="'.$LNG['captcha'].' class="welcome-captcha">';
+		$TMPL['captcha'] = '<input type="text" name="captcha" placeholder="'.$LNG['captcha'].'" style="background-image: url('.$CONF['url'].'/includes/captcha.php)" class="welcome-captcha">';
 	}
 	
 	if($settings['fbapp']) {
