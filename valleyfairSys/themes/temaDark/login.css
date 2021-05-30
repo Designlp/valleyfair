@@ -203,6 +203,8 @@ form.sign-in-form {
   color: #fff;
   transition: transform 0.9s ease-in-out;
   transition-delay: 0.6s;
+  background: none !important;
+  border: none !important;
 }
 
 .panel h3 {
