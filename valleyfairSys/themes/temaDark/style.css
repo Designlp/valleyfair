@@ -1,5 +1,6 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans:100,300,400,500,700,900);
 @import url(//fonts.googleapis.com/css?family=Montserrat:200,400);
+@import url(colors.css);
 
 body {
 color: #fff;
@@ -7,7 +8,7 @@ font-family: "Montserrat", "Roboto", "Droid Sans", "Helvetica Neue",sans-serif;
 font-size: 13px;
 margin: 0;
 padding: 0;
-background: #121519;
+background: var(--background);
 }
 
 h1 { font-size: 52px; margin: 0; padding: 5px 15px;}
@@ -256,7 +257,7 @@ border-bottom: 1px solid #1e346a;
 }
 #content {
 padding: 65px 0 10px 0;
-background: #121519;
+background: var(--background);
 }
 .menu {
 float: right;
@@ -1895,8 +1896,8 @@ overflow: auto;
 }
 .footer {
 padding: 0 10px;
-border-top: 1px solid #ccc;
-background: #FFF;
+border-top: 1px solid var(--colorBorder);
+background: var(--background);
 }
 .footer-container {
 font-size: 13px;
