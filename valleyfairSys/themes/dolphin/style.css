@@ -252,9 +252,10 @@ height: 45px;
 background: #4c66a4;
 background: linear-gradient(to bottom, #4d67a7 0%,#3b5998 100%);
 border-bottom: 1px solid #1e346a;
+padding: 12px;
 }
 #content {
-padding: 65px 0 10px 0;
+padding: 90px 0 10px 0;
 background: #e8ebed;
 }
 .menu {
