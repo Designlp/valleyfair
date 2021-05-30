@@ -3047,7 +3047,7 @@ a.facebook-button:active {
 }
 
 .modal-container {
-	background: #fff;
+	background: var(--backgroundVentana);
 	width: 300px;
 	height: 148px;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
