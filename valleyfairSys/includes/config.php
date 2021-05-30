@@ -15,7 +15,8 @@ $CONF['name'] = 'u532654912_valleyfair';
 // $CONF['name'] = 'valleyfairp';
 
 // The Installation URL
-$CONF['url'] = 'http://localhost/valleyfair';
+$CONF['url'] = 'http://valleyfair.ml';
+// $CONF['url'] = 'http://localhost/valleyfair';
 
 // The Notifications e-mail
 $CONF['email'] = 'dmercadoff@gmail.com';
