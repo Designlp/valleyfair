@@ -2698,13 +2698,16 @@ a.facebook-button:active {
 	text-transform: uppercase;
     position: relative;
     display: inline-flex;
-    padding: 10px 30px;
+    padding: 10px 10px;
     background: #363636;
     color: #fff;
     text-decoration: none;
     letter-spacing: 1px;
     overflow: hidden;
 	height: 37px;
+	border: none;
+	border-radius: 25px;
+	cursor: pointer;
 }
 .login-button span{
     position: relative;
