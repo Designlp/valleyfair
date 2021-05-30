@@ -732,7 +732,7 @@ overflow: auto;
 word-wrap: break-word;
 }
 .message-replies {
-background: #F9F9F9;
+background: var(--background);
 width: 100%;
 float: left;
 overflow: auto;
@@ -859,7 +859,7 @@ overflow: auto;
 padding: 0 0 5px 42px;
 }
 .comment-reply-textarea {
-padding: 5px;
+padding: 10px;
 color: var(--colorWhiteM);
 font-size: 13px;
 overflow: hidden;
@@ -870,12 +870,10 @@ border: 1px solid var(--backgroundVentana);
 max-width: 100%;
 min-height: 30px;
 border-radius: 10px;
-height: 25px;
+height: 40px;
 background: var(--backgroundVentana);
 }
-.comment-reply-textarea:focus {
-border: 1px solid #AAA;
-}
+
 .blocked-link {
 float: right;
 font-weight: normal;
@@ -1328,7 +1326,7 @@ border-bottom: 1px solid #EEE;
 color: #777;
 }
 .sidebar-header a:hover {
-color: #222;
+color: var(--color);
 }
 .sidebar-header-link a {
 color: #AAA;
@@ -1543,7 +1541,7 @@ font-size: 13px;
 font-weight: bold;
 }
 .sidebar-avatar-desc a {
-color: #666;
+color: var(sidebar-avatar-desc);
 }
 .sidebar-avatar-desc a:hover {
 color: #000;	
