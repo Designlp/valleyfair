@@ -73,87 +73,54 @@
 	</div>
 </div>
 
-<script>
-	const loginButton = document.querySelector('.login-button');
-	const registerButton = document.querySelector('.register-button');
-	loginButton.onmousemove = function(e){
-		const x = e.pageX - loginButton.offsetLeft;
-		const y = e.pageY- loginButton.offsetTop;
-
-		loginButton.style.setProperty('--x', x + 'px');
-		loginButton.style.setProperty('--y', y + 'px');
-	}
-	registerButton.onmousemove = function(e){
-		const x = e.pageX - registerButton.offsetLeft;
-		const y = e.pageY- registerButton.offsetTop;
-
-		registerButton.style.setProperty('--x', x + 'px');
-		registerButton.style.setProperty('--y', y + 'px');
-	}
-</script>
-
-
-
 <div class="container">
 	<div class="forms-container">
 	  <div class="signin-signup">
 		<form action="#" class="sign-in-form">
-		  <h2 class="title">Sign in</h2>
-		  <div class="input-field">
-			<i class="fas fa-user"></i>
-			<input type="text" placeholder="Username" />
-		  </div>
-		  <div class="input-field">
-			<i class="fas fa-lock"></i>
-			<input type="password" placeholder="Password" />
-		  </div>
-		  <input type="submit" value="Login" class="btn solid" />
-		  <p class="social-text">Or Sign in with social platforms</p>
-		  <div class="social-media">
-			<a href="#" class="social-icon">
-			  <i class="fab fa-facebook-f"></i>
-			</a>
-			<a href="#" class="social-icon">
-			  <i class="fab fa-twitter"></i>
-			</a>
-			<a href="#" class="social-icon">
-			  <i class="fab fa-google"></i>
-			</a>
-			<a href="#" class="social-icon">
-			  <i class="fab fa-linkedin-in"></i>
-			</a>
-		  </div>
-		</form>
-		<form action="#" class="sign-up-form">
-		  <h2 class="title">Sign up</h2>
-		  <div class="input-field">
-			<i class="fas fa-user"></i>
-			<input type="text" placeholder="Username" />
-		  </div>
-		  <div class="input-field">
-			<i class="fas fa-envelope"></i>
-			<input type="email" placeholder="Email" />
-		  </div>
-		  <div class="input-field">
-			<i class="fas fa-lock"></i>
-			<input type="password" placeholder="Password" />
-		  </div>
-		  <input type="submit" class="btn" value="Sign up" />
-		  <p class="social-text">Or Sign up with social platforms</p>
-		  <div class="social-media">
-			<a href="#" class="social-icon">
-			  <i class="fab fa-facebook-f"></i>
-			</a>
-			<a href="#" class="social-icon">
-			  <i class="fab fa-twitter"></i>
-			</a>
-			<a href="#" class="social-icon">
-			  <i class="fab fa-google"></i>
-			</a>
-			<a href="#" class="social-icon">
-			  <i class="fab fa-linkedin-in"></i>
-			</a>
-		  </div>
+            <h2 class="title">Sign in</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+            <input type="submit" value="Login" class="btn solid" />
+            <p class="social-text">Or Sign in with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+        </form>
+
+
+		<form action="{$welcome_url}" method="POST" autocomplete="off" class="sign-up-form">
+			<h2 class="title">{$registerMsg}</h2>
+			<div class="input-field">
+			  <i class="fas fa-user"></i>
+			  <input type="text" name="username" placeholder="{$lng->username}" />
+			</div>
+			<div class="input-field">
+			  <i class="fas fa-lock"></i>
+			  <input type="password" name="password" placeholder="{$lng->password}">
+			</div>
+			<div class="input-field">
+			  <i class="fas fa-email"></i>
+			  <input type="text" name="email" placeholder="{$lng->email}">
+			  {$captcha}
+			</div>
+			<button type="submit" name="register"  class="register-button"><span>{$lng->register}</span></button>{$fblogin}
 		</form>
 	  </div>
 	</div>
@@ -203,6 +170,23 @@
 
   </script>
 
+<script>
+	const loginButton = document.querySelector('.login-button');
+	const registerButton = document.querySelector('.register-button');
+	loginButton.onmousemove = function(e){
+		const x = e.pageX - loginButton.offsetLeft;
+		const y = e.pageY- loginButton.offsetTop;
 
+		loginButton.style.setProperty('--x', x + 'px');
+		loginButton.style.setProperty('--y', y + 'px');
+	}
+	registerButton.onmousemove = function(e){
+		const x = e.pageX - registerButton.offsetLeft;
+		const y = e.pageY- registerButton.offsetTop;
+
+		registerButton.style.setProperty('--x', x + 'px');
+		registerButton.style.setProperty('--y', y + 'px');
+	}
+</script>
 
 {$ad}
