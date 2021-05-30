@@ -1,8 +1,8 @@
-const btnSend = document.querySelector('.btnSend');
-btnSend.onmousemove = function(e){
-    const x = e.pageX - btnSend.offsetLeft;
-    const y = e.pageY- btnSend.offsetTop;
+const loginButton = document.querySelector('.login-button');
+loginButton.onmousemove = function(e){
+    const x = e.pageX - loginButton.offsetLeft;
+    const y = e.pageY- loginButton.offsetTop;
 
-    btnSend.style.setProperty('--x', x + 'px');
-    btnSend.style.setProperty('--y', y + 'px');
+    loginButton.style.setProperty('--x', x + 'px');
+    loginButton.style.setProperty('--y', y + 'px');
 }
