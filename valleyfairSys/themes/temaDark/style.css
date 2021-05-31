@@ -566,8 +566,9 @@ input[type="submit"]:active {
 
 .topbar-button {
 	text-transform: uppercase;
+    position: relative;
     display: inline-flex;
-    padding: 15px 15px;
+    padding: 10px 15px;
     background: var(--color);
     color: #fff;
     text-decoration: none;
