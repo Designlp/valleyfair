@@ -100,7 +100,7 @@ $TMPL['footer'] = $settings['title'];
 $TMPL['footer_url'] = permalink($CONF['url'].'/index.php?a=info&b=');
 $TMPL['year'] = date('Y');
 $TMPL['info_urls'] = info_urls();
-$TMPL['powered_by'] = 'Powered by <a href="'.$url.'" target="_blank">'.$name.'</a>.';
+// $TMPL['powered_by'] = 'Powered by <a href="'.$url.'" target="_blank">'.$name.'</a>.';
 $TMPL['language'] = getLanguage($CONF['url'], null, 1);
 $TMPL['tracking_code'] = $settings['tracking_code'];
 $TMPL['search_users_url'] = permalink($CONF['url'].'/index.php?a=search&q=');

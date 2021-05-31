@@ -4338,7 +4338,7 @@ class feed {
 				$v = floor($duration/$value);
 				if($v > 1) {
 					//$o = sprintf($LNG['ta_'.$string.'s'], $v).' '.$LNG['ago'];
-					$o = sprintf($LNG['ta_'.$string.'s'], $v).' '.$LNG['ago'];
+					$o = sprintf($LNG['ta_'.$string.'s'], $v);
 				} else {
 					$o = $LNG['ta_'.$string].' '.$LNG['ago'];
 				}
