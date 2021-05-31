@@ -635,7 +635,7 @@ input[type="submit"]:active {
 	padding: 10px;
 	margin-top: 5px;
 	background: var(--backgroundSearch);
-	width: 600px;
+	width: 558px;
 	color: var(--colorWhiteM);
 }
 
@@ -2999,7 +2999,7 @@ a.facebook-button:active {
 }
 
 #values label:hover {
-	background-color: #efefef;
+	background-color: var(--backgroundVentana);
 }
 
 #values label img {
