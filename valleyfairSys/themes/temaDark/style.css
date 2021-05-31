@@ -470,6 +470,7 @@ input[type="submit"]:active {
 
 .menu_btn_hover {
 	background: rgba(0, 0, 0, .12);
+	border-radius: 50%;
 }
 
 .menu_name {
@@ -615,10 +616,12 @@ input[type="submit"]:active {
 }
 
 .menu_btn:hover {
+	border-radius: 50%;
 	background: rgba(0, 0, 0, .12);
 }
 
 .menu_btn:active {
+	border-radius: 50%;
 	background: rgba(0, 0, 0, .35);
 }
 
