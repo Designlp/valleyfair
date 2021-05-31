@@ -1,10 +1,4 @@
 <?php
-//======================================================================\\
-// phpSocial - Social Network Platform			                        \\
-// Copyrightc © Pricop Alexandru - Mihai. All rights reserved.			\\
-//----------------------------------------------------------------------\\
-// http://www.phpsocial.com/          	     	http://www.pricop.info/ \\
-//======================================================================\\
 function getSettings() {
 	$querySettings = "SELECT * from `settings`";
 	return $querySettings;
