@@ -2496,11 +2496,10 @@ select {
 .welcome-full {
 	width: 100%;
 	padding: 0 0 30px 0;
-	border-top: 1px solid #CCC;
 }
 
 .welcome-white {
-	background: #FFF;
+	background: none;
 }
 
 .welcome-inner {
