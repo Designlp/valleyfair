@@ -4099,7 +4099,7 @@ a.facebook-button:active {
 	}
 }
 
-@media only screen and (max-device-width: 808px){
+@media only screen and (max-device-width: 849px){
 	.search-input input{
 		width: 388px;
 	}
