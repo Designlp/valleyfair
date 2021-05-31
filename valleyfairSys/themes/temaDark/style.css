@@ -2685,16 +2685,18 @@ select {
 }
 
 .welcome-inputs input {
-	width: 85%;
+	width: 83%;
 	padding: 10px;
 	margin-bottom: 10px;
-	font-size: 14px;
 	border: none;
 	border-radius: 5px;
 	box-sizing: border-box;
 	margin-top: 8px;
 	color: var(--colorWhiteM);
-	margin-left: 29px;
+	margin-left: 8px;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
 .welcome-inputs i {
@@ -2703,6 +2705,7 @@ select {
     color: #acacac;
     transition: 0.5s;
     font-size: 1.1rem;
+	margin-left: 20px;
   }
 
 .welcome-inputs input::placeholder {
