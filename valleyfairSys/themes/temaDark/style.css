@@ -574,10 +574,12 @@ input[type="submit"]:active {
     text-decoration: none;
     letter-spacing: 1px;
     overflow: hidden;
-	height: 37px;
+	height: 19px;
 	border: none;
 	border-radius: 25px;
 	cursor: pointer;
+	left: 64px;
+	top: 4px;
 }
 .topbar-button span{
     position: relative;
