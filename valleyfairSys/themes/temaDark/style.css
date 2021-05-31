@@ -470,7 +470,7 @@ input[type="submit"]:active {
 
 .menu_btn_hover {
 	background: rgba(0, 0, 0, .12);
-	border-radius: 50%;
+	border-radius: 8px;
 }
 
 .menu_name {
@@ -616,12 +616,12 @@ input[type="submit"]:active {
 }
 
 .menu_btn:hover {
-	border-radius: 50%;
+	border-radius: 8px;
 	background: rgba(0, 0, 0, .12);
 }
 
 .menu_btn:active {
-	border-radius: 50%;
+	border-radius: 8px;
 	background: rgba(0, 0, 0, .35);
 }
 
@@ -3029,7 +3029,7 @@ a.facebook-button:active {
 
 #notifications_btn, #messages_btn, #friends_btn {
 	cursor: pointer;
-	width: 16px;
+	width: 19px;
 }
 
 .notificatons-number-container {
