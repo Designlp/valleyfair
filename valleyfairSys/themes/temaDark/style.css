@@ -4103,6 +4103,9 @@ a.facebook-button:active {
 	.search-input input{
 		width: 388px;
 	}
+	#search {
+		width: 154px;
+	}
 }
 
 @media only screen and (max-device-width: 1121px){
