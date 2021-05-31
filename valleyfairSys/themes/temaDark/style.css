@@ -2508,6 +2508,7 @@ select {
 
 .forgot-password a:hover {
 	color: var(--colorWhiteM);
+	text-decoration: none;
 }
 
 .welcome-captcha {
