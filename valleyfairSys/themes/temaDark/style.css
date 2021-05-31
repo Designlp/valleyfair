@@ -603,15 +603,15 @@ input[type="submit"]:active {
 }
 
 .menu_btn {
-	padding: 0 6px;
+	padding: 0 9px;
 	float: right;
 	height: 45px;
 }
 
 .menu_btn img {
 	margin-top: 14px;
-	width: 16px;
-	height: 16px;
+	width: 21px;
+	height: 19px;
 }
 
 .menu_btn:hover {
