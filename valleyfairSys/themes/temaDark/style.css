@@ -2484,7 +2484,7 @@ select {
 }
 
 .welcome-captcha {
-	background-color: #FFF;
+	background-color: #f0f0f0;
 	background-repeat: no-repeat;
 	background-position: right;
 }
@@ -2656,7 +2656,7 @@ select {
 	padding: 10px;
 	margin-bottom: 10px;
 	font-size: 14px;
-	border: 1px solid #CCC;
+	border: none;
 	border-radius: 5px;
 	box-sizing: border-box;
 }
