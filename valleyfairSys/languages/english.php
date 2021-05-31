@@ -1,6 +1,6 @@
 []<?php
 // Language Name
-$name = 'Español';
+$name = 'English';
 
 // Language Author
 $author = 'phpSocial';
