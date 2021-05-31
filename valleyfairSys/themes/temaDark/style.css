@@ -510,11 +510,7 @@ input[type="submit"]:active {
 	min-width: 200px;
 	width: auto;
 	float: right;
-	border-bottom-left-radius: 3px;
-	border-bottom-right-radius: 3px;
-	border: 1px solid var(--colorBorder);
-	border-top: 0;
-	box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+	border-radius: 13px;
 	color:rgb(240, 240, 240);
 }
 
@@ -542,13 +538,13 @@ input[type="submit"]:active {
 }
 
 .menu-dd-content a {
-	color:rgb(240, 240, 240);
+	color:var(--colorWhiteM);
 	text-decoration: none;
 	width: 100%;
 }
 
-.menu-dd-content a:hover {
-	color: #333;
+.menu-dd-content:hover {
+	background: var(--backgroundSearch);
 }
 
 .menu_img {
