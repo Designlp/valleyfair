@@ -266,8 +266,8 @@
   
   @media (max-width: 870px) {
     .containerForm {
-      min-height: 800px;
-      height: 100vh;
+      min-height: 710px;
+      height: 85vh;
     }
     .signin-signup {
       width: 100%;
