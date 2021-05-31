@@ -139,7 +139,7 @@ input[type="submit"]:active {
 .row-top {
 	background: #fff;
 	padding: 20px 0 10px 0;
-	border-bottom: 1px solid #c3c3c3;
+	/* border-bottom: 1px solid #c3c3c3; */
 	overflow: auto;
 }
 
@@ -2817,7 +2817,7 @@ a.facebook-button:active {
 }
 
 .n-i-extended {
-	border-bottom: 1px solid #dee0e3;
+	/* border-bottom: 1px solid #dee0e3; */
 }
 
 .notification-row:first-child {
@@ -3200,7 +3200,7 @@ a.facebook-button:active {
 
 .modal-listing-inner {
 	padding: 10px;
-	border-bottom: 1px solid #dee0e3;
+	/* border-bottom: 1px solid #dee0e3; */
 }
 
 .modal-listing-load-more {
@@ -3223,7 +3223,7 @@ a.facebook-button:active {
 .edit-menu {
 	margin: 0 0 10px 0;
 	overflow: auto;
-	border-bottom: 1px solid #dee0e3;
+	/* border-bottom: 1px solid #dee0e3; */
 }
 
 .edit-menu-item {
