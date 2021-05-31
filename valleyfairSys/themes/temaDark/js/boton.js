@@ -9,9 +9,9 @@ topbarButton.onmousemove = function(e){
 }
 
 buttonbeau.onmousemove = function(e){
-    const x = e.pageX - buttonbeau.offsetLeft;
-    const y = e.pageY- buttonbeau.offsetTop;
+    const xx = e.pageX - buttonbeau.offsetLeft;
+    const yy = e.pageY- buttonbeau.offsetTop;
 
-    buttonbeau.style.setProperty('--x', x + 'px');
-    buttonbeau.style.setProperty('--y', y + 'px');
+    buttonbeau.style.setProperty('--xx', x + 'px');
+    buttonbeau.style.setProperty('--yy', y + 'px');
 }
