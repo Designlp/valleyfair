@@ -2659,7 +2659,13 @@ select {
 	border: none;
 	border-radius: 5px;
 	box-sizing: border-box;
+	margin-top: 8px;
 }
+
+.welcome-inputs input::placeholder {
+    color: #aaa;
+    font-weight: 500;
+  }
 
 .facebook-button {
 	display: inline-block;
