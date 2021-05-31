@@ -1,4 +1,4 @@
-<?php
+[]<?php
 // Language Name
 $name = 'Español';
 
@@ -886,7 +886,7 @@ $LNG['re_activate_sent'] = 'Se ha enviado un correo electrónico de activación.
 
 // GENERAL
 $LNG['title_profile'] = 'Perfil';
-$LNG['title_feed'] = 'Noticias';
+$LNG['title_feed'] = 'Inicio';
 $LNG['title_post'] = 'Correo';
 $LNG['title_messages'] = 'Mensajes';
 $LNG['title_settings'] = 'Ajustes';
