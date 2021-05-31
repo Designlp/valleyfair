@@ -2855,6 +2855,10 @@ a.facebook-button:active {
 	overflow: auto;
 }
 
+.notification-padding a:hover{
+	color:var(--colorWhiteM);
+}
+
 #notifications-content .timeago {
 	float: none;
 }

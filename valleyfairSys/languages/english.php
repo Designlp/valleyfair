@@ -263,7 +263,7 @@ $LNG['user_menu_general'] = 'General';
 $LNG['user_menu_security'] = 'Contraseña';
 $LNG['user_menu_avatar'] = 'Imágenes de perfil';
 $LNG['user_menu_notifications'] = 'Notificaciones';
-$LNG['user_menu_privacy'] = 'Intimidad';
+$LNG['user_menu_privacy'] = 'Personal';
 $LNG['user_menu_delete'] = $LNG['user_ttl_delete'] = 'Borrar cuenta';
 $LNG['user_menu_blocked'] = $LNG['user_ttl_blocked'] = 'Usuarios bloqueados';
 $LNG['other'] = 'Otro';
@@ -271,17 +271,17 @@ $LNG['other'] = 'Otro';
 $LNG['user_ttl_general'] = 'Configuración general';
 $LNG['user_ttl_security'] = 'Configuración de contraseña';
 $LNG['user_ttl_avatar'] = 'Configuración de imágenes de perfil';
-$LNG['user_ttl_notifications'] = 'Configuracion de notificaciones';
-$LNG['user_ttl_privacy'] = 'La configuración de privacidad';
+$LNG['user_ttl_notifications'] = 'Configuración de notificaciones';
+$LNG['user_ttl_privacy'] = 'Configuración de privacidad';
 
 $LNG['blocked_desc'] = 'Las personas bloqueadas ya no pueden ver las cosas que publicas en tu línea de tiempo, mensajes o agregarte como amigo.';
 $LNG['delete_acc_desc'] = 'Su cuenta se eliminará permanentemente junto con todo el contenido relacionado.';
 
-$LNG['ttl_first_name'] = $LNG['first_name'] = 'Primer nombre';
-$LNG['sub_first_name'] = 'Ponga su primer nombre';
+$LNG['ttl_first_name'] = $LNG['first_name'] = 'Nombre';
+$LNG['sub_first_name'] = 'Introduzca su primer nombre';
 
 $LNG['ttl_last_name'] = $LNG['last_name'] = 'Apellido';
-$LNG['sub_last_name'] = 'Ingrese su apellido';
+$LNG['sub_last_name'] = 'Introduzca su apellido';
 
 $LNG['ttl_email'] = 'Email';
 $LNG['sub_email'] = 'Email no se mostrará';
@@ -316,7 +316,7 @@ $LNG['sub_profile'] = 'Visibilidad del perfil';
 $LNG['ttl_messages'] = 'Mensaje';
 $LNG['sub_messages'] = 'La forma predeterminada de publicar mensajes';
 
-$LNG['ttl_offline'] = 'Estado del chat';
+$LNG['ttl_offline'] = 'Estado en el chat';
 $LNG['sub_offline'] = 'El estado de visibilidad del chat';
 
 $LNG['ttl_facebook'] = 'Facebook';
@@ -328,7 +328,7 @@ $LNG['sub_twitter'] = 'Su ID de perfil de Twitter.';
 $LNG['ttl_google'] = 'Google+';
 $LNG['sub_google'] = 'Su ID de perfil de google +.';
 
-$LNG['ttl_bio'] = 'Bio';
+$LNG['ttl_bio'] = 'Descripción';
 $LNG['sub_bio'] = 'Acerca de ti (160 caracteres o menos)';
 
 $LNG['ttl_birthdate'] = 'Fecha de nacimiento';
@@ -338,14 +338,14 @@ $LNG['ttl_upload_avatar'] = 'Sube la imagen de perfil seleccionada';
 $LNG['ttl_delete_avatar'] = 'Elimina tu imagen de perfil actual';
 
 $LNG['privacy'] = 'Privacidad';
-$LNG['public'] = 'Pública';
+$LNG['public'] = 'Público';
 $LNG['private'] = 'Privado';
 $LNG['report'] = 'Reportar';
 $LNG['delete_message'] = 'Borrar mensaje';
 $LNG['remove_user'] = 'Eliminar usuario';
 
 $LNG['opt_offline_off'] = 'En línea (cuando esté disponible)';
-$LNG['opt_offline_on'] = 'Siempre sin Conexión';
+$LNG['opt_offline_on'] = 'Siempre sin conexión';
 
 $LNG['no_gender'] = 'Sin género';
 $LNG['male'] = 'Masculino';
@@ -671,7 +671,7 @@ $LNG['chat_camera'] = 'Toma una foto';
 // STATS
 $LNG['likes'] = 'Me gusta';
 $LNG['messages'] = 'Mensajes';
-$LNG['comments'] = 'Comentarios';
+$LNG['comments'] = 'Comentar';
 $LNG['registered_users'] = 'Usuarios registrados';
 $LNG['today'] = 'Hoy';
 $LNG['this_week'] = 'Esta semana';
@@ -866,7 +866,7 @@ $LNG['view_chat_notifications'] = 'Ver más mensajes';
 $LNG['view_confirmed_friendships'] = 'Ver solicitudes confirmadas';
 $LNG['close_notifications'] = 'Cerrar notificaciones';
 $LNG['notifications_settings'] = 'Configuracion de notificaciones';
-$LNG['no_notifications'] = 'No hay Notificaciones';
+$LNG['no_notifications'] = 'No hay notificaciones';
 $LNG['search_title'] = 'Resultados de la búsqueda';
 $LNG['view_all_results'] = 'Ver todos los resultados';
 $LNG['close_results'] = 'Cerrar resultados';
