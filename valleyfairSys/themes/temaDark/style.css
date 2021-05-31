@@ -581,6 +581,7 @@ input[type="submit"]:active {
 	left: 64px;
 	top: 4px;
 	text-decoration: none;
+    float: right;
 }
 .topbar-button:hover{
 	text-decoration: none !important;
