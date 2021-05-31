@@ -422,10 +422,14 @@ input[type="submit"]:active {
 }
 
 #content {
-	padding: 54px 0 10px 0;
+	padding: 90px 0 10px 0;
 	background: var(--background);
 }
 
+#contentLogin {
+	padding: 54px 0 10px 0;
+	background: var(--background);
+}
 .menu {
 	float: right;
 	height: 45px;
