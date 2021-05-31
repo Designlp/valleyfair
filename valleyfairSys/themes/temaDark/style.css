@@ -2693,6 +2693,7 @@ select {
 	border-radius: 5px;
 	box-sizing: border-box;
 	margin-top: 8px;
+	color: var(--colorWhiteM);
 }
 
 .welcome-inputs input::placeholder {
