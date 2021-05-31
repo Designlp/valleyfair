@@ -2685,7 +2685,7 @@ select {
 }
 
 .welcome-inputs input {
-	width: 100%;
+	width: 85%;
 	padding: 10px;
 	margin-bottom: 10px;
 	font-size: 14px;
@@ -2694,7 +2694,16 @@ select {
 	box-sizing: border-box;
 	margin-top: 8px;
 	color: var(--colorWhiteM);
+	margin-left: 29px;
 }
+
+.welcome-inputs i {
+    text-align: center;
+    line-height: 55px;
+    color: #acacac;
+    transition: 0.5s;
+    font-size: 1.1rem;
+  }
 
 .welcome-inputs input::placeholder {
     color: #aaa;
