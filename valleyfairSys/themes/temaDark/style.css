@@ -2536,7 +2536,7 @@ select {
 	padding: 0 10px;
 	overflow: auto;
 	box-sizing: border-box;
-	color: #6B6B6B;
+	color: var(--colorWhiteM);
 }
 
 .welcome-row-title {
@@ -3906,7 +3906,6 @@ a.facebook-button:active {
 		width: 100%;
 	}
 }
-
 /* ------------------- !CELULAR ----------------------- */
 
 @media only screen and (max-device-width: 600px), only screen and (device-width: 600px) and (device-height: 600px), only screen and (width: 600px) and (orientation: landscape), only screen and (device-width: 600px), only screen and (max-width: 600px) {
@@ -4119,10 +4118,17 @@ a.facebook-button:active {
 	}
 }
 
-@media only screen and (max-device-width: 1121px){
+@media only screen and (max-device-width: 1123px){
 	.topbar-button{
-		left: 0px;
+		left: 76px;
 	}
+	
+}
+@media only screen and (max-device-width: 910px){
+	.topbar-button{
+		left: 23px;
+	}
+	
 }
 /* .button-beau {
 	text-transform: uppercase;
