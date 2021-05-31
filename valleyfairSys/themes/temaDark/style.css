@@ -4145,4 +4145,6 @@ a.facebook-button:active {
     height: 100px;
 } */
 
-
+.pagePadding{
+	padding: 90px 0 10px 0;
+}
