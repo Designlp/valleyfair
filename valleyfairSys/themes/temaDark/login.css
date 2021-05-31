@@ -2,7 +2,6 @@
 .containerForm {
     position: relative;
     width: 100%;
-    background-color: #fff;
     min-height: 100vh;
     overflow: hidden;
   }
@@ -57,7 +56,7 @@
   .input-field {
     max-width: 380px;
     width: 100%;
-    background-color: #f0f0f0;
+    background-color: var(--backgroundVentana);
     margin: 10px 0;
     height: 55px;
     border-radius: 55px;

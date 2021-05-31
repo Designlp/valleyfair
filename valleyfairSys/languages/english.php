@@ -1,6 +1,6 @@
 <?php
 // Language Name
-$name = 'English';
+$name = 'Español';
 
 // Language Author
 $author = 'phpSocial';
@@ -131,7 +131,7 @@ $LNG['settings'] = 'Configuraciones';
 $LNG['welcome_feed_ttl'] = 'Bienvenido a tu Nuevo Inicio';
 $LNG['welcome_feed'] = 'Todas las publicaciones de tus amigos aparecerán en esta página, empieza por hacer nuevos amigos.';
 $LNG['leave_comment'] = 'Deja un comentario...';
-$LNG['post'] = 'Pub';
+$LNG['post'] = 'Publica';
 $LNG['view_more_messages'] = 'Cargar mas';
 $LNG['view_more_comments'] = 'Ver mas comentarios';
 $LNG['delete_q_comment'] = 'Estas seguro de borrar este comentario?';
@@ -224,7 +224,7 @@ $LNG['sidebar_people'] = 'People';
 $LNG['sidebar_tag'] = 'Personas';
 
 // MESSAGES / CHAT
-$LNG['lonely_here'] = 'Está\' solo aquí, ¿qué tal hacer algunos amigos?';
+$LNG['lonely_here'] = 'Está solo aquí, ¿qué tal hacer algunos amigos?';
 $LNG['chat_too_long'] = 'Lo sentimos, pero el número máximo de caracteres permitido por mensaje de chat es <strong>%s</strong>.';
 $LNG['blocked_by'] = 'El mensaje no se pudo enviar. <strong>%s</strong> te bloqueó.';
 $LNG['blocked_user'] = 'El mensaje no se pudo enviar. Tu\' has bloqueado <strong>%s</strong>.';
@@ -247,7 +247,7 @@ $LNG['label_map'] = 'Agregar un lugar';
 $LNG['label_video'] = 'Comparte una película o un enlace de YouTube o Vimeo';
 $LNG['label_music'] = 'Comparte una canción o un enlace de SoundCloud';
 $LNG['label_image'] = 'Subir imagenes';
-$LNG['message_form'] = '¿Qué\' tienes en mente?';
+$LNG['message_form'] = '¿Qué tienes en mente?';
 $LNG['file_too_big'] = 'El tamaño de archivo seleccionado (%s) es demasiado grande, el tamaño de archivo máximo permitido es <strong>%s</strong>.';
 $LNG['format_not_exist'] = 'El formato de archivo seleccionado (%s) no es válido, suba solo el formato de imagen <strong>%s</strong>.';
 $LNG['privacy_no_exist'] = 'La privacidad seleccionada no existe, actualice la página y vuelva a intentarlo.';
@@ -726,14 +726,14 @@ $LNG['new_comment_notification'] = '<a href="%s" rel="loadpage">%s</a> comentó 
 $LNG['new_shared_notification'] = '<a href="%s" rel="loadpage">%s</a> compartió tu <a href="%s" rel="loadpage">mensaje</a>';
 $LNG['new_page_notification'] = '<a href="%s" rel="loadpage">%s</a> te ha invitado a que te guste <a href="%s" rel="loadpage">%s</a> página';
 $LNG['new_group_notification'] = '<a href="%s" rel="loadpage">%s</a> te ha invitado a unirte <a href="%s" rel="loadpage">%s</a> grupo';
-$LNG['new_friend_notification'] = '<a href="%s" rel="loadpage">%s</a> acepté tu solicitud de amistad';
+$LNG['new_friend_notification'] = '<a href="%s" rel="loadpage">%s</a> acepto tu solicitud de amistad';
 $LNG['new_chat_notification'] = '<a href="%s" rel="loadpage">%s</a> enviarte a <span class="desktop"><a onclick="%s">mensaje de chat</a></span><span class="mobile"><a href="%s" rel="loadpage">mensaje de chat</a></span>';
 $LNG['new_birthday_notification'] = '<a href="%s" rel="loadpage">%s</a>\'s cumpleaños';
 $LNG['years_old'] = '%s años';
 $LNG['x_and_x_others'] = '<a href="%s" rel="loadpage">%s</a> y <a href="%s" rel="loadpage">%s más</a>';
 $LNG['new_like_fa'] = '<a href="%s" rel="loadpage">%s</a> le gustó un <a href="%s" rel="loadpage">mensaje</a>';
 $LNG['new_like_c_fa'] = '<a href="%s" rel="loadpage">%s</a> le gustó un <a href="%s" rel="loadpage">comentario</a>';
-$LNG['new_comment_fa'] = '<a href="%s" rel="loadpage">%s</a> comentó en un <a href="%s" rel="loadpage">mensaje</a>';
+$LNG['new_comment_fa'] = '<a href="%s" rel="loadpage">%s</a> comentó en una <a href="%s" rel="loadpage">c</a>';
 $LNG['new_message_fa'] = '<a href="%s" rel="loadpage">%s</a> publicó un nuevo <a href="%s" rel="loadpage">mensaje</a>';
 $LNG['change_password'] = 'Cambio de contraseña';
 $LNG['enter_new_password'] = 'Introduzca su nueva contraseña';
