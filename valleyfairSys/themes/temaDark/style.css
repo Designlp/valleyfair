@@ -580,6 +580,10 @@ input[type="submit"]:active {
 	cursor: pointer;
 	left: 64px;
 	top: 4px;
+	text-decoration: none;
+}
+.topbar-button:hover{
+	text-decoration: none !important;
 }
 .topbar-button span{
     position: relative;
