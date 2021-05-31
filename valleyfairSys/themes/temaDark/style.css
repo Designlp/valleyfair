@@ -158,6 +158,7 @@ input[type="submit"]:active {
 	max-width: 920px;
 	min-height: 400px;
 	overflow: hidden;
+	padding-top: 30px;
 }
 
 .row-footer {
@@ -422,7 +423,7 @@ input[type="submit"]:active {
 }
 
 #content {
-	padding: 90px 0 10px 0;
+	padding: 65px 0 10px 0;
 	background: var(--background);
 }
 
@@ -4144,7 +4145,3 @@ a.facebook-button:active {
     width: 100px;
     height: 100px;
 } */
-
-.pagePadding{
-	padding: 200px 0 10px 0 !important;
-}
