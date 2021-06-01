@@ -1232,6 +1232,20 @@ a.cover-button-active {
 	margin-top: -4px;
 }
 
+.like_btn_hearth {
+	width: auto;
+	padding-left: 18px;
+	height: 16px;
+	float: right;
+}
+
+.like_btn_hearth img {
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	margin-top: -4px;
+}
+
 .comment-btn {
 	float: right;
 	display: none;
