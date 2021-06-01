@@ -1931,8 +1931,9 @@ class feed {
 					<div class="message-replies">
 						<div class="message-actions">
 							<div class="message-actions-content" id="message-action'.$row['id'].'">
-								'.$this->getActions($row['id'], $row['likes']).'
+							'.$this->getActions($row['id'], $row['likes']).'
 							</div>
+							'.$this->getActions($row['id'], $row['likes']).'
 						</div>
 						<div class="message-replies-content" id="comments-list'.$row['id'].'">
 							'.$this->getComments($row['id'], null, $this->c_start, ($this->id == $row['uid'] ? 1 : 0)).'
@@ -3733,8 +3734,8 @@ class feed {
 							<div class="timeago'.$b.'" title="'.$time.'">
 								'.$time.'
 							</div>
-						</div>
 							<div class="like_btn" id="like_c_btn'.$comment['id'].'"> <a onclick="likesModal('.$comment['id'].', 1)" title="'.$LNG['view_all_likes'].'">'.$comment['likes'].'</a></div>
+						</div>
 					</div>
 					<div class="delete_preloader" id="del_comment_'.$comment['id'].'"></div>
 					
