@@ -940,7 +940,7 @@ a.cover-button-active {
 }
 
 .message-actions-content a {
-	content: '';
+	/* content: '';
 	position: absolute;
 	left: 0;
 	display: inline-block;
@@ -952,7 +952,7 @@ a.cover-button-active {
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: scale(0,1);
-	transform: scale(0,1);
+	transform: scale(0,1); */
 	color: var(--colorWhiteM);
 }
 
