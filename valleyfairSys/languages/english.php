@@ -716,7 +716,7 @@ $LNG['dislike'] = '<div class="corazonDisLike"></div>';
 $LNG['liked'] = 'Gustó';
 $LNG['liked_this'] = 'Le gusto esto';
 $LNG['view_all_likes'] = 'Ver todos los Me gusta';
-$LNG['people_who_like_this'] = 'Las personas que gustan de este';
+$LNG['people_who_like_this'] = 'Personas a la que les gusta esto';
 
 // MISC
 $LNG['sponsored'] = 'Patrocinado';
