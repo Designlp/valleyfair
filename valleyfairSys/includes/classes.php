@@ -3854,7 +3854,7 @@ class feed {
 			// 	$people .= '</span>';
 			// }
 		}
-		return $people.'<a title="'.$LNG['view_all_likes'].'" onclick="likesModal('.$id.', 0)">'.$count.''.$LNG['heart'].'</a>';
+		return $people.'<a class="btn_hearth" title="'.$LNG['view_all_likes'].'" onclick="likesModal('.$id.', 0)">'.$count.''.$LNG['heart'].'</a>';
 	}
 	
 	function parseMessage($message) {

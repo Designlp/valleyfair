@@ -943,7 +943,7 @@ a.cover-button-active {
 	color: var(--colorWhiteM);
 }
 
-.like_btn_hearth a:after{
+a.btn_hearth:after{
 	content: '';
 	position: absolute;
 	left: 0;
@@ -960,7 +960,7 @@ a.cover-button-active {
 	color: var(--colorWhiteM);
 }
 
-.like_btn_hearth a:hover:after {
+a.btn_hearth:hover:after {
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
