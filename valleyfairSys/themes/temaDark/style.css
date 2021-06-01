@@ -4187,6 +4187,6 @@ a.facebook-button:active {
 	width: 40px;
 	height: 40px;
 	background-repeat: no-repeat;
-	background-size: cover;
-	margin-right: 10px;
+	background-size: cover !important;
+	margin-right: 10px !important;
 }
