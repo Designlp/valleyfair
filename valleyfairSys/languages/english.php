@@ -710,7 +710,7 @@ $LNG['admin_reports_delete'] = 'Eliminar el informe y el contenido informado';
 $LNG['admin_reports_view'] = 'Ver el contenido informado';
 
 // LIKES
-$LNG['like'] = 'Me gusta';
+$LNG['like'] = '<div class="corazonLike"></div>';
 $LNG['dislike'] = 'No me gusta';
 $LNG['liked'] = 'Gustó';
 $LNG['liked_this'] = 'Le gusto esto';
