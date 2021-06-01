@@ -711,7 +711,7 @@ $LNG['admin_reports_view'] = 'Ver el contenido informado';
 
 // LIKES
 $LNG['like'] = '<div class="corazonLike"></div>';
-$LNG['heart'] = 'Me gusta';
+$LNG['heart'] = ' Me gusta';
 $LNG['dislike'] = '<div class="corazonDisLike"></div>';
 $LNG['liked'] = 'Gustó';
 $LNG['liked_this'] = 'Le gusto esto';

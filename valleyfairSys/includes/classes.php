@@ -3834,7 +3834,7 @@ class feed {
 	function getLikers($id, $count, $type = null) {
 		global $LNG;
 		if($type) {
-			return ' <a onclick="likesModal('.$id.', 1)" title="'.$LNG['view_all_likes'].'">'.$count.'</a>';
+			return ' <a onclick="likesModal('.$id.', 1)" title="'.$LNG['view_all_likes'].'">'.$count.''.$LNG['heart'].'</a>';
 		}
 		// If the post has any likes and the l_per_post is enabled
 		if($this->l_per_post && $count > 0) {
@@ -6376,7 +6376,7 @@ class feed {
 		$likes = $this->getLikers($id, $likes);
 
 		// Output variable
-		$actions = '<a onclick="doLike('.$id.', 0)" id="doLike'.$id.'">'.$state.'</a> <a onclick="focus_form('.$id.')">'.$LNG['comment'].'</a> <a onclick="share('.$id.')">'.$LNG['share'].'</a> <div class="like_btn_hearth" id="like_btn'.$id.'"> '.$likes.''.$LNG['heart'].'</div>';
+		$actions = '<a onclick="doLike('.$id.', 0)" id="doLike'.$id.'">'.$state.'</a> <a onclick="focus_form('.$id.')">'.$LNG['comment'].'</a> <a onclick="share('.$id.')">'.$LNG['share'].'</a> <div class="like_btn_hearth" id="like_btn'.$id.'"> '.$likes.'</div>';
 		
 		// If the current user is not empty
 		if(empty($this->id)) {
