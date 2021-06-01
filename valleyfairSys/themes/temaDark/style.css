@@ -932,6 +932,7 @@ a.cover-button-active {
 .message-actions {
 	float: left;
 	width: 100%;
+	margin-bottom: 14px;
 }
 
 .message-actions-content {
@@ -1158,7 +1159,7 @@ a.cover-button-active {
 }
 
 .message-reply-message {
-	padding: 0 16px 0 42px;
+	padding: 0 16px 8px 42px;
 	word-wrap: break-word;
 }
 
@@ -1655,15 +1656,16 @@ a.cover-button-active {
 }
 
 .message-reply-avatar {
-	width: 32px;
+	width: 41px;
 	float: left;
 	overflow: auto;
 }
 
 .message-reply-avatar img {
 	border-radius: 50%;
-	width: 32px;
-	height: 32px;
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
 }
 
 .message-replies-content {
