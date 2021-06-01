@@ -4181,3 +4181,9 @@ a.facebook-button:active {
 	height: 40px;
 	background-repeat: no-repeat;
 }
+.commentD{
+	background-image: url('images/icons/commentD.png');
+	width: 40px;
+	height: 40px;
+	background-repeat: no-repeat;
+}
