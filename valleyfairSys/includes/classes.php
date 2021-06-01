@@ -3842,13 +3842,13 @@ class feed {
 			}
 			
 			// Define the $people who liked variable
-			if(is_array($array)) {
-				$people = '<span class="likes-container">';
-				foreach($array as $row) {
-					$people .= '<a href="'.permalink($this->url.'/index.php?a=profile&u='.$row['username']).'" rel="loadpage"><img src="'.permalink($this->url.'/thumb.php?t=a&w=25&h=25&src='.$row['image']).'" title="'.realName($row['username'], $row['first_name'], $row['last_name']).' '.$LNG['liked_this'].'"></a> ';
-				}
-				$people .= '</span>';
-			}
+			// if(is_array($array)) {
+			// 	$people = '<span class="likes-container">';
+			// 	foreach($array as $row) {
+			// 		$people .= '<a href="'.permalink($this->url.'/index.php?a=profile&u='.$row['username']).'" rel="loadpage"><img src="'.permalink($this->url.'/thumb.php?t=a&w=25&h=25&src='.$row['image']).'" title="'.realName($row['username'], $row['first_name'], $row['last_name']).' '.$LNG['liked_this'].'"></a> ';
+			// 	}
+			// 	$people .= '</span>';
+			// }
 		}
 		return $people.'<a title="'.$LNG['view_all_likes'].'" onclick="likesModal('.$id.', 0)">'.$count.'</a>';
 	}
