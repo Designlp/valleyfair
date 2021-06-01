@@ -4,7 +4,7 @@ function autosize() {
 		$(this).height(0);
 		$(this).height(this.scrollHeight);
 	});
-	// $('body').find('textarea.comment-reply-textarea').keyup();
+	$('body').find('textarea.comment-reply-textarea').keyup();
 }
 function showButton(id) {
 	$('#comment_btn_'+id).fadeIn('slow');
