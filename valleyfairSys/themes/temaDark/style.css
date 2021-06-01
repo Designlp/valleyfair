@@ -4167,3 +4167,11 @@ a.facebook-button:active {
     width: 100px;
     height: 100px;
 } */
+
+
+.corazonLike{
+	background-image: url('images/icons/like.png');
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
+}
