@@ -942,8 +942,10 @@ a.cover-button-active {
 .message-actions-content a {
 	color: var(--colorWhiteM);
 }
-
-a.btn_hearth:after{
+.btn_hearth{
+	width: 10px;
+}
+.btn_hearth:after{
 	content: '';
 	display: inline-block;
 	width: 100%;
@@ -955,10 +957,10 @@ a.btn_hearth:after{
 	transform: scale(0,1);
 	color: var(--colorWhiteM);
 }
-a.btn_hearth:hover{
+.btn_hearth:hover{
 	text-decoration: none;
 }
-a.btn_hearth:hover:after {
+.btn_hearth:hover:after {
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
