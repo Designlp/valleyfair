@@ -939,11 +939,11 @@ a.cover-button-active {
 	display: block ruby;
 }
 
-.message-actions-content a:after {
+.message-actions-content a {
 	color: var(--colorWhiteM);
 }
 
-.like_btn_hearth a{
+.like_btn_hearth a:after{
 	content: '';
 	position: absolute;
 	left: 0;
