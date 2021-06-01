@@ -156,7 +156,7 @@ $LNG['message_semi_private'] = 'Lo sentimos, este mensaje es privado, solo los a
 $LNG['message_semi_private_ttl'] = 'Mensaje privado';
 $LNG['login_to_lcs'] = 'Inicie sesión para dar me gusta, comentar o compartir';
 $LNG['message'] = 'Mensaje';
-$LNG['comment'] = 'Comentar';
+$LNG['comment'] = '<div class="commentD"></div>';
 $LNG['share'] = 'Compartir';
 $LNG['camera'] = 'Camara';
 $LNG['capture'] = 'Captura';
@@ -672,7 +672,7 @@ $LNG['chat_camera'] = 'Toma una foto';
 // $LNG['likes'] = 'Me gusta';
 $LNG['likes'] = '<div class="corazonLike"></div>';
 $LNG['messages'] = 'Mensajes';
-$LNG['comments'] = '<div class="commentD"></div>';
+$LNG['comments'] = 'Comentar';
 $LNG['registered_users'] = 'Usuarios registrados';
 $LNG['today'] = 'Hoy';
 $LNG['this_week'] = 'Esta semana';
