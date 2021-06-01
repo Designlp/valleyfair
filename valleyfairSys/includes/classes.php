@@ -3725,7 +3725,7 @@ class feed {
 					</div>
 					<div class="message-reply-footer">
 						<div class="message-time">
-							'.($this->id ? '<span class="like-comment"><a onclick="doLike('.$comment['id'].', 1)" id="doLikeC'.$comment['id'].'">'.$state.'</a> -&nbsp;</span>' : '').'
+							'.($this->id ? '<span class="like-comment"><a onclick="doLike('.$comment['id'].', 1)" id="doLikeC'.$comment['id'].'">'.$state.'</a> &nbsp;</span>' : '').'
 							<div class="timeago'.$b.'" title="'.$time.'">
 								'.$time.'
 							</div>

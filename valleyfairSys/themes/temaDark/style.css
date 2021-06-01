@@ -2316,7 +2316,7 @@ select {
 }
 
 .page-input-sub {
-	color: var(--backgroundSearch);
+	color: var(--colorOpaco);
 	font-size: 11px;
 	padding-top: 3px;
 }
@@ -4187,4 +4187,6 @@ a.facebook-button:active {
 	width: 40px;
 	height: 40px;
 	background-repeat: no-repeat;
+	background-size: cover;
+	margin-right: 10px;
 }
