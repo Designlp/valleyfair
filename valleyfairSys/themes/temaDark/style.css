@@ -940,7 +940,11 @@ a.cover-button-active {
 }
 
 .message-actions-content a {
-	/* content: '';
+	color: var(--colorWhiteM);
+}
+
+.like_btn_hearth a{
+	content: '';
 	position: absolute;
 	left: 0;
 	display: inline-block;
@@ -952,11 +956,11 @@ a.cover-button-active {
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: scale(0,1);
-	transform: scale(0,1); */
+	transform: scale(0,1);
 	color: var(--colorWhiteM);
 }
 
-.message-actions-content a:hover:after {
+.like_btn_hearth a:hover:after {
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
