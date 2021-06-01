@@ -4170,8 +4170,14 @@ a.facebook-button:active {
 
 
 .corazonLike{
-	background-image: url('images/icons/like.png');
-	width: 20px;
-	height: 20px;
+	background-image: url('images/icons/heart-inactive.png');
+	width: 40px;
+	height: 40px;
+	background-repeat: no-repeat;
+}
+.corazonDisLike{
+	background-image: url('images/icons/heart-active.png');
+	width: 40px;
+	height: 40px;
 	background-repeat: no-repeat;
 }
