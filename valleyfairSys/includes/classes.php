@@ -3733,8 +3733,8 @@ class feed {
 							<div class="timeago'.$b.'" title="'.$time.'">
 								'.$time.'
 							</div>
-							<div class="like_btn" id="like_c_btn'.$comment['id'].'"> <a onclick="likesModal('.$comment['id'].', 1)" title="'.$LNG['view_all_likes'].'">'.$comment['likes'].'</a></div>
 						</div>
+							<div class="like_btn" id="like_c_btn'.$comment['id'].'"> <a onclick="likesModal('.$comment['id'].', 1)" title="'.$LNG['view_all_likes'].'">'.$comment['likes'].'</a></div>
 					</div>
 					<div class="delete_preloader" id="del_comment_'.$comment['id'].'"></div>
 					
