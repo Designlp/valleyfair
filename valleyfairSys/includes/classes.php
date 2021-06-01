@@ -1931,10 +1931,7 @@ class feed {
 					<div class="message-replies">
 						<div class="message-actions">
 							<div class="message-actions-content" id="message-action'.$row['id'].'">
-							'.$this->getActions($row['id'], $row['likes']).'
-							</div>
-							<div id="message-action'.$row['id'].'">
-							'.$this->getActions($row['likes']).'
+								'.$this->getActions($row['id'], $row['likes']).'
 							</div>
 						</div>
 						<div class="message-replies-content" id="comments-list'.$row['id'].'">
