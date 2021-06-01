@@ -1659,6 +1659,7 @@ a.cover-button-active {
 	width: 32px;
 	float: left;
 	overflow: auto;
+	margin-top: 6px;
 }
 
 .message-reply-avatar img {
