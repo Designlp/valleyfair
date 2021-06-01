@@ -174,7 +174,7 @@ class timthumb {
 		$this->debug(1, "Starting new request from " . $this->getIP() . " to " . $_SERVER['REQUEST_URI']);
 		$this->calcDocRoot();
 		//On windows systems I'm assuming fileinode returns an empty string or a number that doesn't change. Check this.
-		$this->salt = @filemtime(__FILE__) . ' ' . @fileinode(__FILE__);
+		$this->salt = @filemtime(__FILE__) . '-' . @fileinode(__FILE__);
 		$this->debug(3, "Salt is: " . $this->salt);
 		if(FILE_CACHE_DIRECTORY){
 			if(! is_dir(FILE_CACHE_DIRECTORY)){

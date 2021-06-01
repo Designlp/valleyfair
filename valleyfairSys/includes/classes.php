@@ -6372,7 +6372,7 @@ class feed {
 		$likes = $this->getLikers($id, $likes);
 
 		// Output variable
-		$actions = '<a onclick="doLike('.$id.', 0)" id="doLike'.$id.'">'.$state.'</a> - <a onclick="focus_form('.$id.')">'.$LNG['comment'].'</a> - <a onclick="share('.$id.')">'.$LNG['share'].'</a> <div class="like_btn" id="like_btn'.$id.'"> '.$likes.'</div>';
+		$actions = '<a onclick="doLike('.$id.', 0)" id="doLike'.$id.'">'.$state.'</a> <a onclick="focus_form('.$id.')">'.$LNG['comment'].'</a> - <a onclick="share('.$id.')">'.$LNG['share'].'</a> <div class="like_btn" id="like_btn'.$id.'"> '.$likes.'</div>';
 		
 		// If the current user is not empty
 		if(empty($this->id)) {
