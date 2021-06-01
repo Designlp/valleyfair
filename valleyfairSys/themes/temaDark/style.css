@@ -939,7 +939,7 @@ a.cover-button-active {
 	display: block ruby;
 }
 
-.message-actions-content a {
+.message-actions-content a:after {
 	color: var(--colorWhiteM);
 }
 
