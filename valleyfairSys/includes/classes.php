@@ -3834,7 +3834,7 @@ class feed {
 	function getLikers($id, $count, $type = null) {
 		global $LNG;
 		if($type) {
-			return ' <a onclick="likesModal('.$id.', 1)" title="'.$LNG['view_all_likes'].'">'.$count.''.$LNG['heart'].'</a>';
+			return ' <a onclick="likesModal('.$id.', 1)" title="'.$LNG['view_all_likes'].'">'.$count.'</a>';
 		}
 		// If the post has any likes and the l_per_post is enabled
 		if($this->l_per_post && $count > 0) {
@@ -3854,7 +3854,7 @@ class feed {
 			// 	$people .= '</span>';
 			// }
 		}
-		return $people.'<a title="'.$LNG['view_all_likes'].'" onclick="likesModal('.$id.', 0)">'.$count.'</a>';
+		return $people.'<a title="'.$LNG['view_all_likes'].'" onclick="likesModal('.$id.', 0)">'.$count.''.$LNG['heart'].'</a>';
 	}
 	
 	function parseMessage($message) {
