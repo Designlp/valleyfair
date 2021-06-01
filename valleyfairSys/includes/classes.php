@@ -1929,7 +1929,12 @@ class feed {
 					<div class="message-divider"></div>
 					'.($sharedMedia ? $sharedMedia : $this->getMessageType($row['type'], $row['value'], $row['id'])).$po.'
 					<div class="message-replies">
-						<div class="message-actions"><div class="message-actions-content" id="message-action'.$row['id'].'">'.$this->getActions($row['id'], $row['likes']).'</div></div>
+						<div class="message-actions">
+							<div class="message-actions-content" id="message-action'.$row['id'].'">
+								'.$this->getActions($row['id'].'
+							</div>
+							'.$this->getActions($row['likes']).'
+						</div>
 						<div class="message-replies-content" id="comments-list'.$row['id'].'">
 							'.$this->getComments($row['id'], null, $this->c_start, ($this->id == $row['uid'] ? 1 : 0)).'
 						</div>
