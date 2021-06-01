@@ -959,6 +959,7 @@ a.cover-button-active {
 }
 .btn_hearth:hover{
 	text-decoration: none;
+	transition: 0.5s all;
 	color: #FF4F4F;
 }
 .btn_hearth:hover:after {
@@ -966,6 +967,7 @@ a.cover-button-active {
 	-webkit-transform: scale(1);
 	transform: scale(1);
 	color: #FF4F4F;
+	transition: 0.5s all;
 }
 
 .message-actions a {
