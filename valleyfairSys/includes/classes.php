@@ -1930,7 +1930,6 @@ class feed {
 					'.($sharedMedia ? $sharedMedia : $this->getMessageType($row['type'], $row['value'], $row['id'])).$po.'
 					<div class="message-replies">
 						<div class="message-actions"><div class="message-actions-content" id="message-action'.$row['id'].'">'.$this->getActions($row['id'], $row['likes']).'</div></div>
-						<div class="like_btn" id="like_btn'.$id.'"> '.$likes.'</div>
 						<div class="message-replies-content" id="comments-list'.$row['id'].'">
 							'.$this->getComments($row['id'], null, $this->c_start, ($this->id == $row['uid'] ? 1 : 0)).'
 						</div>
@@ -6373,7 +6372,7 @@ class feed {
 		$likes = $this->getLikers($id, $likes);
 
 		// Output variable
-		$actions = '<a onclick="doLike('.$id.', 0)" id="doLike'.$id.'">'.$state.'</a> <a onclick="focus_form('.$id.')">'.$LNG['comment'].'</a> <a onclick="share('.$id.')">'.$LNG['share'].'</a>';
+		$actions = '<a onclick="doLike('.$id.', 0)" id="doLike'.$id.'">'.$state.'</a> <a onclick="focus_form('.$id.')">'.$LNG['comment'].'</a> <a onclick="share('.$id.')">'.$LNG['share'].'</a> <div class="like_btn" id="like_btn'.$id.'"> '.$likes.'</div>';
 		
 		// If the current user is not empty
 		if(empty($this->id)) {
