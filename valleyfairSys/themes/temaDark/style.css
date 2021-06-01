@@ -4171,18 +4171,18 @@ a.facebook-button:active {
 
 .corazonLike{
 	background-image: url('images/icons/heart-inactive.png');
-	width: 40px;
-	height: 40px;
-	background-repeat: no-repeat;
 }
 .corazonDisLike{
 	background-image: url('images/icons/heart-active.png');
-	width: 40px;
-	height: 40px;
-	background-repeat: no-repeat;
 }
 .commentD{
 	background-image: url('images/icons/commentD.png');
+}
+.shareD{
+	background-image: url('images/icons/shareD.png');
+}
+
+.corazonLike, .corazonDisLike, .commentD, .shareD{
 	width: 40px;
 	height: 40px;
 	background-repeat: no-repeat;
