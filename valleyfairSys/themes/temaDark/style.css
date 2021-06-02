@@ -3299,7 +3299,7 @@ a.facebook-button:active {
 }
 
 #profile-card {
-	background: #fff;
+	background: var(--b);
 	border: 1px solid #BFBFBF;
 	width: 330px;
 	margin: 0 auto;
