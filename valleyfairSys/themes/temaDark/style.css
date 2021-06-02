@@ -1450,8 +1450,8 @@ a.cover-button-active {
 }
 
 .private-icon {
-	background: url('images/icons/privacy_sprite.png') 0 -32px;
-	background-size: 16px;
+	background: url('images/icons/privacy_sprite.png') 0 -49px;
+	background-size: 25px;
 }
 
 .download_btn {
