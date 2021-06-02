@@ -11,9 +11,9 @@ topbarButton.onmousemove = function(e){
 const botonJS = document.querySelector('.botonJS');
 
 botonJS.onmousemove = function(e){
-    const x = e.pageX - botonJS.offsetLeft;
-    const y = e.pageY- botonJS.offsetTop;
+    const xxx = e.pageX - botonJS.offsetLeft;
+    const yyy = e.pageY- botonJS.offsetTop;
 
-    botonJS.style.setProperty('--xxx', x + 'px');
-    botonJS.style.setProperty('--yyy', y + 'px');
+    botonJS.style.setProperty('--xxx', xxx + 'px');
+    botonJS.style.setProperty('--yyy', yyy + 'px');
 }
