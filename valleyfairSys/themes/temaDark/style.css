@@ -332,7 +332,7 @@ input[type="submit"]:active {
 .column, .columns {
 	float: left;
 	min-height: 1px;
-	position: relative;
+	/* position: relative; */
 }
 
 [class*="column"]+[class*="column"]:last-child {
@@ -4251,11 +4251,12 @@ a.facebook-button:active {
     text-decoration: none;
     letter-spacing: 1px;
     overflow: hidden;
-	height: 37px;
+	height: 14px;
 	border: none;
 	border-radius: 25px;
 	cursor: pointer;
 	color: var(--colorWhiteM) !important;
+	margin-bottom: 10px;
 }
 
 .botonJS:hover{
