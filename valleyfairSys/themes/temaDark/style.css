@@ -4237,3 +4237,37 @@ a.facebook-button:active {
 	background-size: cover !important;
 	margin-right: 10px !important;
 }
+
+.botonJS{
+	text-transform: uppercase;
+    position: relative;
+    display: inline-flex;
+    padding: 10px 15px;
+    background: var(--color);
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    overflow: hidden;
+	height: 37px;
+	border: none;
+	border-radius: 25px;
+	cursor: pointer;
+}
+
+.botonJS span{
+	position: relative;
+	z-index: 1;
+}
+
+.botonJS::before{
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: var(--colorCO);
+    transition: width 0.5s, height 0.5s;
+}

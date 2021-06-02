@@ -670,7 +670,7 @@ $LNG['chat_camera'] = 'Toma una foto';
 
 // STATS
 // $LNG['likes'] = 'Me gusta';
-$LNG['likes'] = '<div class="corazonLike"></div>';
+$LNG['likes'] = 'Me gusta';
 $LNG['messages'] = 'Mensajes';
 $LNG['comments'] = 'Comentar';
 $LNG['registered_users'] = 'Usuarios registrados';
