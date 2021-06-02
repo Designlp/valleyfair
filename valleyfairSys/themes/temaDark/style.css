@@ -2143,14 +2143,14 @@ img.sidebar-status-icon {
 	display: block;
 }
 
-.button-active a:hover, .plugin-button-active:hover {
+.plugin-button-active:hover {
 	border-color: #3c5389 #324675 #304473;
 	background: #435c98;
 	/* Old browsers */
 	background: linear-gradient(to bottom, #435c98 0%, #354f87 100%);
 }
 
-.button-active a:active, .plugin-button-active:active {
+.plugin-button-active:active {
 	background: #4e69a8;
 	box-shadow: #40568a 0px 1px 5px inset;
 }
@@ -2870,7 +2870,10 @@ a.facebook-button:active {
 
 /*Cambiar hover*/
 
-#friends_page_url{}
+#friends_page_url{
+	color: rgb(243, 243, 243);
+	text-decoration: none;
+}
 
 .notification-inner {
 	padding: 10px;
