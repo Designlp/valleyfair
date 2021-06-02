@@ -3109,9 +3109,7 @@ a.facebook-button:active {
 
 .notifications-number {
 	background: #ED4956;
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f84049', endColorstr='#da121c', GradientType=0);
-
-	border-radius: 50%;
+	border-radius: 70%;
 	padding: 3px 3px;
 	font-size: 10px;
 	position: absolute;
