@@ -935,9 +935,9 @@ $LNG['ta_week'] = 'una semana';
 $LNG['ta_weeks'] = '%d semanas';
 $LNG['ta_month'] = 'un mes';
 $LNG['ta_months'] = '%d meses';
-$LNG['ta_year'] = 'un año';
-$LNG['ta_years'] = '%d años';
-$LNG['ago'] = 'hace';
+$LNG['ta_year'] = 'hace un año';
+$LNG['ta_years'] = 'hace %d años';
+$LNG['ago'] = '';
 
 // MONTHS
 $LNG['month'] = 'Mes';
