@@ -1445,8 +1445,8 @@ a.cover-button-active {
 }
 
 .friends-icon {
-	background: url('images/icons/privacy_sprite.png') 0 -16px;
-	background-size: 16px;
+	background: url('images/icons/privacy_sprite.png') 0 -30px;
+	background-size: 29px;
 }
 
 .private-icon {
@@ -3109,7 +3109,7 @@ a.facebook-button:active {
 
 .notifications-number {
 	background: #ED4956;
-	border-radius: 70%;
+	border-radius: 50%;
 	padding: 3px 3px;
 	font-size: 10px;
 	position: absolute;
