@@ -3731,7 +3731,7 @@ class feed {
 					<div class="message-reply-footer">
 						<div class="message-time">
 							'.($this->id ? '<span class="like-comment"><a onclick="doLike('.$comment['id'].', 1)" id="doLikeC'.$comment['id'].'">'.$state.'</a> &nbsp;</span>' : '').'
-							<div class="timeago'.$time.'" title="'.$b.'">
+							<div class="timeago'.$b.'" title="'.$time.'">
 								'.$time.'
 							</div>
 							<div class="like_btn" id="like_c_btn'.$comment['id'].'"> <a onclick="likesModal('.$comment['id'].', 1)" title="'.$LNG['view_all_likes'].'">'.$comment['likes'].'</a></div>

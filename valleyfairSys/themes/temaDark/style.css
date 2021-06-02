@@ -4174,7 +4174,7 @@ a.facebook-button:active {
 	}
 	
 }
-/* .button-beau {
+.button-beau {
 	text-transform: uppercase;
     position: relative;
     display: inline-flex;
@@ -4210,7 +4210,7 @@ a.facebook-button:active {
 .button-beau:hover::before{
     width: 100px;
     height: 100px;
-} */
+}
 
 
 .corazonLike{
