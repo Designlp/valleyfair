@@ -923,7 +923,7 @@ $LNG['language'] = 'Idioma';
 
 // TIME
 $LNG['just_now'] = 'En este momento';
-$LNG['ta_second'] = 'Hace Un segundo';
+$LNG['ta_second'] = 'Hace un segundo';
 $LNG['ta_seconds'] = 'Hace %d segundos';
 $LNG['ta_minute'] = 'Hace un minuto';
 $LNG['ta_minutes'] = 'Hace %d minutos';

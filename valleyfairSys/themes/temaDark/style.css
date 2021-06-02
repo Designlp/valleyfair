@@ -588,6 +588,10 @@ input[type="submit"]:active {
     position: relative;
     z-index: 1;
 }
+.topbar-button a{
+    position: relative;
+    z-index: 1;
+}
 .topbar-button::before{
     content: '';
     position: absolute;
@@ -2864,6 +2868,8 @@ a.facebook-button:active {
 	color: var(--colorWhiteM);
 }
 
+/*Cambiar hover*/
+
 .notification-inner {
 	padding: 10px;
 }
@@ -2932,6 +2938,11 @@ a.facebook-button:active {
 	overflow: auto;
 }
 
+/*Cambio Notificaciones hover*/
+
+.notification-padding:hover {
+	color: rgb(199, 199, 199);
+}
 
 
 #notifications-content .timeago {
@@ -3300,7 +3311,7 @@ a.facebook-button:active {
 
 #profile-card {
 	background: var(--background);
-	border: 1px solid #BFBFBF;
+	border: 1px solid var(--colorWhiteM);
 	width: 330px;
 	margin: 0 auto;
 	border-radius: 3px;
