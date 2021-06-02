@@ -4176,7 +4176,6 @@ a.facebook-button:active {
 }
 .button-beau {
 	text-transform: uppercase;
-    position: relative;
     display: inline-flex;
     padding: 10px 15px;
     background: var(--color);
