@@ -1,9 +1,11 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans:100,300,400,500,700,900);
 @import url(//fonts.googleapis.com/css?family=Montserrat:200,400);
+@import url(//https://fonts.googleapis.com/css2?family=Mulish&display=swap);
 @import url(colors.css);
 body {
 	color: #fff;
-	font-family: "Montserrat", "Roboto", "Droid Sans", "Helvetica Neue", sans-serif;
+	/* font-family: "Montserrat", "Roboto", "Droid Sans", "Helvetica Neue", sans-serif; */
+	font-family: 'Mulish', sans-serif;
 	font-size: 13px;
 	margin: 0;
 	padding: 0;
