@@ -923,20 +923,20 @@ $LNG['language'] = 'Idioma';
 
 // TIME
 $LNG['just_now'] = 'En este momento';
-$LNG['ta_second'] = 'hace Un segundo';
-$LNG['ta_seconds'] = 'hace %d segundos';
-$LNG['ta_minute'] = 'hace un minuto';
-$LNG['ta_minutes'] = 'hace %d minutos';
-$LNG['ta_hour'] = 'hace una hora';
-$LNG['ta_hours'] = 'hace %d horas';
-$LNG['ta_day'] = 'hace un día';
-$LNG['ta_days'] = 'hace %d días';
-$LNG['ta_week'] = 'hace una semana';
-$LNG['ta_weeks'] = 'hace %d semanas';
-$LNG['ta_month'] = 'hace un mes';
-$LNG['ta_months'] = '%d meses';
-$LNG['ta_year'] = 'hace un año';
-$LNG['ta_years'] = 'hace %d años';
+$LNG['ta_second'] = 'Hace Un segundo';
+$LNG['ta_seconds'] = 'Hace %d segundos';
+$LNG['ta_minute'] = 'Hace un minuto';
+$LNG['ta_minutes'] = 'Hace %d minutos';
+$LNG['ta_hour'] = 'Hace una hora';
+$LNG['ta_hours'] = 'Hace %d horas';
+$LNG['ta_day'] = 'Hace un día';
+$LNG['ta_days'] = 'Hace %d días';
+$LNG['ta_week'] = 'Hace una semana';
+$LNG['ta_weeks'] = 'Hace %d semanas';
+$LNG['ta_month'] = 'Hace un mes';
+$LNG['ta_months'] = 'Hace %d meses';
+$LNG['ta_year'] = 'Hace un año';
+$LNG['ta_years'] = 'Hace %d años';
 $LNG['ago'] = '';
 
 // MONTHS
