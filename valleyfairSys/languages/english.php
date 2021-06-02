@@ -937,7 +937,7 @@ $LNG['ta_month'] = 'un mes';
 $LNG['ta_months'] = '%d meses';
 $LNG['ta_year'] = 'un año';
 $LNG['ta_years'] = '%d años';
-$LNG['ago'] = 'HACE';
+$LNG['ago'] = 'hace';
 
 // MONTHS
 $LNG['month'] = 'Mes';
