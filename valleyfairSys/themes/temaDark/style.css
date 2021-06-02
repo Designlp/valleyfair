@@ -2870,7 +2870,7 @@ a.facebook-button:active {
 
 /*Cambiar hover*/
 
-#friends_page_url{
+#friends_page_url a:hover{
 	color: rgb(243, 243, 243);
 	text-decoration: none;
 }
@@ -4255,6 +4255,11 @@ a.facebook-button:active {
 	border: none;
 	border-radius: 25px;
 	cursor: pointer;
+	color: var(--colorWhiteM);
+}
+
+.botonJS:hover{
+	text-decoration: none;
 }
 
 .botonJS span{
