@@ -923,16 +923,16 @@ $LNG['language'] = 'Idioma';
 
 // TIME
 $LNG['just_now'] = 'En este momento';
-$LNG['ta_second'] = 'Un segundo';
-$LNG['ta_seconds'] = '%d segundos';
-$LNG['ta_minute'] = 'un minuto';
-$LNG['ta_minutes'] = '%d minutos';
-$LNG['ta_hour'] = 'una hora';
-$LNG['ta_hours'] = '%d horas';
-$LNG['ta_day'] = 'un día';
-$LNG['ta_days'] = '%d días';
-$LNG['ta_week'] = 'una semana';
-$LNG['ta_weeks'] = '%d semanas';
+$LNG['ta_second'] = 'hace Un segundo';
+$LNG['ta_seconds'] = 'hace %d segundos';
+$LNG['ta_minute'] = 'hace un minuto';
+$LNG['ta_minutes'] = 'hace %d minutos';
+$LNG['ta_hour'] = 'hace una hora';
+$LNG['ta_hours'] = 'hace %d horas';
+$LNG['ta_day'] = 'hace un día';
+$LNG['ta_days'] = 'hace %d días';
+$LNG['ta_week'] = 'hace una semana';
+$LNG['ta_weeks'] = 'hace %d semanas';
 $LNG['ta_month'] = 'un mes';
 $LNG['ta_months'] = '%d meses';
 $LNG['ta_year'] = 'hace un año';

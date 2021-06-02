@@ -2137,15 +2137,6 @@ img.sidebar-status-icon {
 
 .button-active a, .plugin-button-active {
 	display: block;
-	background: var(--color);
-	border-radius: 3px;
-	padding: 4px 5px;
-	color: #fff !important;
-	cursor: pointer;
-	text-decoration: none;
-	border: 1px solid;
-	border-color: #475d91 #3c5389 #3a5186;
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
 }
 
 .button-active a:hover, .plugin-button-active:hover {
@@ -4179,7 +4170,7 @@ a.facebook-button:active {
     display: inline-flex;
     padding: 10px 15px;
     background: var(--color);
-    color: #fff;
+    color: var(--colorWhiteM) !important;
     text-decoration: none;
     letter-spacing: 1px;
     overflow: hidden;
