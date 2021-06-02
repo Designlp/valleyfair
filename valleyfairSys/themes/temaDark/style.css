@@ -938,7 +938,7 @@ a.cover-button-active {
 .message-actions-content {
 	padding: 15px 20px 1px 20px;
 	display: block ruby;
-	display: inline-flex;
+	/* display: inline-flex; */
 }
 
 .message-actions-content a {
