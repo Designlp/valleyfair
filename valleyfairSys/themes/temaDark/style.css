@@ -2137,7 +2137,7 @@ img.sidebar-status-icon {
 
 .message-btn {
 	float: right;
-	padding: 6px 10px 0 0;
+	padding: 6px 15px 0 0;
 }
 
 .button-active a, .plugin-button-active {
@@ -2164,15 +2164,13 @@ img.sidebar-status-icon {
 	text-decoration: none;
 }
 
+
 .button-normal a:hover, .plugin-button-normal:hover {
 	text-decoration: none;
 }
 
 .button-normal a:active, .plugin-button-normal:active {
-	background: linear-gradient(to bottom, #EEE 0%, #E0E0E0 100%);
-	border-color: #BBB;
-	box-shadow: #CCC 0px 1px 5px inset;
-	color: #000;
+	background: var(--backgroundVentana);
 	z-index: 2;
 }
 
@@ -3066,6 +3064,7 @@ a.facebook-button:active {
 	cursor: pointer;
 	margin-right: 3px;
 	background-size: 24px;
+	margin-left: 10px;
 }
 
 .button-image:hover {
@@ -4251,7 +4250,7 @@ a.facebook-button:active {
 	border-radius: 25px;
 	cursor: pointer;
 	color: var(--colorWhiteM) !important;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 
 .botonJS:hover{
