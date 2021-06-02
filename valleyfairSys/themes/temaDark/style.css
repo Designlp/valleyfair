@@ -10,7 +10,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background: var(--background);
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 }
 
 h1 {
@@ -333,7 +333,7 @@ input[type="submit"]:active {
 .column, .columns {
 	float: left;
 	min-height: 1px;
-	/* position: relative; */
+	position: relative;
 }
 
 [class*="column"]+[class*="column"]:last-child {
@@ -3318,7 +3318,7 @@ a.facebook-button:active {
 
 #profile-card {
 	background: var(--background);
-	border: 1px solid var(--colorWhiteM);
+	border: 1px solid var(--colorOpaco);
 	width: 330px;
 	margin: 0 auto;
 	border-radius: 3px;
@@ -3326,6 +3326,7 @@ a.facebook-button:active {
 	display: none;
 	padding: 0 0 10px 0;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+	border
 }
 
 .profile-card-padding {
