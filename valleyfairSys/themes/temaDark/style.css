@@ -2941,7 +2941,8 @@ a.facebook-button:active {
 /*Cambio Notificaciones hover*/
 
 .notification-padding a:hover {
-	color: rgb(199, 199, 199);
+	color: rgb(243, 243, 243);
+	text-decoration: none;
 }
 
 
