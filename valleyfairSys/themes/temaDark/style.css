@@ -4271,8 +4271,8 @@ a.facebook-button:active {
 .botonJS::before{
     content: '';
     position: absolute;
-    top: var(--yyy);
-    left: var(--xxx);
+    top: var(--y);
+    left: var(--x);
     transform: translate(-50%, -50%);
     width: 0;
     height: 0;
