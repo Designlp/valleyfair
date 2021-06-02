@@ -1421,15 +1421,15 @@ a.cover-button-active {
 }
 
 .privacy-icons {
-	width: 16px;
-	height: 16px;
+	width: 27px;
+	height: 27px;
 	float: left;
 	margin: 1px 0 0 5px;
 }
 
 .public-icon {
 	background: url('images/icons/privacy_sprite.png');
-	background-size: 16px;
+	background-size: 27px;
 }
 
 .friends-icon {
