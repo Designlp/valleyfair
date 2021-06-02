@@ -4255,11 +4255,12 @@ a.facebook-button:active {
 	border: none;
 	border-radius: 25px;
 	cursor: pointer;
-	color: var(--colorWhiteM);
+	color: var(--colorWhiteM) !important;
 }
 
 .botonJS:hover{
 	text-decoration: none;
+	color: var(--colorWhiteM) !important;
 }
 
 .botonJS span{
