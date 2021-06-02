@@ -8,12 +8,12 @@
 //     topbarButton.style.setProperty('--y', y + 'px');
 // }
 
-const botonJS = document.querySelector('.botonJS');
+// const botonJS = document.querySelector('.botonJS');
 
-botonJS.onmousemove = function(e){
-    const x = e.pageX - botonJS.offsetLeft;
-    const y = e.pageY- botonJS.offsetTop;
+// botonJS.onmousemove = function(e){
+//     const x = e.pageX - botonJS.offsetLeft;
+//     const y = e.pageY- botonJS.offsetTop;
 
-    botonJS.style.setProperty('--x', x + 'px');
-    botonJS.style.setProperty('--y', y + 'px');
-}
+//     botonJS.style.setProperty('--x', x + 'px');
+//     botonJS.style.setProperty('--y', y + 'px');
+// }
