@@ -3718,6 +3718,7 @@ class feed {
 				}
 				
 				// Variable which contains the result
+				//<div class="timeago'.$b.'" title="'.$time.'">3734
 				$comments .= '
 				<div class="message-reply-container" id="comment'.$comment['id'].'">
 					'.$menu.'
@@ -3730,7 +3731,7 @@ class feed {
 					<div class="message-reply-footer">
 						<div class="message-time">
 							'.($this->id ? '<span class="like-comment"><a onclick="doLike('.$comment['id'].', 1)" id="doLikeC'.$comment['id'].'">'.$state.'</a> &nbsp;</span>' : '').'
-							<div class="timeago'.$b.'" title="'.$time.'">
+							<div class="timeago'.$time.'" title="'.$b.'">
 								'.$time.'
 							</div>
 							<div class="like_btn" id="like_c_btn'.$comment['id'].'"> <a onclick="likesModal('.$comment['id'].', 1)" title="'.$LNG['view_all_likes'].'">'.$comment['likes'].'</a></div>
@@ -4336,9 +4337,9 @@ class feed {
 				$v = floor($duration/$value);
 				if($v > 1) {
 					//$o = sprintf($LNG['ta_'.$string.'s'], $v).' '.$LNG['ago'];
-					$o = sprintf($LNG['ta_'.$string.'s'], $v);
+					$o = $LNG['ago'].' '.sprintf($LNG['ta_'.$string.'s'], $v);
 				} else {
-					$o = $LNG['ta_'.$string].' '.$LNG['ago'];
+					$o = $LNG['ago'].' '.$LNG['ta_'.$string];
 				}
 				break;
 			}
