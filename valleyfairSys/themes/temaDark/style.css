@@ -4271,3 +4271,8 @@ a.facebook-button:active {
     background: var(--colorCO);
     transition: width 0.5s, height 0.5s;
 }
+
+.botonJS:hover::before{
+    width: 100px;
+    height: 100px;
+}
