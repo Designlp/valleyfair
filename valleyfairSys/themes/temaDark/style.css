@@ -3353,7 +3353,7 @@ a.facebook-button:active {
 .profile-card-avatar img {
 	width: 80px;
 	height: 80px;
-	border-radius: 3px;
+	border-radius: 100%;
 	border: 3px solid #FFF;
 	box-shadow: 0px 1px 1px #CCC;
 }
