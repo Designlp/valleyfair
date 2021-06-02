@@ -1015,6 +1015,7 @@ a.cover-button-active {
 	cursor: pointer;
 	font-weight: bold;
 	letter-spacing: 1px;
+	font-size: 16px;
 }
 
 .message-message {
@@ -1063,6 +1064,7 @@ a.cover-button-active {
 .message-time {
 	overflow: auto;
 	word-wrap: break-word;
+	height: 22px;
 }
 
 .message-replies {
@@ -1436,7 +1438,7 @@ a.cover-button-active {
 	width: 27px;
 	height: 27px;
 	float: left;
-	margin: 1px 0 0 5px;
+	margin: -4px 0 0 5px;
 }
 
 .public-icon {

@@ -805,6 +805,7 @@ class updateSettings {
 								</div>
 								<div class="message-time">
 									'.$LNG['by'].': <a href="'.$url.'" target="_blank" title="'.$LNG['author_title'].'">'.$author.'</a>
+									
 								</div>
 							</div>
 						</div>
