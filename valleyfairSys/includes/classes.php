@@ -1100,7 +1100,7 @@ class updateUserSettings {
 			return array('email_exists');
 		}
 	
-		if((!filter_var($data['email'], FILTER_VALIDATE_EMAIL) && !empty($data['email'])) || (substr($data['email'], 0, 16) != 'est.univalle.edu' && substr($data['email'], 0, 12) != 'univalle.edu' && !empty($data['email']))) {
+		if((!filter_var($data['email'], FILTER_VALIDATE_EMAIL) && !empty($data['email'])) || (substr($data['email'], -16) != 'est.univalle.edu' && substr($data['email'], -12) != 'univalle.edu' && !empty($data['email']))) {
 			return array('valid_email_univalle');
 		}
 		
