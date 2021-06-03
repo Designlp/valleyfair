@@ -1,12 +1,12 @@
 <?php
 // Software Name
-$name = 'phpSocial';
+$name = 'ValleyFair';
 
 // Software Author
-$author = 'phpSocial';
+$author = 'ValleyFair';
 
 // Software URL
-$url = 'http://phpsocial.com';
+$url = 'https://valleyfair.ml';
 
 // Software Version
 $version = '3.0.8';

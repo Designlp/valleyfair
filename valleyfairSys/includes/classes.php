@@ -1098,6 +1098,7 @@ class updateUserSettings {
 		if(isset($data['password']) && $data['password'] !== $data['repeat_password']) {
 			return array('password_not_match');
 		}
+
 	}
 	
 	function truncate_data($data) {
