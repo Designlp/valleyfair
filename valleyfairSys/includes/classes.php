@@ -1075,7 +1075,7 @@ class updateUserSettings {
 			return array('valid_email');
 		}
 
-		if(isset($data['email']) && !str_contains($data['email'], "univalle.edu" || !str_contains($data['email'], "est.univalle.edu")) {
+		if(isset($data['email']) && !str_contains($data['email'], "univalle.edu") || !str_contains($data['email'], "est.univalle.edu")) {
 			return array('valid_email');
 		}
 		
