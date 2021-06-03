@@ -402,9 +402,14 @@ class register {
 		if(strlen($this->username) <= 2 || strlen($this->username) >= 33) {
 			$error[] .= 'user_too_short';
 		}
-		if(!filter_var($this->email, FILTER_VALIDATE_EMAIL) && str_contains($this->email,'univalle.edu') || str_contains($this->email,'est.univalle.edu')) {
-			$error[] .= 'invalid_email';
+		if(!filter_var($this->email, FILTER_VALIDATE_EMAIL){
+			$error[] .= 'valid_email';
 		}
+
+		if((!filter_var($data['email'], FILTER_VALIDATE_EMAIL) && !empty($data['email'])) || (substr($data['email'], 0, 16) != 'est.univalle.edu' && substr($data['website'], 0, 12) != 'univalle.edu' && !empty($data['email']))) {
+			$error[] .= 'valid_email_univalle';
+		}
+
 		if($this->verify_captcha() == false) {
 			$error[] .= 'invalid_captcha';
 		}
@@ -1075,6 +1080,7 @@ class updateUserSettings {
 			return array('valid_email');
 		}
 
+		//validacion de correo
 		if(isset($data['email']) && !str_contains($data['email'], "univalle.edu") || !str_contains($data['email'], "est.univalle.edu")) {
 			return array('valid_email_univalle');
 		}
