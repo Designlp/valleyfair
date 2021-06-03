@@ -574,7 +574,7 @@ input[type="submit"]:hover::before{
 .menu-divider {
 	height: 1px;
 	width: 100%;
-	background: #DDD;
+	background: var(--colorCO);
 }
 
 .menu-dd-content a {
@@ -2190,6 +2190,8 @@ img.sidebar-status-icon {
 
 .button-active a, .plugin-button-active {
 	display: block;
+	padding: 4px 5px;
+	cursor: pointer;
 }
 
 .plugin-button-active:hover {
@@ -2969,7 +2971,7 @@ a.facebook-button:active {
 }
 
 .notification-unread {
-	background: #F1F1F1;
+	background: var(--backgroundSearch);
 }
 
 .notification-friendships {
@@ -3003,7 +3005,7 @@ a.facebook-button:active {
 #notifications-content img.notifications {
 	height: 35px;
 	width: 35px;
-	border-radius: 3px;
+	border-radius: 50%;
 	margin-right: 5px;
 }
 
