@@ -152,6 +152,7 @@ input[type="submit"]:active {
 	margin: 0 auto;
 	max-width: 920px;
 	overflow: auto;
+	padding-top: 42px;
 }
 
 .row-body {

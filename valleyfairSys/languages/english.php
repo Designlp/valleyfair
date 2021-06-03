@@ -942,7 +942,7 @@ $LNG['ago'] = '';
 
 // MONTHS
 $LNG['month'] = 'Mes';
-$LNG['year'] = 'Años';
+$LNG['year'] = 'Año';
 $LNG['day'] = 'Día';
 $LNG['month_1'] = 'Enero';
 $LNG['month_2'] = 'Febrero';
