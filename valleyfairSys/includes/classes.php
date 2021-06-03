@@ -1957,7 +1957,7 @@ class feed {
 							<textarea id="comment-form'.$row['id'].'" onclick="showButton('.$row['id'].')" placeholder="'.$LNG['leave_comment'].'" class="comment-reply-textarea"></textarea>
 						</div>
 						<div class="comment-btn button-active" id="comment_btn_'.$row['id'].'">
-							<a class="botonJS" onclick="postComment('.$row['id'].')">'.$LNG['post'].'</a>
+							<a class="botonJS" onclick="postComment('.$row['id'].')"><span>'.$LNG['post'].'</span></a>
 						</div>
 						<div class="delete_preloader" id="post_comment_'.$row['id'].'"></div>
 					</div>
