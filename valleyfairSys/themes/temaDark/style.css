@@ -4265,3 +4265,7 @@ a.facebook-button:active {
     width: 150px;
     height: 150px;
 }
+
+.content-body{
+	padding: 65px 0 10px 0;
+}
