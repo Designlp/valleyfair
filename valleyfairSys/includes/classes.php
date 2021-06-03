@@ -405,9 +405,9 @@ class register {
 		if(!filter_var($this->email, FILTER_VALIDATE_EMAIL)) {
 			$error[] .= 'valid_email';
 		}
-		// if(!str_contains($this->email,'univalle.edu') && !str_contains($this->email,'est.univalle.edu')) {
-		// 	$error[] .= 'valid_email_univalle';
-		// }
+		if(!str_contains($this->email,'est.univalle.edu') && !str_contains($this->email,'univalle.edu')) {
+			$error[] .= 'valid_email_univalle';
+		}
 
 		if(!filter_var($this->email, FILTER_VALIDATE_EMAIL) && (substr($data['email'], 0, 16) != 'est.univalle.edu' && substr($data['email'], 0, 12) != 'univalle.edu')) {
 			$error[] .= 'valid_email_univalle';
@@ -1088,9 +1088,9 @@ class updateUserSettings {
 		}
 
 		//validacion de correo
-		if(isset($data['email']) && !str_contains($data['email'], "univalle.edu") || !str_contains($data['email'], "est.univalle.edu")) {
-			return array('valid_email_univalle');
-		}
+		// if(isset($data['email']) && !str_contains($data['email'], "univalle.edu") || !str_contains($data['email'], "est.univalle.edu")) {
+		// 	return array('valid_email_univalle');
+		// }
 		
 		if((!filter_var($data['website'], FILTER_VALIDATE_URL) && !empty($data['website'])) || (substr($data['website'], 0, 7) != 'http://' && substr($data['website'], 0, 8) != 'https://' && !empty($data['website']))) {
 			return array('valid_url');
@@ -1118,9 +1118,9 @@ class updateUserSettings {
 		}
 
 
-		// if((!filter_var($data['email'], FILTER_VALIDATE_EMAIL) && !empty($data['email'])) || (substr($data['email'], 0, 16) != 'est.univalle.edu' && substr($data['website'], 0, 12) != 'univalle.edu' && !empty($data['email']))) {
-		// 	return array('valid_email_univalle');
-		// }
+		if((!filter_var($data['email'], FILTER_VALIDATE_EMAIL) && !empty($data['email'])) || (substr($data['email'], 0, 16) != 'est.univalle.edu' && substr($data['email'], 0, 12) != 'univalle.edu' && !empty($data['email']))) {
+			return array('valid_email_univalle');
+		}
 	}
 	
 	function truncate_data($data) {
