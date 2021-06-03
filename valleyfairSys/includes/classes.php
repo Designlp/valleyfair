@@ -30,7 +30,7 @@ function menu($user) {
 		$links = array(	array('profile&u='.$user['username'], realName($user['username'], $user['first_name'], $user['last_name']), 1, 0),
 						array('feed', $LNG['title_feed'], 1, 0),
 						array('notifications', $LNG['title_notifications'], 1, 0),
-						array('page', $LNG['pages'], 1, 0),
+						//array('page', $LNG['pages'], 1, 0),
 						array('group', $LNG['groups'], 1, 0),
 						array('settings', $LNG['title_settings'], 1, 0),
 						array('feed&logout=1&token_id='.$_SESSION['token_id'], $LNG['log_out'], 0, 0));
@@ -1100,6 +1100,9 @@ class updateUserSettings {
 			return array('email_exists');
 		}
 	
+		if((!filter_var($data['email'], FILTER_VALIDATE_EMAIL) && !empty($data['email'])) || (substr($data['email'], 0, 16) != 'est.univalle.edu' && substr($data['email'], 0, 12) != 'univalle.edu' && !empty($data['email']))) {
+			return array('valid_email_univalle');
+		}
 		
 		if(!countries(0, $data['country'])) {
 			return array('valid_country');
@@ -1118,9 +1121,6 @@ class updateUserSettings {
 		}
 
 
-		if((!filter_var($data['email'], FILTER_VALIDATE_EMAIL) && !empty($data['email'])) || (substr($data['email'], 0, 16) != 'est.univalle.edu' && substr($data['email'], 0, 12) != 'univalle.edu' && !empty($data['email']))) {
-			return array('valid_email_univalle');
-		}
 	}
 	
 	function truncate_data($data) {

@@ -106,7 +106,7 @@ $TMPL['tracking_code'] = $settings['tracking_code'];
 $TMPL['search_users_url'] = permalink($CONF['url'].'/index.php?a=search&q=');
 $TMPL['search_tags_url'] = permalink($CONF['url'].'/index.php?a=search&tag=');
 $TMPL['search_groups_url'] = permalink($CONF['url'].'/index.php?a=search&groups=');
-$TMPL['search_pages_url'] = permalink($CONF['url'].'/index.php?a=search&pages=');
+//$TMPL['search_pages_url'] = permalink($CONF['url'].'/index.php?a=search&pages=');
 $LNG['search_for_people'] = $LNG['search_for_people'].($settings['pages'] ? $LNG['search_pages'] : '').($settings['groups'] ? $LNG['search_groups'] : '');
 
 $skin = new skin('wrapper');

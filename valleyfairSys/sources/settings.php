@@ -261,7 +261,7 @@ function PageMain() {
 				}
 				
 				if(empty($settings['pages'])) {
-					$TMPL['empty_pages'] = ' style="display: none;"';
+					//$TMPL['empty_pages'] = ' style="display: none;"';
 				}
 				
 				if(empty($settings['groups'])) {

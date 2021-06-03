@@ -67,7 +67,7 @@ function PageMain() {
 				}
 			}
 			if($settings['pages']) {
-				$TMPL['pages'] = $feed->sidebarPages();
+				//$TMPL['pages'] = $feed->sidebarPages();
 			}
 			if($settings['groups']) {
 				$TMPL['groups'] = $feed->sidebarGroups();
