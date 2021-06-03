@@ -126,7 +126,8 @@ function PageMain() {
 	}
 
 	$TMPL['url'] = $CONF['url'];
-	$TMPL['title'] = $LNG['title_feed'].' - '.$settings['title'];
+	//$TMPL['title'] = $LNG['title_feed'].' - '.$settings['title'];
+	$TMPL['title'] = $LNG['title_feed'];
 
 	// Load the Feed page plugins
 	unset($TMPL['plugins']);
