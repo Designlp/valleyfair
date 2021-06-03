@@ -62,6 +62,7 @@ $LNG['file_format'] = 'El formato de archivo seleccionado no es compatible. Sube
 $LNG['image_removed'] = 'Imagen removida';
 $LNG['bio_description'] = 'La descripción de la biografía debe ser de %s caracteres o menos.';
 $LNG['valid_email'] = 'Porfavor introduce un correo electronico válido.';
+$LNG['valid_email_univalle'] = 'Tu correo debe ser institucional con Univalle.';
 $LNG['valid_url'] = 'Por favor introduce un URL válido.';
 $LNG['valid_country'] = 'Por favor selecciona un país valido.';
 $LNG['password_too_short'] = 'La contraseña debe contener al menos 6 caracteres.';
