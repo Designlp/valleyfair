@@ -1034,7 +1034,8 @@ function PageMain() {
 
 	// If the logged-in user is a Moderator, remove menu elements
 	if($loggedIn['user_group']) {
-		unset($menu['&b=site_settings'], $menu['&b=users_settings'], $menu['&b=social'], $menu['&b=themes'], $menu['&b=plugins'], $menu['&b=languages'], $menu['&b=manage_ads'], $menu['&b=info_pages'], $menu['&b=security'], $menu['&logout=1&token_id='.$_SESSION['token_id']]);
+		//unset($menu['&b=site_settings'], $menu['&b=users_settings'], $menu['&b=social'], $menu['&b=themes'], $menu['&b=plugins'], $menu['&b=languages'], $menu['&b=manage_ads'], $menu['&b=info_pages'], $menu['&b=security'], $menu['&logout=1&token_id='.$_SESSION['token_id']]);
+		unset($menu['&b=site_settings'], $menu['&b=users_settings'], $menu['&b=social'], $menu['&b=themes'], $menu['&b=manage_ads'], $menu['&b=info_pages'], $menu['&b=security'], $menu['&logout=1&token_id='.$_SESSION['token_id']]);
 	}
 
 	$i = 1;

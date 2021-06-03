@@ -1440,6 +1440,7 @@ a.cover-button-active {
 .settings_btn:hover {
 	background: url('images/icons/message_sprite.png') -16px -176px;
 	background-size: 32px;
+	margin-right: 6px;
 }
 
 .minimize_btn {
@@ -1956,7 +1957,7 @@ a.cover-button-active {
 }
 
 .sidebar-group:hover, .sidebar-page:hover {
-	background: #f7f7f7;
+	background: var(--backgroundSearch);
 }
 
 .sidebar-group a, .sidebar-page a {
