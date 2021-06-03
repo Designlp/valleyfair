@@ -2282,11 +2282,12 @@ textarea {
 }
 
 .page-content {
-	box-shadow: 0px 1px 1px #CCC;
-	border: 1px solid var(--backgroundVentana);
+	-webkit-box-shadow: var(--boxShadow);
+	-moz-box-shadow: var(--boxShadow);
+	box-shadow: var(--boxShadow);
 	background: var(--backgroundVentana);
 	color: var(--colorWhiteM);
-	border-radius: 3px;
+	border-radius: 12px;
 	overflow: auto;
 }
 
@@ -4265,8 +4266,4 @@ a.facebook-button:active {
 .botonJS:hover::before{
     width: 150px;
     height: 150px;
-}
-
-.content-body{
-	padding: 65px 0 10px 0;
 }
