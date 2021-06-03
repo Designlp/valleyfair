@@ -2092,7 +2092,7 @@ img.sidebar-status-icon {
 	padding: 20px;
 	font-size: 13px;
 	font-weight: bold;
-	color: #777;
+	color: var(--colorWhiteM);
 }
 
 .message-form-user img, .page-header img {
