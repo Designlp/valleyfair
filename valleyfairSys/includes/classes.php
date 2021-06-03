@@ -405,16 +405,10 @@ class register {
 		if(!filter_var($this->email, FILTER_VALIDATE_EMAIL)) {
 			$error[] .= 'valid_email';
 		}
-		// if(!str_contains($email,'est.univalle.edu') && !str_contains($email,'univalle.edu')) {
-		// 	$error[] .= 'valid_email_univalle';
-		// }
 			
 		if((!filter_var($this->email, FILTER_VALIDATE_EMAIL) && !empty($this->email)) || (substr($this->email, -16) != 'est.univalle.edu' && substr($this->email, -12) != 'univalle.edu' && !empty($this->email))) {
 			$error[] .= 'valid_email_univalle';
 		}
-		// if((!filter_var($data['email'], FILTER_VALIDATE_EMAIL) && !empty($data['email'])) || (substr($data['email'], -16) != 'est.univalle.edu' && substr($data['email'], -12) != 'univalle.edu' && !empty($data['email']))) {
-		// 	$error[] .= 'valid_email_univalle';
-		// }
 
 		if($this->verify_captcha() == false) {
 			$error[] .= 'invalid_captcha';
