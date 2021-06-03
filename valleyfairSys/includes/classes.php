@@ -402,7 +402,7 @@ class register {
 		if(strlen($this->username) <= 2 || strlen($this->username) >= 33) {
 			$error[] .= 'user_too_short';
 		}
-		if(!filter_var($this->email, FILTER_VALIDATE_EMAIL)) {
+		if(!filter_var($this->email, FILTER_VALIDATE_EMAIL) && str_contains($this->email,'univalle.edu') || str_contains($this->email,'est.univalle.edu')) {
 			$error[] .= 'invalid_email';
 		}
 		if($this->verify_captcha() == false) {
