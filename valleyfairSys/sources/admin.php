@@ -1020,7 +1020,7 @@ function PageMain() {
 	$menu = array(	''											=> array('admin_menu_dashboard', '', 'dashboard'),
 					'&b=site_settings'							=> array('admin_menu_site_settings', '', 'settings'),
 					'&b=themes' 								=> array('admin_menu_themes', '', 'themes'),
-					//'&b=plugins'								=> array('admin_menu_plugins', '', 'plugins'),
+					'&b=plugins'								=> array('admin_menu_plugins', '', 'plugins'),
 					'&b=languages'								=> array('admin_menu_languages', '', 'languages'),
 					'&b=stats'									=> array('admin_menu_stats', '', 'stats'),
 					'&b=users'									=> array('admin_menu_users', array('users' => $LNG['list_users'], 'moderators' => $LNG['list_moderators'], 'verified' => $LNG['list_verified'], 'suspended' => $LNG['list_suspended']), 'users'),
