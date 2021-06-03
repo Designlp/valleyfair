@@ -1958,6 +1958,7 @@ a.cover-button-active {
 
 .sidebar-group:hover, .sidebar-page:hover {
 	background: var(--backgroundSearch);
+	border-radius: 10px;
 }
 
 .sidebar-group a, .sidebar-page a {
