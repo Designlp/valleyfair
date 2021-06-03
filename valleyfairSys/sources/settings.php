@@ -381,7 +381,6 @@ function PageMain() {
 	}
 
 	$TMPL['title'] = $LNG['title_settings'].' - '.$settings['title'];
-	//$TMPL['title'] = $LNG['title_settings'];
 	
 	$skin = new skin('settings/content');
 	return $skin->make();
