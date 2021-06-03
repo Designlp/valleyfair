@@ -1076,7 +1076,7 @@ class updateUserSettings {
 		}
 
 		if(isset($data['email']) && !str_contains($data['email'], "univalle.edu" || !str_contains($data['email'], "est.univalle.edu")) {
-			return array('valid_email_univalle');
+			return array('valid_email');
 		}
 		
 		if((!filter_var($data['website'], FILTER_VALIDATE_URL) && !empty($data['website'])) || (substr($data['website'], 0, 7) != 'http://' && substr($data['website'], 0, 8) != 'https://' && !empty($data['website']))) {
