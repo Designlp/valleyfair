@@ -1435,6 +1435,7 @@ a.cover-button-active {
 	background: url('images/icons/message_sprite.png') 0 -176px;
 	background-size: 32px;
 	cursor: pointer;
+	margin-right: 6px;
 }
 
 .settings_btn:hover {
