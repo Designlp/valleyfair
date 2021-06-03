@@ -402,9 +402,9 @@ class register {
 		if(strlen($this->username) <= 2 || strlen($this->username) >= 33) {
 			$error[] .= 'user_too_short';
 		}
-		if(!filter_var($this->email, FILTER_VALIDATE_EMAIL) ) {
-			$error[] .= 'valid_email';
-		}
+		// if(!filter_var($this->email, FILTER_VALIDATE_EMAIL) || (!str_contains($this->email,'univalle.edu') || !str_contains($this->email,'est.univalle.edu'))) {
+		// 	$error[] .= 'valid_email';
+		// }
 
 		if((!filter_var($this->email, FILTER_VALIDATE_EMAIL)) && (substr($data['email'], 0, 16) != 'est.univalle.edu' && substr($data['email'], 0, 12) != 'univalle.edu')) {
 			$error[] .= 'valid_email_univalle';
