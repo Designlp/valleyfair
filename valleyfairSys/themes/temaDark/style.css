@@ -703,11 +703,13 @@ input[type="submit"]:hover::before{
 	background: var(--backgroundSearch);
 	width: 558px;
 	color: var(--colorWhiteM);
+	transition: 0.5s;
 }
 
 .search-input input:hover, .search-input input:focus {
 	background: var(--background);
 	border: 1px solid var(--background);
+	transition: 0.5s all;
 }
 
 .search-container {
@@ -1302,6 +1304,10 @@ a.cover-button-active {
 	border-radius: 10px;
 	height: 40px;
 	background: var(--backgroundSearch);
+}
+
+.comment-reply-textarea:hover{
+	border: 2px solid var(--color);
 }
 
 .blocked-link {
