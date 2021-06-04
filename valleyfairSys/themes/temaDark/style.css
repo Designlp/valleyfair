@@ -455,7 +455,7 @@ input[type="submit"]:hover::before{
 	left: 0;
 	z-index: 1000;
 	height: 45px;
-	background: var(--backgroundVentana);
+	background: var(--background);
 	padding: 12px;
 }
 
@@ -707,8 +707,8 @@ input[type="submit"]:hover::before{
 }
 
 .search-input input:hover, .search-input input:focus {
-	background: var(--background);
-	border: 1px solid var(--background);
+	background: var(--backgroundVentana);
+	border: 1px solid var(--backgroundVentana);
 	transition: 0.5s all;
 }
 
