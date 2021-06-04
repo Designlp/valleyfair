@@ -980,6 +980,7 @@ a.cover-button-active {
 	color: var(--colorWhiteM);
 	border-radius: 16px;
 	overflow: auto;
+	background: var(--background);
 }
 
 .message-header {
@@ -1123,7 +1124,7 @@ a.cover-button-active {
 .message-time {
 	overflow: auto;
 	word-wrap: break-word;
-	height: 22px;
+	height: 27px;
 }
 
 .message-replies {
