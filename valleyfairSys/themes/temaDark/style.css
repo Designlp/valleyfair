@@ -1122,7 +1122,7 @@ a.cover-button-active {
 }
 
 .message-time {
-	overflow: auto;
+	/* overflow: auto; */
 	word-wrap: break-word;
 	height: 27px;
 }
