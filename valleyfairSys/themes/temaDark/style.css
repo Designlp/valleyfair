@@ -474,8 +474,8 @@ input[type="submit"]:hover::before{
     left: 50%;
     border-radius: 100%;
     transform: translateX(-50%) skewY(-8deg);
-    background-color: var(--color);
-    z-index: -1;
+    background-color: var(--backgroundVentana);
+    z-index: 0;
     animation: wave 8s ease-in-out infinite alternate;
 }
 
