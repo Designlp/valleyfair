@@ -1,11 +1,18 @@
 :root {
+    /*THEME DARK - PRINCIPAL*/
     /* --background: #121519;
     --backgroundVentana: #1A1E23;
     --backgroundSearch: #1F252D;  */
-
+    
+    /*THEME LIGHT - PRINCIPAL*/
+    /* --background: #EDF2F7;
+    --backgroundVentana: #F7FAFC;
+    --backgroundSearch: #D7D7D7;  */
+    
+    /*THEME SEMI-DARK*/
     --background: #EDF2F7;
     --backgroundVentana: #F7FAFC;
-    --backgroundSearch: #F0F0F0; 
+    --backgroundSearch: #D7D7D7; 
 
 
     --colorBorder: rgba(255, 255, 255, 0.1);
