@@ -995,7 +995,7 @@ a.cover-button-active {
 }
 
 .message-inner {
-	padding: 15px;
+	padding: 13px;
 }
 
 /*hovers administracion*/
@@ -1281,7 +1281,7 @@ a.cover-button-active {
 }
 
 .message-comment-box-container {
-	padding: 10px;
+	padding: 13px;
 	background: var(--backgroundVentana);
 	overflow: auto;
 }
@@ -1767,7 +1767,7 @@ a.cover-button-active {
 
 .message-replies-content {
 	overflow: auto;
-	padding: 0 10px 0 10px;
+	padding: 0 13px 0 13px;
 }
 
 .load_more {
