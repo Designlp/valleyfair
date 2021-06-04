@@ -980,7 +980,7 @@ a.cover-button-active {
 	color: var(--colorWhiteM);
 	border-radius: 16px;
 	overflow: auto;
-	background: var(--background);
+	background: var(--backgroundVentana);
 }
 
 .message-header {
@@ -1128,7 +1128,7 @@ a.cover-button-active {
 }
 
 .message-replies {
-	background: var(--background);
+	background: var(--backgroundVentana);
 	width: 100%;
 	float: left;
 	overflow: auto;
@@ -1280,7 +1280,7 @@ a.cover-button-active {
 
 .message-comment-box-container {
 	padding: 10px;
-	background: var(--background);
+	background: var(--backgroundVentana);
 	overflow: auto;
 }
 
@@ -1296,12 +1296,12 @@ a.cover-button-active {
 	width: 100%;
 	resize: none;
 	box-sizing: border-box;
-	border: 1px solid var(--backgroundVentana);
+	border: 1px solid var(--backgroundSearch);
 	max-width: 100%;
 	min-height: 30px;
 	border-radius: 10px;
 	height: 40px;
-	background: var(--backgroundVentana);
+	background: var(--backgroundSearch);
 }
 
 .blocked-link {
