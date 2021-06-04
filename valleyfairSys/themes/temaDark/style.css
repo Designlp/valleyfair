@@ -1150,8 +1150,11 @@ a.cover-button-active {
 }
 
 .message-type-image img {
-	width: 100%;
+	width: 96%;
 	float: left;
+	border-radius: 17px;
+	margin-left: 12px;
+	margin-right: 10px;
 }
 
 .image-container-padding {
@@ -1198,11 +1201,14 @@ a.cover-button-active {
 
 .message-type-player {
 	float: left;
-	width: 100%;
+	width: 96%;
+	margin-right: 10px;
 }
 
 .message-type-player iframe {
 	float: left;
+	border-radius: 17px;
+	margin-left: 12px;
 }
 
 .message-type-general {
@@ -2527,7 +2533,7 @@ select {
 .footer {
 	padding: 0 10px;
 	border-top: 1px solid var(--colorBorder);
-	background: var(--background);
+	background: var(--backgroundVentana);
 	position: absolute;
 	width: 99%;
 }
