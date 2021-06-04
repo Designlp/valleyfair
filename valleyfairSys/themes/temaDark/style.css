@@ -2528,6 +2528,8 @@ select {
 	padding: 0 10px;
 	border-top: 1px solid var(--colorBorder);
 	background: var(--background);
+	position: absolute;
+	width: 99%;
 }
 
 .footer-container {
