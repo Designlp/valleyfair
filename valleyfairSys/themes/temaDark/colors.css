@@ -1,7 +1,11 @@
 :root {
-    --background: #121519;
+    /* --background: #121519;
     --backgroundVentana: #1A1E23;
-    --backgroundSearch: #1F252D; 
+    --backgroundSearch: #1F252D;  */
+
+    --background: #EDF2F7;
+    --backgroundVentana: #F7FAFC;
+    --backgroundSearch: #F0F0F0; 
 
 
     --colorBorder: rgba(255, 255, 255, 0.1);
