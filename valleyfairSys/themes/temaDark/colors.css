@@ -5,15 +5,15 @@
     --backgroundSearch: #1F252D;  */
     
     /*THEME LIGHT - PRINCIPAL*/
-    /* --background: #EDF2F7;
+    --background: #EDF2F7;
     --backgroundVentana: #F7FAFC;
-    --backgroundSearch: #D7D7D7;  */
+    --backgroundSearch: #D7D7D7; 
     
     /*THEME SEMI-DARK*/
-    --background: #151728;
+    /* --background: #151728;
     --backgroundVentana: #0D0E18;
     --backgroundSearch: #0E0F1A; 
-    --backgroundAnimate: #1A1D34; 
+    --backgroundAnimate: #1A1D34;  */
 
 
     --colorBorder: rgba(255, 255, 255, 0.1);
