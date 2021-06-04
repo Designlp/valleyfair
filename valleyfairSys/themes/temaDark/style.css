@@ -1298,7 +1298,7 @@ a.cover-button-active {
 	width: 100%;
 	resize: none;
 	box-sizing: border-box;
-	border: 1px solid var(--backgroundSearch);
+	border: 2px solid var(--backgroundSearch);
 	max-width: 100%;
 	min-height: 30px;
 	border-radius: 10px;
@@ -1306,7 +1306,7 @@ a.cover-button-active {
 	background: var(--backgroundSearch);
 }
 
-.comment-reply-textarea:hover{
+.comment-reply-textarea:hover, .comment-reply-textarea:active{
 	border: 2px solid var(--color);
 }
 
