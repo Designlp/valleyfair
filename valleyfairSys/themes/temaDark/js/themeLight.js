@@ -17,14 +17,14 @@ function cambiarColor(){
 function modificarColor(change) {
     if(change)
     {
-        var elements = document.getElementsByClassName('prueba'); // get all elements
+        var elements = document.getElementsByClassName('topbar'); // get all elements
         for(var i = 0; i < elements.length; i++){
-            elements[i].style.backgroundColor = "var(--main-day-color)";
+            elements[i].style.backgroundColor = "var(--background)";
         }
     }else{
-        var elements = document.getElementsByClassName('prueba'); // get all elements
+        var elements = document.getElementsByClassName('topbar'); // get all elements
         for(var i = 0; i < elements.length; i++){
-            elements[i].style.backgroundColor = "var(--main-nigth-color)";
+            elements[i].style.backgroundColor = "var(--color)";
         }
     }
 }

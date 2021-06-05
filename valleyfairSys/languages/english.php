@@ -21,7 +21,7 @@ $LNG['invalid_email'] = 'Email invalido';
 $LNG['invalid_user_pw'] = 'Usuario y/o contraseña incorrectos';
 $LNG['invalid_captcha'] = 'Captcha invalido';
 $LNG['activate_email'] = 'Un link de activación fue enviado a tu email';
-$LNG['account_activated'] = 'Su cuenta ha sido activada';
+$LNG['account_activated'] = 'Tu cuenta ha sido activada';
 $LNG['log_out'] = 'Cerrar la sesión';
 $LNG['hello'] = 'Hola';
 $LNG['register'] = 'Registrar';
@@ -276,7 +276,7 @@ $LNG['user_ttl_notifications'] = 'Configuración de notificaciones';
 $LNG['user_ttl_privacy'] = 'Configuración de privacidad';
 
 $LNG['blocked_desc'] = 'Las personas bloqueadas ya no pueden ver las cosas que publicas en tu línea de tiempo, mensajes o agregarte como amigo.';
-$LNG['delete_acc_desc'] = 'Su cuenta se eliminará permanentemente junto con todo el contenido relacionado.';
+$LNG['delete_acc_desc'] = 'Tu cuenta se eliminará permanentemente junto con todo el contenido relacionado.';
 
 $LNG['ttl_first_name'] = $LNG['first_name'] = 'Nombre';
 $LNG['sub_first_name'] = 'Introduzca su primer nombre';
