@@ -3030,7 +3030,10 @@ a.facebook-button:active {
 }
 
 #chat_page_url a:hover{
-	color:
+	color:var(--backgroundhover);
+}
+#global_page_url a:hover{
+	color:var(--backgroundhover);
 }
 
 .n-i-extended {
@@ -4385,7 +4388,7 @@ a.facebook-button:active {
 }
 
 .commentD {
-	background-image: url('images/icons/commentD.png');
+	background-image: url('images/icons/commentD.svg');
 }
 
 .shareD {
@@ -4414,7 +4417,7 @@ a.facebook-button:active {
 	border: none;
 	border-radius: 25px;
 	cursor: pointer;
-	color: var(--colorWhiteM) !important;
+	color: var(--colorWhiteImportant) !important;
 	margin-bottom: 15px;
 }
 
