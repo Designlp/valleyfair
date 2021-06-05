@@ -4391,6 +4391,9 @@ a.facebook-button:active {
 
 .commentD {
 	background-image: url('images/icons/commentD.svg');
+	background-color: red !important;
+	color: red !important;
+	fill: red !important;
 }
 
 .shareD {
