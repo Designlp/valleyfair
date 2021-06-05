@@ -39,3 +39,18 @@ function modificarColor(change) {
     }
 
 }
+
+function changeIconComment(change) {
+    if(change)
+    {
+        var elements = document.getElementsByClassName('commentD'); // get all elements
+        for(var i = 0; i < elements.length; i++){
+            elements[i].style.backgroundImage = "url('images/icons/commentD.svg')";
+        }
+    }else{
+        var elements = document.getElementsByClassName('topbar'); // get all elements
+        for(var i = 0; i < elements.length; i++){
+            elements[i].style.backgroundImage = "url('images/icons/commentD.svg')";
+        }
+    }
+}

@@ -5,6 +5,11 @@
     --backgroundAnimate: #1A1E23;
     --backgroundSearch: #1F252D;
     --backgroundhover:#fdfdfd;
+
+
+    --imagesSVG: url('images/icons/commentD.svg');
+    --imagesSVGLight: url('images/icons/commentDark.svg');
+    
     
     /*THEME LIGHT - PRINCIPAL*/
     /* --background: #EDF2F7;
