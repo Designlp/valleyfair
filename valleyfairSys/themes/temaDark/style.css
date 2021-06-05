@@ -517,11 +517,13 @@ input[type="submit"]:hover::before {
 	height: 45px;
 	background: var(--background);
 	padding: 12px;
+	tra
 }
 
 #content {
 	padding: 65px 0 10px 0;
 	background: var(--background);
+	transition: 0.3s;
 }
 
 #content::before {
@@ -4391,7 +4393,6 @@ a.facebook-button:active {
 
 .commentD {
 	background-image: var(--imagesComentSVG);
-	transition: 0.3s all;
 }
 
 .shareD {
