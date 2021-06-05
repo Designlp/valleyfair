@@ -12,17 +12,17 @@ function cambiarColor(){
     }
 }
 
-// function modificarColor(change) {
-//     if(change)
-//     {
-//         var elements = document.getElementsByClassName('prueba'); // get all elements
-//         for(var i = 0; i < elements.length; i++){
-//             elements[i].style.backgroundColor = "var(--main-day-color)";
-//         }
-//     }else{
-//         var elements = document.getElementsByClassName('prueba'); // get all elements
-//         for(var i = 0; i < elements.length; i++){
-//             elements[i].style.backgroundColor = "var(--main-nigth-color)";
-//         }
-//     }
-// }
+function modificarColor(change) {
+    if(change)
+    {
+        var elements = document.getElementsByClassName('prueba'); // get all elements
+        for(var i = 0; i < elements.length; i++){
+            elements[i].style.backgroundColor = "var(--main-day-color)";
+        }
+    }else{
+        var elements = document.getElementsByClassName('prueba'); // get all elements
+        for(var i = 0; i < elements.length; i++){
+            elements[i].style.backgroundColor = "var(--main-nigth-color)";
+        }
+    }
+}
