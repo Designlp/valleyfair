@@ -83,11 +83,11 @@ a:hover {
 }
   
 input.input-swich:checked + .slider {
-	background-color: var(--colorIndicadores);
+	background-color: var(--colorBefore);
 }
 
 input.input-swich:focus + .slider {
-	box-shadow: 0 0 1px var(--colorIndicadores);
+	box-shadow: 0 0 1px var(--colorBefore);
 }
 
 input.input-swich:checked + .slider:before {
@@ -534,7 +534,7 @@ input[type="submit"]:hover::before {
 	left: 50%;
 	border-radius: 100%;
 	transform: translateX(-50%) skewY(-8deg);
-	background-color: var(--backgroundVentana);
+	background-color: var(--backgroundAnimate);
 	z-index: 0;
 	animation: wave 8s ease-in-out infinite alternate;
 }
@@ -3021,7 +3021,7 @@ a.facebook-button:active {
 /*Cambiar hover*/
 
 #friends_page_url a:hover {
-	color: rgb(243, 243, 243);
+	color: var(--backgroundhover);
 	text-decoration: none;
 }
 
@@ -3096,7 +3096,7 @@ a.facebook-button:active {
 /*Cambio Notificaciones hover*/
 
 .notification-padding a:hover {
-	color: rgb(243, 243, 243);
+	color: var(--backgroundhover);
 	text-decoration: none;
 }
 

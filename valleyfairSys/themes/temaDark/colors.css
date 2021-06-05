@@ -2,7 +2,9 @@
     /*THEME DARK - PRINCIPAL*/
     --background: #121519;
     --backgroundVentana: #1A1E23;
-    --backgroundSearch: #1F252D; 
+    --backgroundAnimate: #1A1E23;
+    --backgroundSearch: #1F252D;
+    --backgroundhover:#fdfdfd;
     
     /*THEME LIGHT - PRINCIPAL*/
     /* --background: #EDF2F7;
