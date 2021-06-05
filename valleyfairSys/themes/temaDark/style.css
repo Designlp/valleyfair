@@ -83,11 +83,11 @@ a:hover {
 }
   
 input.input-swich:checked + .slider {
-	background-color: var(--color);
+	background-color: var(--colorIndicadores);
 }
 
 input.input-swich:focus + .slider {
-	box-shadow: 0 0 1px var(--color);
+	box-shadow: 0 0 1px var(--colorIndicadores);
 }
 
 input.input-swich:checked + .slider:before {
