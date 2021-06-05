@@ -4241,6 +4241,18 @@ a.facebook-button:active {
 	}
 	
 }
+
+@media only screen and (max-device-width: 440px){
+	.logo-container{
+		display: none;
+	}
+	.menu_btn{
+		padding: 0 6px;
+	}
+	#values{
+		width: 220px;
+	}
+}
 .button-beau {
 	text-transform: uppercase;
     display: inline-flex;
