@@ -34,17 +34,17 @@ function modificarColor(change) {
         }
     }
 
-    if(change)
-    {
-        var elements = document.getElementById('content::before'); // get all elements
-        for(var i = 0; i < elements.length; i++){
-            elements[i].style.backgroundColor = "var(--backgroundVentana)";
-        }
-    }else{
-        var elements = document.getElementById('content::before'); // get all elements
-        for(var i = 0; i < elements.length; i++){
-            elements[i].style.backgroundColor = "var(--colorBefore)";
-        }
-    }
+    // if(change)
+    // {
+    //     var elements = document.getElementById('content::before'); // get all elements
+    //     for(var i = 0; i < elements.length; i++){
+    //         elements[i].style.backgroundColor = "var(--backgroundVentana)";
+    //     }
+    // }else{
+    //     var elements = document.getElementById('content::before'); // get all elements
+    //     for(var i = 0; i < elements.length; i++){
+    //         elements[i].style.backgroundColor = "var(--colorBefore)";
+    //     }
+    // }
     //#content::before
 }
