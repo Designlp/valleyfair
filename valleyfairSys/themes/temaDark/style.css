@@ -4390,7 +4390,8 @@ a.facebook-button:active {
 }
 
 .commentD {
-	background-image: var(--imagesSVG);
+	background-image: var(--imagesComentSVG);
+	transition: 0.3s all;
 }
 
 .shareD {
