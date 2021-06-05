@@ -30,7 +30,7 @@ function modificarColor(change) {
     }else{
         var elements = document.getElementsByClassName('topbar'); // get all elements
         for(var i = 0; i < elements.length; i++){
-            elements[i].style.backgroundColor = "var(--color)";
+            elements[i].style.backgroundColor = "var(--606060)";
         }
     }
 
