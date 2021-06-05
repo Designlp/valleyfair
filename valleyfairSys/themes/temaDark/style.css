@@ -4250,7 +4250,7 @@ a.facebook-button:active {
 		padding: 0 6px;
 	}
 	#values{
-		width: 202px;
+		width: 214px;
 	}
 	#values label img{
 		padding: 7px 2px 6px 2px;
@@ -4259,6 +4259,12 @@ a.facebook-button:active {
 	}
 	.button-image{
 		background-size: 20px;
+	}
+	.message-btn{
+		padding: 0px 10px 0 0;
+	}
+	.button-normal a, .plugin-button-normal{
+		padding: 0px !important;
 	}
 }
 .button-beau {
