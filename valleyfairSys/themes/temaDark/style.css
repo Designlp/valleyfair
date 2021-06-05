@@ -43,7 +43,66 @@ a:hover {
 	text-decoration: underline;
 }
 
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+}
 
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input.input-swich:checked+.slider {
+	background-color: #2196F3;
+}
+
+input.input-swich:focus+.slider {
+	box-shadow: 0 0 1px #2196F3;
+}
+
+input.input-swich:checked+.slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+/* Rounded sliders */
+
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
 
 input:not([type="checkbox"]), textarea, select, button {
 	font-family: inherit;
@@ -110,18 +169,16 @@ input[type="submit"] {
 	margin: 0;
 	border-radius: 2px;
 	cursor: pointer;
-
-
 }
 
-input[type="submit"]{
+input[type="submit"] {
 	text-transform: uppercase;
-    padding: 10px 15px;
-    background: var(--color);
-    color: #fff;
-    text-decoration: none;
-    letter-spacing: 1px;
-    overflow: hidden;
+	padding: 10px 15px;
+	background: var(--color);
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 1px;
+	overflow: hidden;
 	height: 46px;
 	border: none;
 	border-radius: 25px;
@@ -130,32 +187,32 @@ input[type="submit"]{
 	margin-bottom: 15px;
 }
 
-input[type="submit"]:hover{
+input[type="submit"]:hover {
 	text-decoration: none;
 	color: var(--colorWhiteM) !important;
 }
 
-input[type="submit"] span{
+input[type="submit"] span {
 	position: relative;
 	z-index: 1;
 }
 
-input[type="submit"]::before{
-    content: '';
-    position: absolute;
-    top: 18px;
-    left: 50px;
-    transform: translate(-50%, -50%);
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-    background: var(--colorCO);
-    transition: width 0.8s, height 0.8s;
+input[type="submit"]::before {
+	content: '';
+	position: absolute;
+	top: 18px;
+	left: 50px;
+	transform: translate(-50%, -50%);
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	background: var(--colorCO);
+	transition: width 0.8s, height 0.8s;
 }
 
-input[type="submit"]:hover::before{
-    width: 150px;
-    height: 150px;
+input[type="submit"]:hover::before {
+	width: 150px;
+	height: 150px;
 }
 
 ::selection {
@@ -466,35 +523,35 @@ input[type="submit"]:hover::before{
 	background: var(--background);
 }
 
-#content::before{
-    content: "";
-    display: block;
-    position: fixed;
-    width: 300%;
-    height: 100%;
-    top: 50%;
-    left: 50%;
-    border-radius: 100%;
-    transform: translateX(-50%) skewY(-8deg);
-    background-color: var(--backgroundVentana);
-    z-index: 0;
-    animation: wave 8s ease-in-out infinite alternate;
+#content::before {
+	content: "";
+	display: block;
+	position: fixed;
+	width: 300%;
+	height: 100%;
+	top: 50%;
+	left: 50%;
+	border-radius: 100%;
+	transform: translateX(-50%) skewY(-8deg);
+	background-color: var(--backgroundVentana);
+	z-index: 0;
+	animation: wave 8s ease-in-out infinite alternate;
 }
 
 @keyframes wave {
-    0% {
-      transform: translateX(-50%) skew(0deg, -8deg);
-    }
-
-    100% {
-      transform: translateX(-30%) skew(8deg, -4deg);
-    }
+	0% {
+		transform: translateX(-50%) skew(0deg, -8deg);
+	}
+	100% {
+		transform: translateX(-30%) skew(8deg, -4deg);
+	}
 }
 
 .contentLogin {
 	padding: 54px 0 10px 0 !important;
 	background: var(--background);
 }
+
 .menu {
 	float: right;
 	height: 45px;
@@ -577,7 +634,7 @@ input[type="submit"]:hover::before{
 	width: auto;
 	float: right;
 	border-radius: 13px;
-	color:rgb(240, 240, 240);
+	color: rgb(240, 240, 240);
 }
 
 .menu-dd-row {
@@ -605,7 +662,7 @@ input[type="submit"]:hover::before{
 }
 
 .menu-dd-content a {
-	color:var(--colorWhiteM);
+	color: var(--colorWhiteM);
 	text-decoration: none;
 	width: 100%;
 }
@@ -629,14 +686,14 @@ input[type="submit"]:hover::before{
 
 .topbar-button {
 	text-transform: uppercase;
-    position: relative;
-    display: inline-flex;
-    padding: 10px 15px;
-    background: var(--color);
-    color: #fff;
-    text-decoration: none;
-    letter-spacing: 1px;
-    overflow: hidden;
+	position: relative;
+	display: inline-flex;
+	padding: 10px 15px;
+	background: var(--color);
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 1px;
+	overflow: hidden;
 	height: 19px;
 	border: none;
 	border-radius: 25px;
@@ -646,29 +703,32 @@ input[type="submit"]:hover::before{
 	text-decoration: none;
 }
 
-.topbar-button span{
-    position: relative;
-    z-index: 1;
+.topbar-button span {
+	position: relative;
+	z-index: 1;
 }
-.topbar-button a{
-    position: relative;
-    z-index: 1;
+
+.topbar-button a {
+	position: relative;
+	z-index: 1;
 }
-.topbar-button::before{
-    content: '';
-    position: absolute;
-    top: var(--y);
-    left: var(--x);
-    transform: translate(-50%, -50%);
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-    background: var(--colorCO);
-    transition: width 0.5s, height 0.5s;
+
+.topbar-button::before {
+	content: '';
+	position: absolute;
+	top: var(--y);
+	left: var(--x);
+	transform: translate(-50%, -50%);
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	background: var(--colorCO);
+	transition: width 0.5s, height 0.5s;
 }
-.topbar-button:hover::before{
-    width: 100px;
-    height: 100px;
+
+.topbar-button:hover::before {
+	width: 100px;
+	height: 100px;
 }
 
 .menu_btn {
@@ -962,7 +1022,6 @@ a.cover-button-active {
 	padding: 7px 0 7px 10px;
 }
 
-
 /*AdminHov*/
 
 .users-button a:hover {
@@ -1002,9 +1061,6 @@ a.cover-button-active {
 
 /*hovers administracion*/
 
-
-
-
 .message-divider {
 	height: 1px;
 	width: 100%;
@@ -1027,10 +1083,12 @@ a.cover-button-active {
 .message-actions-content a {
 	color: var(--colorWhiteM);
 }
-.btn_hearth{
+
+.btn_hearth {
 	width: 10px;
 }
-.btn_hearth:after{
+
+.btn_hearth:after {
 	content: '';
 	display: inline-block;
 	width: 100%;
@@ -1038,15 +1096,17 @@ a.cover-button-active {
 	opacity: 0;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: scale(0,1);
-	transform: scale(0,1);
+	-webkit-transform: scale(0, 1);
+	transform: scale(0, 1);
 	color: var(--colorWhiteM);
 }
-.btn_hearth:hover{
+
+.btn_hearth:hover {
 	text-decoration: none;
 	transition: 0.5s all;
 	color: #FF4F4F;
 }
+
 .btn_hearth:hover:after {
 	opacity: 1;
 	-webkit-transform: scale(1);
@@ -1308,7 +1368,7 @@ a.cover-button-active {
 	background: var(--backgroundSearch);
 }
 
-.comment-reply-textarea:hover, .comment-reply-textarea:active, .comment-reply-textarea:focus{
+.comment-reply-textarea:hover, .comment-reply-textarea:active, .comment-reply-textarea:focus {
 	border: 2px solid var(--color);
 }
 
@@ -1403,7 +1463,7 @@ a.cover-button-active {
 	display: none;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
 	z-index: 3;
-	color:var(--colorWhiteM);
+	color: var(--colorWhiteM);
 }
 
 .menu-profile-container {
@@ -2136,8 +2196,6 @@ img.sidebar-status-icon {
 	color: var(--color);
 }
 
-
-
 .sidebar-avatar-edit a {
 	font-size: 12px;
 	color: rgb(201, 201, 201);
@@ -2257,7 +2315,6 @@ img.sidebar-status-icon {
 	text-decoration: none;
 }
 
-
 .button-normal a:hover, .plugin-button-normal:hover {
 	text-decoration: none;
 }
@@ -2374,7 +2431,6 @@ textarea {
 	overflow: auto;
 }
 
-
 .page-input-container {
 	width: 100%;
 	float: left;
@@ -2430,7 +2486,7 @@ select {
 
 .page-input-title, .page-input-title-img {
 	text-align: right;
-	width: 150px;
+	width: 200px;
 	margin-right: 10px;
 	margin-top: 4px;
 	display: inline-block;
@@ -2792,14 +2848,12 @@ select {
 
 .welcome-inputs {
 	max-width: 380px;
-    width: 100%;
-    background-color: var(--backgroundVentana);
-    margin: 10px 0;
-    height: 55px;
-    border-radius: 55px;
-    padding: 0 0.4rem;
-
-	
+	width: 100%;
+	background-color: var(--backgroundVentana);
+	margin: 10px 0;
+	height: 55px;
+	border-radius: 55px;
+	padding: 0 0.4rem;
 	float: right;
 }
 
@@ -2821,24 +2875,24 @@ select {
 	margin-top: 8px;
 	color: var(--colorWhiteM);
 	margin-left: 8px;
-    line-height: 1;
-    font-weight: 600;
-    font-size: 1.1rem;
+	line-height: 1;
+	font-weight: 600;
+	font-size: 1.1rem;
 }
 
 .welcome-inputs i {
-    text-align: center;
-    line-height: 55px;
-    color: #acacac;
-    transition: 0.5s;
-    font-size: 1.1rem;
+	text-align: center;
+	line-height: 55px;
+	color: #acacac;
+	transition: 0.5s;
+	font-size: 1.1rem;
 	margin-left: 20px;
-  }
+}
 
 .welcome-inputs input::placeholder {
-    color: #aaa;
-    font-weight: 500;
-  }
+	color: #aaa;
+	font-weight: 500;
+}
 
 .facebook-button {
 	display: inline-block;
@@ -2861,77 +2915,84 @@ a.facebook-button:active {
 	background: #374C80;
 }
 
-.login-button{
+.login-button {
 	text-transform: uppercase;
-    position: relative;
-    display: inline-flex;
-    padding: 10px 15px;
-    background: var(--color);
-    color: #fff;
-    text-decoration: none;
-    letter-spacing: 1px;
-    overflow: hidden;
+	position: relative;
+	display: inline-flex;
+	padding: 10px 15px;
+	background: var(--color);
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 1px;
+	overflow: hidden;
 	height: 37px;
 	border: none;
 	border-radius: 25px;
 	cursor: pointer;
-}
-.login-button span{
-    position: relative;
-    z-index: 1;
-}
-.login-button::before{
-    content: '';
-    position: absolute;
-    top: 18px;
-    left: 70px;
-    transform: translate(-50%, -50%);
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-    background: var(--colorCO);
-    transition: width 0.8s, height 0.8s;
-}
-.login-button:hover::before{
-    width: 200px;
-    height: 200px;
 }
 
-.register-button{
+.login-button span {
+	position: relative;
+	z-index: 1;
+}
+
+.login-button::before {
+	content: '';
+	position: absolute;
+	top: 18px;
+	left: 70px;
+	transform: translate(-50%, -50%);
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	background: var(--colorCO);
+	transition: width 0.8s, height 0.8s;
+}
+
+.login-button:hover::before {
+	width: 200px;
+	height: 200px;
+}
+
+.register-button {
 	text-transform: uppercase;
-    position: relative;
-    display: inline-flex;
-    padding: 10px 15px;
-    background: var(--color);
-    color: #fff;
-    text-decoration: none;
-    letter-spacing: 1px;
-    overflow: hidden;
+	position: relative;
+	display: inline-flex;
+	padding: 10px 15px;
+	background: var(--color);
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 1px;
+	overflow: hidden;
 	height: 37px;
 	border: none;
 	border-radius: 25px;
 	cursor: pointer;
 }
-.register-button span{
-    position: relative;
-    z-index: 1;
+
+.register-button span {
+	position: relative;
+	z-index: 1;
 }
-.register-button::before{
-    content: '';
-    position: absolute;
-    top: 18px;
-    left: 55px;
-    transform: translate(-50%, -50%);
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-    background: var(--colorCO);
-    transition: width 0.8s, height 0.8s;
+
+.register-button::before {
+	content: '';
+	position: absolute;
+	top: 18px;
+	left: 55px;
+	transform: translate(-50%, -50%);
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	background: var(--colorCO);
+	transition: width 0.8s, height 0.8s;
 }
-.register-button:hover::before{
-    width: 200px;
-    height: 200px;
+
+.register-button:hover::before {
+	width: 200px;
+	height: 200px;
 }
+
 .notification-container {
 	max-width: 920px;
 	width: 100%;
@@ -2958,7 +3019,7 @@ a.facebook-button:active {
 
 /*Cambiar hover*/
 
-#friends_page_url a:hover{
+#friends_page_url a:hover {
 	color: rgb(243, 243, 243);
 	text-decoration: none;
 }
@@ -3038,7 +3099,6 @@ a.facebook-button:active {
 	text-decoration: none;
 }
 
-
 #notifications-content .timeago {
 	float: none;
 }
@@ -3101,11 +3161,11 @@ a.facebook-button:active {
 .sidebar-fa-text {
 	font-size: 11px;
 	padding-left: 35px;
-	color:rgb(145, 145, 145);
+	color: rgb(145, 145, 145);
 }
 
-.sidebar-fa-text a{
-	color:var(--color);
+.sidebar-fa-text a {
+	color: var(--color);
 }
 
 .sidebar-fa-text .timeago {
@@ -4020,6 +4080,7 @@ a.facebook-button:active {
 		width: 100%;
 	}
 }
+
 /* ------------------- !CELULAR ----------------------- */
 
 @media only screen and (max-device-width: 600px), only screen and (device-width: 600px) and (device-height: 600px), only screen and (width: 600px) and (orientation: landscape), only screen and (device-width: 600px), only screen and (max-width: 600px) {
@@ -4223,8 +4284,8 @@ a.facebook-button:active {
 	}
 }
 
-@media only screen and (max-device-width: 849px){
-	.search-input input{
+@media only screen and (max-device-width: 849px) {
+	.search-input input {
 		width: 388px;
 	}
 	#search {
@@ -4232,53 +4293,53 @@ a.facebook-button:active {
 	}
 }
 
-@media only screen and (max-device-width: 1123px){
-	.topbar-button{
+@media only screen and (max-device-width: 1123px) {
+	.topbar-button {
 		left: 76px;
 	}
-	
-}
-@media only screen and (max-device-width: 910px){
-	.topbar-button{
-		left: 23px;
-	}
-	
 }
 
-@media only screen and (max-device-width: 440px){
-	.logo-container{
+@media only screen and (max-device-width: 910px) {
+	.topbar-button {
+		left: 23px;
+	}
+}
+
+@media only screen and (max-device-width: 440px) {
+	.logo-container {
 		display: none;
 	}
-	.menu_btn{
+	.menu_btn {
 		padding: 0 6px;
 	}
-	#values{
+	#values {
 		width: 214px;
 	}
-	#values label img{
+	#values label img {
 		padding: 7px 2px 6px 2px;
 		width: 20px;
 		height: 20px;
 	}
-	.button-image{
+	.button-image {
 		background-size: 20px;
 	}
-	.message-btn{
+	.message-btn {
 		padding: 0px 10px 0 0;
 	}
-	.button-normal a, .plugin-button-normal{
+	.button-normal a, .plugin-button-normal {
 		padding: 0px !important;
 	}
 }
+
 .button-beau {
 	text-transform: uppercase;
-    display: inline-flex;
-    padding: 10px 15px;
-    background: var(--color);
-    color: var(--colorWhiteM) !important;
-    text-decoration: none;
-    letter-spacing: 1px;
-    overflow: hidden;
+	display: inline-flex;
+	padding: 10px 15px;
+	background: var(--color);
+	color: var(--colorWhiteM) !important;
+	text-decoration: none;
+	letter-spacing: 1px;
+	overflow: hidden;
 	height: 19px;
 	border: none;
 	border-radius: 25px;
@@ -4286,42 +4347,47 @@ a.facebook-button:active {
 	left: 64px;
 	top: 4px;
 }
-.button-beau span{
-    position: relative;
-    z-index: 1;
-}
-.button-beau::before{
-    content: '';
-    position: absolute;
-    top: var(--yy);
-    left: var(--xx);
-    transform: translate(-50%, -50%);
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-    background: var(--colorCO);
-    transition: width 0.5s, height 0.5s;
-}
-.button-beau:hover::before{
-    width: 100px;
-    height: 100px;
+
+.button-beau span {
+	position: relative;
+	z-index: 1;
 }
 
+.button-beau::before {
+	content: '';
+	position: absolute;
+	top: var(--yy);
+	left: var(--xx);
+	transform: translate(-50%, -50%);
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	background: var(--colorCO);
+	transition: width 0.5s, height 0.5s;
+}
 
-.corazonLike{
+.button-beau:hover::before {
+	width: 100px;
+	height: 100px;
+}
+
+.corazonLike {
 	background-image: url('images/icons/heart-inactive.png');
 }
-.corazonDisLike{
+
+.corazonDisLike {
 	background-image: url('images/icons/heart-active.png');
 }
-.commentD{
+
+.commentD {
 	background-image: url('images/icons/commentD.png');
 }
-.shareD{
+
+.shareD {
 	background-image: url('images/icons/shareD.png');
 }
 
-.corazonLike, .corazonDisLike, .commentD, .shareD{
+.corazonLike, .corazonDisLike, .commentD, .shareD {
 	width: 20px;
 	height: 20px;
 	background-repeat: no-repeat;
@@ -4329,16 +4395,16 @@ a.facebook-button:active {
 	margin-right: 10px !important;
 }
 
-.botonJS{
+.botonJS {
 	text-transform: uppercase;
-    position: relative;
-    display: inline-flex;
-    padding: 10px 15px;
-    background: var(--color);
-    color: #fff;
-    text-decoration: none;
-    letter-spacing: 1px;
-    overflow: hidden;
+	position: relative;
+	display: inline-flex;
+	padding: 10px 15px;
+	background: var(--color);
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 1px;
+	overflow: hidden;
 	height: 14px;
 	border: none;
 	border-radius: 25px;
@@ -4347,30 +4413,30 @@ a.facebook-button:active {
 	margin-bottom: 15px;
 }
 
-.botonJS:hover{
+.botonJS:hover {
 	text-decoration: none;
 	color: var(--colorWhiteM) !important;
 }
 
-.botonJS span{
+.botonJS span {
 	position: relative;
 	z-index: 1;
 }
 
-.botonJS::before{
-    content: '';
-    position: absolute;
-    top: 18px;
-    left: 50px;
-    transform: translate(-50%, -50%);
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-    background: var(--colorCO);
-    transition: width 0.8s, height 0.8s;
+.botonJS::before {
+	content: '';
+	position: absolute;
+	top: 18px;
+	left: 50px;
+	transform: translate(-50%, -50%);
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	background: var(--colorCO);
+	transition: width 0.8s, height 0.8s;
 }
 
-.botonJS:hover::before{
-    width: 150px;
-    height: 150px;
+.botonJS:hover::before {
+	width: 150px;
+	height: 150px;
 }
