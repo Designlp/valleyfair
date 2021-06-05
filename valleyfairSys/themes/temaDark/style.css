@@ -1380,7 +1380,7 @@ a.cover-button-active {
 
 .blocked-link a {
 	cursor: pointer;
-	color: #999;
+	color: var(--colorIndicadores);
 	text-decoration: none;
 }
 
@@ -1789,7 +1789,7 @@ a.cover-button-active {
 }
 
 .load-more-comments a, .load-more-chat a {
-	color: #999;
+	color: var(--colorIndicadores);
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -1896,7 +1896,7 @@ a.cover-button-active {
 }
 
 .timeago, .timeago-standard {
-	color: #999;
+	color: var(--colorIndicadores);
 	float: left;
 	text-decoration: none;
 }
@@ -2743,7 +2743,7 @@ select {
 .welcome-box-desc {
 	padding: 10px 0 0 0;
 	font-size: 16px;
-	color: #999;
+	color: var(--colorIndicadores);
 }
 
 .notification-box {
@@ -3399,7 +3399,7 @@ a.facebook-button:active {
 }
 
 .modal-listing-load-more a {
-	color: #999;
+	color: var(--colorIndicadores);
 	text-decoration: none;
 	cursor: pointer;
 	float: left;
