@@ -5,12 +5,14 @@ function cambiarColor(){
         modificarColor(change);
         document.documentElement.style.setProperty('--background', '#121519');
         document.documentElement.style.setProperty('--backgroundVentana', '#1A1E23');
+        document.documentElement.style.setProperty('--colorWhiteM', '#D7D7D7');
     }
     else{
         //day
         modificarColor(change);
         document.documentElement.style.setProperty('--background', '#EDF2F7');
         document.documentElement.style.setProperty('--backgroundVentana', '#F7FAFC');
+        document.documentElement.style.setProperty('--colorWhiteM', '#4D4D4D');
     }
 }
 
