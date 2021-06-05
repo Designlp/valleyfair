@@ -701,7 +701,7 @@ input[type="submit"]:hover::before{
 	padding: 10px;
 	margin-top: 5px;
 	background: var(--backgroundSearch);
-	width: 558px;
+	width: 520px;
 	color: var(--colorWhiteM);
 	transition: 0.5s;
 }
@@ -4110,7 +4110,7 @@ a.facebook-button:active {
 		padding: 0 10px 10px 10px;
 	}
 	#values {
-		width: 150px;
+		width: 270px;
 	}
 	.page-input-title {
 		width: 100%;
