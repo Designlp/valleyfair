@@ -54,17 +54,17 @@ function checkNewNotifications(x) {
 			if(html.indexOf("{$lng->no_notifications}") == -1 && html !== "" && html !== "0") {
 				var result = jQuery.parseJSON(html);
 				if(result.response.global > 0) {
-					$("#notifications_btn").html(getNotificationImage()+'<span class="notificatons-number-container"><span class="notifications-number">'+result.response.global+'</span></span>');
+					$("#notifications_btn").html(getNotificationImage()+'<span class="notificatons-number-container"><span class="notifications-number"></span></span>');
 				} else {
 					$("#notifications_btn").html(getNotificationImage());
 				}
 				if(result.response.friends > 0) {
-					$("#friends_btn").html(getFriendsImage()+'<span class="notificatons-number-container"><span class="notifications-number">'+result.response.friends+'</span></span>');
+					$("#friends_btn").html(getFriendsImage()+'<span class="notificatons-number-container"><span class="notifications-number"></span></span>');
 				} else {
 					$("#friends_btn").html(getFriendsImage());
 				}
 				if(result.response.messages > 0) {
-					$("#messages_btn").html(getMessagesImageUrl()+'<span class="notificatons-number-container"><span class="notifications-number">'+result.response.messages+'</span></span>');
+					$("#messages_btn").html(getMessagesImageUrl()+'<span class="notificatons-number-container"><span class="notifications-number"></span></span>');
 				} else {
 					$("#messages_btn").html(getMessagesImageUrl());
 				}
