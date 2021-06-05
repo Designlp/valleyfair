@@ -2127,7 +2127,7 @@ img.sidebar-status-icon {
 	padding: 5px 10px 5px 10px;
 	display: block;
 	text-decoration: none;
-	color: #898F9C;
+	color: var(--colorWhiteM);
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
@@ -3031,9 +3031,11 @@ a.facebook-button:active {
 
 #chat_page_url a:hover{
 	color:var(--backgroundhover);
+	text-decoration: none;
 }
 #global_page_url a:hover{
 	color:var(--backgroundhover);
+	text-decoration: none;
 }
 
 .n-i-extended {
