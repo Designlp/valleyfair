@@ -2467,8 +2467,9 @@ class feed {
 		global $LNG;
 		
 		// If the user is logged-in and is not on his profile
+		// , (!$this->getBlocked($this->profile_data['idu'], 2) ? $this->poke($this->profile_data['idu']) : '')
 		if(!empty($this->username) && $this->username !== $this->profile) {
-			$items = array($this->getBlocked($this->profile_data['idu'], null, 1), (!$this->getBlocked($this->profile_data['idu'], 2) ? $this->poke($this->profile_data['idu']) : ''));
+			$items = array($this->getBlocked($this->profile_data['idu'], null, 1));
 		}
 		
 		if(!empty($items)) {
