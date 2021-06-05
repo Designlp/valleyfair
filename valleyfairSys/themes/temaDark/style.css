@@ -89,9 +89,9 @@ a:hover {
   }
   
   input.input-swich:checked + .slider:before {
-	-webkit-transform: translateX(9px);
-	-ms-transform: translateX(9px);
-	transform: translateX(9px);
+	-webkit-transform: translateX(10px);
+	-ms-transform: translateX(10px);
+	transform: translateX(10px);
   }
   
   /* Rounded sliders */
