@@ -43,6 +43,8 @@ a:hover {
 	text-decoration: underline;
 }
 
+
+
 input:not([type="checkbox"]), textarea, select, button {
 	font-family: inherit;
 	font-size: inherit;
@@ -2428,7 +2430,7 @@ select {
 
 .page-input-title, .page-input-title-img {
 	text-align: right;
-	width: 85px;
+	width: 150px;
 	margin-right: 10px;
 	margin-top: 4px;
 	display: inline-block;
