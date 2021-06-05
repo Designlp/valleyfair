@@ -4428,7 +4428,7 @@ a.facebook-button:active {
 
 .botonJS:hover {
 	text-decoration: none;
-	color: var(--colorWhiteM) !important;
+	color: var(--colorWhiteImportant) !important;
 }
 
 .botonJS span {
