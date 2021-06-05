@@ -10,6 +10,7 @@ function cambiarColor(){
         //day
         modificarColor(change);
         document.documentElement.style.setProperty('--background', '#EDF2F7');
+        document.documentElement.style.setProperty('--backgroundVentana', '#F7FAFC');
     }
 }
 
