@@ -6,6 +6,7 @@ function cambiarColor(){
         document.documentElement.style.setProperty('--background', '#121519');
         document.documentElement.style.setProperty('--backgroundVentana', '#1A1E23');
         document.documentElement.style.setProperty('--colorWhiteM', '#D7D7D7');
+        document.documentElement.style.setProperty('--colorIndicadores', '#999');
         document.documentElement.style.setProperty('--backgroundSearch', '#1F252D');
     }
     else{
@@ -14,6 +15,7 @@ function cambiarColor(){
         document.documentElement.style.setProperty('--background', '#EDF2F7');
         document.documentElement.style.setProperty('--backgroundVentana', '#F7FAFC');
         document.documentElement.style.setProperty('--colorWhiteM', '#787878');
+        document.documentElement.style.setProperty('--colorIndicadores', '#BDBDBD');
         document.documentElement.style.setProperty('--backgroundSearch', '#ebebeb');
     }
 }
@@ -31,4 +33,18 @@ function modificarColor(change) {
             elements[i].style.backgroundColor = "var(--color)";
         }
     }
+
+    if(change)
+    {
+        var elements = document.getElementById('content::before'); // get all elements
+        for(var i = 0; i < elements.length; i++){
+            elements[i].style.backgroundColor = "var(--backgroundVentana)";
+        }
+    }else{
+        var elements = document.getElementById('content::before'); // get all elements
+        for(var i = 0; i < elements.length; i++){
+            elements[i].style.backgroundColor = "var(--colorBefore)";
+        }
+    }
+    //#content::before
 }

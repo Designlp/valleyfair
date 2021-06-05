@@ -3741,7 +3741,7 @@ a.facebook-button:active {
 }
 
 .bc-friends-username {
-	color: #fff;
+	color: var(--colorWhiteM);
 	float: left;
 	line-height: 15px;
 	text-overflow: ellipsis;
