@@ -4,6 +4,7 @@ function cambiarColor(){
     if(change){
         modificarColor(change);
         document.documentElement.style.setProperty('--background', '#121519');
+        document.documentElement.style.setProperty('--backgroundVentana', '#1A1E23');
     }
     else{
         //day
