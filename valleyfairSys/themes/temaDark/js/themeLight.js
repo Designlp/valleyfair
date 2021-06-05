@@ -11,6 +11,8 @@ function cambiarColor(){
         document.documentElement.style.setProperty('--backgroundhover', '#fdfdfd');
         document.documentElement.style.setProperty('--backgroundAnimate', '#1A1E23');
         document.documentElement.style.setProperty('--imagesComentSVG', "url('images/icons/commentD.svg')");
+        document.documentElement.style.setProperty('--imagesInactiveLikeSVG', "url('images/icons/heart-inactive.svg')");
+        document.documentElement.style.setProperty('--imagesSharedSVG', "url('images/icons/shareD.svg')");
     }
     else{
         //Mod
@@ -23,6 +25,8 @@ function cambiarColor(){
         document.documentElement.style.setProperty('--backgroundhover', '#3b3b3b');
         document.documentElement.style.setProperty('--backgroundAnimate', '#64c1ff');
         document.documentElement.style.setProperty('--imagesComentSVG', "url('images/icons/commentDark.svg')");
+        document.documentElement.style.setProperty('--imagesInactiveLikeSVG', "url('images/icons/heart-inactiveDark.svg')");
+        document.documentElement.style.setProperty('--imagesSharedSVG', "url('images/icons/shareDDark.svg')");
     }
 }
 

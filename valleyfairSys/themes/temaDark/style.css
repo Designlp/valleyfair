@@ -10,6 +10,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background: var(--background);
+	transition: 0.3s;
 	/* overflow-x: hidden; */
 }
 
@@ -4384,11 +4385,11 @@ a.facebook-button:active {
 }
 
 .corazonLike {
-	background-image: url('images/icons/heart-inactive.png');
+	background-image: var(--imagesInactiveLikeSVG);
 }
 
 .corazonDisLike {
-	background-image: url('images/icons/heart-active.png');
+	background-image: url('images/icons/heart-active.svg');
 }
 
 .commentD {
@@ -4396,7 +4397,7 @@ a.facebook-button:active {
 }
 
 .shareD {
-	background-image: url('images/icons/shareD.png');
+	background-image: var(--imagesSharedSVG);
 }
 
 .corazonLike, .corazonDisLike, .commentD, .shareD {
