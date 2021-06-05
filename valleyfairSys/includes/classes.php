@@ -4440,7 +4440,7 @@ class feed {
 		global $LNG, $CONF;
 		
 		// Start the output
-		$row = array_filter(array('likes', 'comments', 'shared', 'friendships', ($settings['pages'] ? 'pages' : ''), ($settings['groups'] ? 'groups' : ''), 'chats', 'pokes', 'birthdays'));
+		$row = array_filter(array('likes', 'comments', 'shared', 'friendships', ($settings['pages'] ? 'pages' : ''), ($settings['groups'] ? 'groups' : ''), 'chats', 'birthdays'));
 		$link = '<div class="sidebar-container widget-notifications"><div class="sidebar-content"><div class="sidebar-header">'.$LNG['title_notifications'].'</div>';
 		if(!in_array($bold, $row)) {
 			$class = ' sidebar-link-active';
