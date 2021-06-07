@@ -3938,7 +3938,7 @@ a.facebook-button:active {
 }
 
 .about-location {
-	background: url('images/icons/about_sprite.svg') 0 -36px;
+	background: url('images/icons/about_sprite.svg') 0 -38px;
 	background-size: 12px;
 }
 
@@ -3948,12 +3948,12 @@ a.facebook-button:active {
 }
 
 .about-male {
-	background: url('images/icons/about_sprite.svg') 0 -60px;
+	background: url('images/icons/about_sprite.svg') 0 -61px;
 	background-size: 12px;
 }
 
 .about-female {
-	background: url('images/icons/about_sprite.svg') 0 -72px;
+	background: url('images/icons/about_sprite.svg') 0 -74px;
 	background-size: 12px;
 }
 
@@ -3963,12 +3963,12 @@ a.facebook-button:active {
 }
 
 .about-privacy {
-	background: url('images/icons/about_sprite.svg') 0 -96px;
+	background: url('images/icons/about_sprite.svg') 0 -98px;
 	background-size: 12px;
 }
 
 .about-info {
-	background: url('images/icons/about_sprite.svg') 0 -108px;
+	background: url('images/icons/about_sprite.svg') 0 -110px;
 	background-size: 12px;
 }
 
