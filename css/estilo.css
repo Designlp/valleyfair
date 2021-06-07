@@ -10,9 +10,8 @@ body {
   height: 100%;
   overflow: hidden;
   color: #fff;
-  background-color: #15202B;
-  font-family: "Montserrat", "Roboto", "Droid Sans", "Helvetica Neue",
- sans-serif;
+  background-color: #121519;
+  font-family: "Montserrat", "Roboto", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 ul,
@@ -181,7 +180,7 @@ p {
   right: 0;
   height: 500px;
   padding: 2rem;
-  border-radius: 0.5rem;
+  border-radius: 30px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -283,7 +282,7 @@ p {
           flex: 1 0 0;
   position: relative;
   padding: 2rem;
-  border-radius: 0.5rem;
+  border-radius: 30px;
   font-size: 0.875rem;
   color: #fff;
   -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
@@ -358,7 +357,7 @@ p {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  border-radius: 0.5rem;
+  border-radius: 30px;
 }
 
 .scrollctrl {
@@ -458,7 +457,7 @@ p {
   width: 60px;
   height: 60px;
   margin-right: 1rem;
-  border-radius: 0.25rem;
+  border-radius: 15px;
   -o-object-position: center center;
      object-position: center center;
   -o-object-fit: cover;

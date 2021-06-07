@@ -1318,6 +1318,8 @@ a.cover-button-active {
 .message-reply-message {
 	padding: 0 16px 8px 42px;
 	word-wrap: break-word;
+	color: var(--backgroundletrasamigos);
+
 }
 
 .message-reply-footer {
