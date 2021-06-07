@@ -139,10 +139,6 @@ p {
   -webkit-overflow-scrolling: touch;
 }
 
-.nav__item:not(:last-child) {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
 .nav__link {
   display: block;
   color: #fff;

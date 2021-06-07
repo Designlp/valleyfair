@@ -137,10 +137,6 @@ p {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
-  &__item:not(:last-child) {
-    border-bottom: 1px solid rgba(#fff, 0.1);
-  }
-
   &__link {
     display: block;
     color: #fff;
