@@ -1019,7 +1019,7 @@ function PageMain() {
 
 	$menu = array(	''											=> array('admin_menu_dashboard', '', 'dashboard'),
 					'&b=site_settings'							=> array('admin_menu_site_settings', '', 'settings'),
-					'&b=themes' 								=> array('admin_menu_themes', '', 'themes'),
+					//'&b=themes' 								=> array('admin_menu_themes', '', 'themes'),
 					//'&b=plugins'								=> array('admin_menu_plugins', '', 'plugins'),
 					//'&b=languages'								=> array('admin_menu_languages', '', 'languages'),
 					'&b=stats'									=> array('admin_menu_stats', '', 'stats'),
@@ -1027,8 +1027,8 @@ function PageMain() {
 					'&b=manage_pages'							=> array('admin_menu_manage_pages', '', 'pages'),
 					'&b=manage_groups'							=> array('admin_menu_manage_groups', '', 'groups'),
 					'&b=manage_reports'							=> array('admin_menu_manage_reports', adminMenuCounts($db, 0), 'reports'),
-					'&b=manage_ads'								=> array('admin_menu_manage_ads', '', 'board'),
-					'&b=info_pages'								=> array('admin_menu_info_pages', '', 'info'),
+					//'&b=manage_ads'								=> array('admin_menu_manage_ads', '', 'board'),
+					//'&b=info_pages'								=> array('admin_menu_info_pages', '', 'info'),
 					'&b=security'								=> array('admin_menu_security', '', 'security'),
 					'&logout=1&token_id='.$_SESSION['token_id']	=> array('admin_menu_logout', '', 'logout'));
 
