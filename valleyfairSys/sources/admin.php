@@ -1024,7 +1024,7 @@ function PageMain() {
 					//'&b=languages'								=> array('admin_menu_languages', '', 'languages'),
 					'&b=stats'									=> array('admin_menu_stats', '', 'stats'),
 					'&b=users'									=> array('admin_menu_users', array('users' => $LNG['list_users'], 'moderators' => $LNG['list_moderators'], 'verified' => $LNG['list_verified'], 'suspended' => $LNG['list_suspended']), 'users'),
-					'&b=manage_pages'							=> array('admin_menu_manage_pages', '', 'pages'),
+					//'&b=manage_pages'							=> array('admin_menu_manage_pages', '', 'pages'),
 					'&b=manage_groups'							=> array('admin_menu_manage_groups', '', 'groups'),
 					'&b=manage_reports'							=> array('admin_menu_manage_reports', adminMenuCounts($db, 0), 'reports'),
 					//'&b=manage_ads'								=> array('admin_menu_manage_ads', '', 'board'),
