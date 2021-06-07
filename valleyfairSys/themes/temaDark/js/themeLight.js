@@ -14,13 +14,16 @@ function cambiarColor(){
         document.documentElement.style.setProperty('--imagesInactiveLikeSVG', "url('images/icons/heart-inactive.svg')");
         document.documentElement.style.setProperty('--imagesSharedSVG', "url('images/icons/shareD.svg')");
     }
+
+    //B5B5B5
+
     else{
         //Mod
         modificarColor(change);
         document.documentElement.style.setProperty('--background', '#EDF2F7');
         document.documentElement.style.setProperty('--backgroundVentana', '#F7FAFC');
         document.documentElement.style.setProperty('--colorWhiteM', '#5C5C5C');//787878
-        document.documentElement.style.setProperty('--colorIndicadores', '#BDBDBD');
+        document.documentElement.style.setProperty('--colorIndicadores', '#B5B5B5');
         document.documentElement.style.setProperty('--backgroundSearch', '#ebebeb');
         document.documentElement.style.setProperty('--backgroundhover', '#3b3b3b');
         document.documentElement.style.setProperty('--backgroundAnimate', '#64c1ff');
