@@ -3,16 +3,16 @@ function cambiarColor(){
     change=!change;
     if(change){
         modificarColor(change);
-        document.documentElement.style.setProperty('--background', '#121519');
-        document.documentElement.style.setProperty('--backgroundVentana', '#1A1E23');
-        document.documentElement.style.setProperty('--colorWhiteM', '#D7D7D7');
-        document.documentElement.style.setProperty('--colorIndicadores', '#999');
-        document.documentElement.style.setProperty('--backgroundSearch', '#1F252D');
-        document.documentElement.style.setProperty('--backgroundhover', '#fdfdfd');
-        document.documentElement.style.setProperty('--backgroundAnimate', '#1A1E23');
-        document.documentElement.style.setProperty('--imagesComentSVG', "url('images/icons/commentD.svg')");
-        document.documentElement.style.setProperty('--imagesInactiveLikeSVG', "url('images/icons/heart-inactive.svg')");
-        document.documentElement.style.setProperty('--imagesSharedSVG', "url('images/icons/shareD.svg')");
+        // document.documentElement.style.setProperty('--background', '#121519');
+        // document.documentElement.style.setProperty('--backgroundVentana', '#1A1E23');
+        // document.documentElement.style.setProperty('--colorWhiteM', '#D7D7D7');
+        // document.documentElement.style.setProperty('--colorIndicadores', '#999');
+        // document.documentElement.style.setProperty('--backgroundSearch', '#1F252D');
+        // document.documentElement.style.setProperty('--backgroundhover', '#fdfdfd');
+        // document.documentElement.style.setProperty('--backgroundAnimate', '#1A1E23');
+        // document.documentElement.style.setProperty('--imagesComentSVG', "url('images/icons/commentD.svg')");
+        // document.documentElement.style.setProperty('--imagesInactiveLikeSVG', "url('images/icons/heart-inactive.svg')");
+        // document.documentElement.style.setProperty('--imagesSharedSVG', "url('images/icons/shareD.svg')");
     }
     else{
         //Mod
