@@ -2130,7 +2130,7 @@ img.sidebar-status-icon {
 	padding: 5px 10px 5px 10px;
 	display: block;
 	text-decoration: none;
-	color: var(--colorWhiteM);
+	color: var(--backgroundletrasamigos);
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
