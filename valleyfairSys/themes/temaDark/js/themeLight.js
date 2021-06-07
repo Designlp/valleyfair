@@ -13,7 +13,7 @@ function cambiarColor(){
         document.documentElement.style.setProperty('--imagesComentSVG', "url('images/icons/commentD.svg')");
         document.documentElement.style.setProperty('--imagesInactiveLikeSVG', "url('images/icons/heart-inactive.svg')");
         document.documentElement.style.setProperty('--imagesSharedSVG', "url('images/icons/shareD.svg')");
-        document.documentElement.style.setProperty('--backgroundletrasamigos', '#1B2937');
+        document.documentElement.style.setProperty('--backgroundletrasamigos', '#f8f8f8');
     }
 
     //B5B5B5
@@ -31,6 +31,7 @@ function cambiarColor(){
         document.documentElement.style.setProperty('--imagesComentSVG', "url('images/icons/commentDark.svg')");
         document.documentElement.style.setProperty('--imagesInactiveLikeSVG', "url('images/icons/heart-inactiveDark.svg')");
         document.documentElement.style.setProperty('--imagesSharedSVG', "url('images/icons/shareDDark.svg')");
+        document.documentElement.style.setProperty('--backgroundletrasamigos', '#3b3b3b');
     }
 }
 
@@ -47,7 +48,6 @@ function modificarColor(change) {
             elements[i].style.backgroundColor = "var(--color)";
         }
     }
-
 }
 
 // function changeIconComment(change) {

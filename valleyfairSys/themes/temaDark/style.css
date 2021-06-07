@@ -3266,9 +3266,9 @@ a.facebook-button:active {
 }
 
 .notifications-number {
-	background: var(--color);
+	background: var(--colorNotifications);
 	border-radius: 50%;
-	padding: 3px 3px;
+	padding: 4px 4px;
 	font-size: 25px;
 	position: absolute;
 	margin: -29px 0 0 8px;
