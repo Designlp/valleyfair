@@ -3923,67 +3923,67 @@ a.facebook-button:active {
 }
 
 .about-work {
-	background: url('images/icons/about_sprite.png') 0 0;
+	background: url('images/icons/about_sprite.svg') 0 0;
 	background-size: 12px;
 }
 
 .about-school {
-	background: url('images/icons/about_sprite.png') 0 -12px;
+	background: url('images/icons/about_sprite.svg') 0 -12px;
 	background-size: 12px;
 }
 
 .about-calendar {
-	background: url('images/icons/about_sprite.png') 0 -24px;
+	background: url('images/icons/about_sprite.svg') 0 -24px;
 	background-size: 12px;
 }
 
 .about-location {
-	background: url('images/icons/about_sprite.png') 0 -36px;
+	background: url('images/icons/about_sprite.svg') 0 -36px;
 	background-size: 12px;
 }
 
 .about-friends {
-	background: url('images/icons/about_sprite.png') 0 -48px;
+	background: url('images/icons/about_sprite.svg') 0 -48px;
 	background-size: 12px;
 }
 
 .about-male {
-	background: url('images/icons/about_sprite.png') 0 -60px;
+	background: url('images/icons/about_sprite.svg') 0 -60px;
 	background-size: 12px;
 }
 
 .about-female {
-	background: url('images/icons/about_sprite.png') 0 -72px;
+	background: url('images/icons/about_sprite.svg') 0 -72px;
 	background-size: 12px;
 }
 
 .about-like {
-	background: url('images/icons/about_sprite.png') 0 -84px;
+	background: url('images/icons/about_sprite.svg') 0 -84px;
 	background-size: 12px;
 }
 
 .about-privacy {
-	background: url('images/icons/about_sprite.png') 0 -96px;
+	background: url('images/icons/about_sprite.svg') 0 -96px;
 	background-size: 12px;
 }
 
 .about-info {
-	background: url('images/icons/about_sprite.png') 0 -108px;
+	background: url('images/icons/about_sprite.svg') 0 -108px;
 	background-size: 12px;
 }
 
 .about-website {
-	background: url('images/icons/about_sprite.png') 0 -120px;
+	background: url('images/icons/about_sprite.svg') 0 -120px;
 	background-size: 12px;
 }
 
 .about-address {
-	background: url('images/icons/about_sprite.png') 0 -132px;
+	background: url('images/icons/about_sprite.svg') 0 -132px;
 	background-size: 12px;
 }
 
 .about-phone {
-	background: url('images/icons/about_sprite.png') 0 -144px;
+	background: url('images/icons/about_sprite.svg') 0 -144px;
 	background-size: 12px;
 }
 
