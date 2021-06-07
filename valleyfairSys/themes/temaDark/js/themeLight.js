@@ -13,6 +13,7 @@ function cambiarColor(){
         document.documentElement.style.setProperty('--imagesComentSVG', "url('images/icons/commentD.svg')");
         document.documentElement.style.setProperty('--imagesInactiveLikeSVG', "url('images/icons/heart-inactive.svg')");
         document.documentElement.style.setProperty('--imagesSharedSVG', "url('images/icons/shareD.svg')");
+        document.documentElement.style.setProperty('--backgroundletrasamigos', '#1B2937');
     }
 
     //B5B5B5
