@@ -1325,7 +1325,7 @@ a.cover-button-active {
 }
 
 .message-reply-footer a {
-	color: #666;
+	color: #FF4F4F;
 	cursor: pointer;
 	text-decoration: none;
 }
@@ -2603,7 +2603,8 @@ select {
 	border-top: 1px solid var(--colorBorder);
 	background: var(--backgroundVentana);
 	position: absolute;
-	width: 98%;
+	width: 99%;
+	bottom: 0;
 }
 
 .footer-container {
@@ -3775,7 +3776,7 @@ a.facebook-button:active {
 }
 
 .bc-friends-content .sidebar-users a {
-	color: #fff;
+	color: var(--backgroundletrasamigos);
 }
 
 .bc-friends-chat {
