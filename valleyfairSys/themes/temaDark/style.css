@@ -3286,9 +3286,9 @@ a.facebook-button:active {
 	color: #FFF;
 	font-size: 10px;
 	position: absolute;
-	height: 20px;
+	height: 6px;
 	line-height: 20px;
-	margin: 1px 0 0 5px;
+	margin: 9px 0 0 7px;
 }
 
 .sidebar-notifications-number {
