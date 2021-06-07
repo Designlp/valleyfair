@@ -10,7 +10,7 @@ body {
   height: 100%;
   overflow: hidden;
   color: #fff;
-  background-color: #121519;
+  background-color: #15202B;
   font-family: "Montserrat", "Roboto", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
@@ -344,7 +344,7 @@ p {
   height: 0;
   border-style: solid;
   border-width: 10px 0 10px 15px;
-  border-color: transparent transparent transparent #121519;
+  border-color: transparent transparent transparent #15202B;
   margin-left: 2px;
 }
 
