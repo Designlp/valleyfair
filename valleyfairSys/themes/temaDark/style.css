@@ -253,7 +253,7 @@ input[type="submit"]:hover::before {
 	border-bottom: 0;
 	width: 100%;
 	margin: 0 auto;
-	max-width: 920px;
+	max-width: 982px;
 	min-height: 400px;
 	overflow: hidden;
 	padding-top: 30px;
@@ -273,7 +273,7 @@ input[type="submit"]:hover::before {
 }
 
 .row-body .three {
-	width: 30%;
+	width: 33%;
 }
 
 .row-body .four {
@@ -297,7 +297,7 @@ input[type="submit"]:hover::before {
 }
 
 .row-body .nine {
-	width: 70%;
+	width: 67%;
 }
 
 .row-body .ten {
@@ -2602,7 +2602,7 @@ select {
 	padding: 0 10px;
 	border-top: 1px solid var(--colorBorder);
 	background: var(--backgroundVentana);
-	position: relative
+	position: relative;
 	width: 99%;
 	bottom: 0;
 }
@@ -4304,7 +4304,7 @@ a.facebook-button:active {
 		width: 388px;
 	}
 	#search {
-		width: 154px;
+		width: 130px;
 	}
 }
 
