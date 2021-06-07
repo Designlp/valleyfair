@@ -14,6 +14,8 @@ function cambiarColor(){
         document.documentElement.style.setProperty('--imagesInactiveLikeSVG', "url('images/icons/heart-inactive.svg')");
         document.documentElement.style.setProperty('--imagesSharedSVG', "url('images/icons/shareD.svg')");
         document.documentElement.style.setProperty('--backgroundletrasamigos', '#f8f8f8');
+        document.documentElement.style.setProperty('--colorNotifications', '#149FFE');
+        document.documentElement.style.setProperty('--color1Notifications', '#15202B');
     }
 
     //B5B5B5
@@ -32,6 +34,8 @@ function cambiarColor(){
         document.documentElement.style.setProperty('--imagesInactiveLikeSVG', "url('images/icons/heart-inactiveDark.svg')");
         document.documentElement.style.setProperty('--imagesSharedSVG', "url('images/icons/shareDDark.svg')");
         document.documentElement.style.setProperty('--backgroundletrasamigos', '#3b3b3b');
+        document.documentElement.style.setProperty('--colorNotifications', '#ffffff');
+        document.documentElement.style.setProperty('--color1Notifications', '#149FFE');
     }
 }
 

@@ -3273,7 +3273,7 @@ a.facebook-button:active {
 	position: absolute;
 	margin: -29px 0 0 8px;
 	color: #fff;
-	border: 3px solid var(--background);
+	border: 3px solid var(--color1Notifications);
 }
 
 .admin-notifications-number {
