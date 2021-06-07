@@ -3277,11 +3277,11 @@ a.facebook-button:active {
 }
 
 .admin-notifications-number {
-	background: #ED4956;
+	background:var(--color);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f84049', endColorstr='#da121c', GradientType=0);
 	/* IE6-9 */
 	padding: 0 3px;
-	border-radius: 3px;
+	border-radius: 50%;
 	font-weight: normal;
 	color: #FFF;
 	font-size: 10px;

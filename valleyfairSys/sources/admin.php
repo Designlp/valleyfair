@@ -1049,8 +1049,8 @@ function PageMain() {
 		$is_menu = (is_array($title[1]) ? 1 : 0);
 		$collapsed = ($title[1][$_GET['filter']] ? ' sidebar-link-sub-active' : '');
 		
-		$TMPL['menu'] .= '<div class="sidebar-link'.$class.($is_menu ? ' sidebar-link-sub'.$collapsed.'" id="sub-menu'.$i.'"' : '"').'><a '.($is_menu ? 'onclick="adminSubMenu('.$i.')"' : 'href="'.$CONF['url'].'/index.php?a=admin'.$link.'"').' '.(($title[0] !== 'admin_menu_logout' && !$is_menu) ? 'rel="loadpage"' : '').'><img src="'.$CONF['url'].'/'.$CONF['theme_url'].'/images/icons/settings/'.$title[2].'.png">'.$LNG[$title[0]].' '.($title[1] && !$is_menu ? '<span class="admin-notifications-number">'.$title[1].'</span>' : '').'</a></div>';
-
+		$TMPL['menu'] .= '<div class="sidebar-link'.$class.($is_menu ? ' sidebar-link-sub'.$collapsed.'" id="sub-menu'.$i.'"' : '"').'><a '.($is_menu ? 'onclick="adminSubMenu('.$i.')"' : 'href="'.$CONF['url'].'/index.php?a=admin'.$link.'"').' '.(($title[0] !== 'admin_menu_logout' && !$is_menu) ? 'rel="loadpage"' : '').'><img src="'.$CONF['url'].'/'.$CONF['theme_url'].'/images/icons/settings/'.$title[2].'.png">'.$LNG[$title[0]].' '.($title[1] && !$is_menu ? '<span class="admin-notifications-number"></span>' : '').'</a></div>';
+		//'.$title[1].'
 		// Start the menu's container
 		if($is_menu) {
 			$TMPL['menu'] .= '<div id="sub-menu-content'.$i.'" class="sub-menu"'.($title[1][$_GET['filter']] ? '' : ' style="display: none;"').'>';
