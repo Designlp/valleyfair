@@ -145,6 +145,8 @@ p {
     &:hover,
     &:focus {
       background-color: rgba(#fff, 0.035);
+      border-radius: 30px;
+      transition: 0.2s all;
     }
   }
 
