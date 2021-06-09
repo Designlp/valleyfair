@@ -7624,22 +7624,22 @@ function percentage($current, $old) {
 function smiles() {
 	// Define smiles
 	$smiles = array(
-		':)'	=> 'smile.png',
-		':('	=> 'sad.png',
-		';)'	=> 'wink.png',
-		'xD'	=> 'devil.png',
+		':)'	=> 'smile.svg',
+		':('	=> 'sad.svg',
+		';)'	=> 'wink.svg',
+		'xD'	=> 'devil.svg',
 		'x('	=> 'angry.svg',
-		'=('	=> 'cry.png',
-		':*'	=> 'kiss.png',
-		':D'	=> 'laugh.png',
-		':x'	=> 'love.png',
-		'(:|'	=> 'sleepy.png',
-		'B)'	=> 'cool.png',
-		':P'	=> 'cheeky.png',
-		':\\'	=> 'confused.png',
-		':o'	=> 'surprised.png',
-		'&lt;3'	=> 'heart.png',
-		'(y)'	=> 'like.png',
+		'=('	=> 'cry.svg',
+		':*'	=> 'kiss.svg',
+		':D'	=> 'laugh.svg',
+		':x'	=> 'love.svg',
+		'(:|'	=> 'sleepy.svg',
+		'B)'	=> 'cool.svg',
+		':P'	=> 'cheeky.svg',
+		':\\'	=> 'confused.svg',
+		':o'	=> 'surprised.svg',
+		'&lt;3'	=> 'heart.svg',
+		'(y)'	=> 'like.svg',
 	);
 	return $smiles;
 }
