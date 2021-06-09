@@ -23,7 +23,7 @@ function load(){
             document.documentElement.style.setProperty('--backgroundletrasamigos', '#3b3b3b');
             document.documentElement.style.setProperty('--colorNotifications', '#ffffff');
             document.documentElement.style.setProperty('--color1Notifications', '#149FFE');
-            document.documentElement.style.setProperty('--backgroundTopBar', '#EDF2F7');
+            document.documentElement.style.setProperty('--backgroundTopBar', '#149FFE');
         }
         else{
             //modificarColor('true');
@@ -41,7 +41,7 @@ function load(){
             document.documentElement.style.setProperty('--backgroundletrasamigos', '#f8f8f8');
             document.documentElement.style.setProperty('--colorNotifications', '#149FFE');
             document.documentElement.style.setProperty('--color1Notifications', '#15202B');
-            document.documentElement.style.setProperty('--backgroundTopBar', '#149FFE');
+            document.documentElement.style.setProperty('--backgroundTopBar', '#15202B');
 
         }
     }
@@ -65,7 +65,7 @@ function cambiarColor(){
         document.documentElement.style.setProperty('--backgroundletrasamigos', '#f8f8f8');
         document.documentElement.style.setProperty('--colorNotifications', '#149FFE');
         document.documentElement.style.setProperty('--color1Notifications', '#15202B');
-        document.documentElement.style.setProperty('--backgroundTopBar', '#149FFE');
+        document.documentElement.style.setProperty('--backgroundTopBar', '#15202B');
         localStorage.setItem('change','false');
     }
 
@@ -88,7 +88,7 @@ function cambiarColor(){
         document.documentElement.style.setProperty('--backgroundletrasamigos', '#3b3b3b');
         document.documentElement.style.setProperty('--colorNotifications', '#ffffff');
         document.documentElement.style.setProperty('--color1Notifications', '#149FFE');
-        document.documentElement.style.setProperty('--backgroundTopBar', '#EDF2F7');
+        document.documentElement.style.setProperty('--backgroundTopBar', '#149FFE');
         localStorage.setItem('change','true');
     }
 }
