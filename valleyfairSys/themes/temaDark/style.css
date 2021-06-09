@@ -967,16 +967,15 @@ a.cover-button-active {
 }
 
 .cover-username a {
-	color: #FFF;
+	color: var(--colorWhiteM);
 	font-weight: bold;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
 }
 
 .cover-username img {
 	margin: 0 0 -3px 7px;
-	width: 16px;
-	height: 16px;
-	border: 2px solid #FFF;
+	width: 18px;
+	height: 18px;
 	border-radius: 50%;
 }
 
