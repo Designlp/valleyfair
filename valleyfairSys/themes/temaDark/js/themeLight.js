@@ -9,7 +9,7 @@ function load(){
         change = localStorage.getItem('change');
         if(change === 'true'){
             //changer.checked = true;
-            modificarColor(change);
+            modificarColor('false');
             document.documentElement.style.setProperty('--background', '#EDF2F7');
             document.documentElement.style.setProperty('--backgroundVentana', '#F7FAFC');
             document.documentElement.style.setProperty('--colorWhiteM', '#5C5C5C');//787878
@@ -25,7 +25,7 @@ function load(){
             document.documentElement.style.setProperty('--color1Notifications', '#149FFE');
         }
         else{
-            modificarColor(change);
+            modificarColor('true');
             //changer.checked = false;
             document.documentElement.style.setProperty('--background', '#15202B');
             document.documentElement.style.setProperty('--backgroundVentana', '#192734');
