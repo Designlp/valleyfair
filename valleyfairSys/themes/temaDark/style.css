@@ -4388,6 +4388,13 @@ a.facebook-button:active {
 
 .corazonLike {
 	background-image: var(--imagesInactiveLikeSVG);
+	transition: 0.4s all;
+}
+
+.corazonLike:active {
+	width: 24px;
+	height: 24px;
+	transition: 0.4s all;
 }
 
 .corazonDisLike {

@@ -90,6 +90,7 @@ function cambiarColor(){
 }
 
 function modificarColor(change) {
+    console.log(change);
     if(change === 'true')
     {
         var elements = document.getElementsByClassName('topbar'); // get all elements
