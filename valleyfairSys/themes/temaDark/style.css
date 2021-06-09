@@ -40,8 +40,8 @@ a {
 }
 
 a:hover {
-	color: #000;
-	text-decoration: underline;
+	color: var(--color);
+	text-decoration: none;
 }
 
 .switch {

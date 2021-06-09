@@ -7628,7 +7628,7 @@ function smiles() {
 		':('	=> 'sad.png',
 		';)'	=> 'wink.png',
 		'xD'	=> 'devil.png',
-		'x('	=> 'angry.png',
+		'x('	=> 'angry.svg',
 		'=('	=> 'cry.png',
 		':*'	=> 'kiss.png',
 		':D'	=> 'laugh.png',
