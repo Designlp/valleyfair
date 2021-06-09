@@ -516,7 +516,7 @@ input[type="submit"]:hover::before {
 	left: 0;
 	z-index: 1000;
 	height: 45px;
-	background: var(--background);
+	background: var(--backgroundTopBar);
 	padding: 12px;
 	transition: 0.3s;
 }
