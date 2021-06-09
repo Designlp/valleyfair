@@ -41,7 +41,6 @@ function load(){
             document.documentElement.style.setProperty('--colorNotifications', '#149FFE');
             document.documentElement.style.setProperty('--color1Notifications', '#15202B');
         }
-        console.log(change);
     }
 }
 
@@ -90,7 +89,6 @@ function cambiarColor(){
 }
 
 function modificarColor(change) {
-    console.log(change);
     if(change === 'true')
     {
         var elements = document.getElementsByClassName('topbar'); // get all elements
@@ -101,6 +99,7 @@ function modificarColor(change) {
         var elements = document.getElementsByClassName('topbar'); // get all elements
         for(var i = 0; i < elements.length; i++){
             elements[i].style.backgroundColor = "var(--color)";
+            console.log(elements[i]);
         }
     }
 }

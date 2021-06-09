@@ -1149,6 +1149,7 @@ a.cover-button-active {
 .message-message {
 	padding-top: 5px;
 	word-wrap: break-word;
+	font-size: 14px;
 }
 
 .message-shared {
@@ -1613,9 +1614,6 @@ a.cover-button-active {
 }
 
 .friend-button {
-	border: 1px solid;
-	border-color: #cccccc #c6c6c6 #b9b9b9;
-	background-color: #F5F5F5;
 	background-image: url(images/icons/friend_add.png);
 	background-size: 25px;
 	background-position: center;
@@ -1794,7 +1792,7 @@ a.cover-button-active {
 }
 
 .load-more-comments a:hover, .load-more-chat a:hover {
-	color: #666;
+	color: var(--color);
 }
 
 .load-more-comments img, .load-more-chat img {
@@ -4388,12 +4386,6 @@ a.facebook-button:active {
 
 .corazonLike {
 	background-image: var(--imagesInactiveLikeSVG);
-	transition: 0.7s all;
-}
-
-.corazonLike:active {
-	width: 24px;
-	height: 24px;
 }
 
 .corazonDisLike {
