@@ -3844,7 +3844,7 @@ a.facebook-button:active {
 	box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
 	overflow: auto;
 	pointer-events: all;
-	background: var(--backgroundSearch;
+	background: var(--backgroundSearch);
 }
 
 .chat-plugin-container a {

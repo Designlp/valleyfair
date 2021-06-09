@@ -1,14 +1,14 @@
 let change;
-let changer = document.getElementById('changer');
+//let changer = document.getElementById('changer');
 window.onload=load();
 function load(){
-    changer = document.getElementById('changer');
+    //changer = document.getElementById('changer');
     if(!localStorage.getItem('change')){
         localStorage.setItem('change','false');
     }else{
         change = localStorage.getItem('change');
         if(change === 'true'){
-            changer.checked = true;
+            //changer.checked = true;
             modificarColor(change);
             document.documentElement.style.setProperty('--background', '#EDF2F7');
             document.documentElement.style.setProperty('--backgroundVentana', '#F7FAFC');
@@ -26,7 +26,7 @@ function load(){
         }
         else{
             modificarColor(change);
-            changer.checked = false;
+            //changer.checked = false;
             document.documentElement.style.setProperty('--background', '#15202B');
             document.documentElement.style.setProperty('--backgroundVentana', '#192734');
             document.documentElement.style.setProperty('--colorWhiteM', '#D7D7D7');
@@ -49,7 +49,7 @@ function cambiarColor(){
     change = localStorage.getItem('change');
     if(change === 'true'){
         modificarColor(change);
-        changer.checked = false;
+        //changer.checked = false;
         document.documentElement.style.setProperty('--background', '#15202B');
         document.documentElement.style.setProperty('--backgroundVentana', '#192734');
         document.documentElement.style.setProperty('--colorWhiteM', '#D7D7D7');
@@ -70,7 +70,7 @@ function cambiarColor(){
 
     else{
         //Mod
-        changer.checked = true;
+        //changer.checked = true;
         modificarColor(change);
         document.documentElement.style.setProperty('--background', '#EDF2F7');
         document.documentElement.style.setProperty('--backgroundVentana', '#F7FAFC');
