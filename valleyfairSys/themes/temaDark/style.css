@@ -798,13 +798,13 @@ input[type="submit"]:hover::before {
 }
 
 .search-results {
-	background: var(--backgroundVentana);
+	background: var(--backgroundSearch);
 	border-bottom-left-radius: 3px;
 	border-bottom-right-radius: 3px;
-	border: 1px solid #BFBFBF;
 	border-top: 0;
 	margin-top: 46px;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+	border-radius: 0px 0px 20px 20px;
 }
 
 .search-results .friend-button, .search-results, .search-results .sub-loading, .search-results .message_btn {
@@ -812,11 +812,11 @@ input[type="submit"]:hover::before {
 }
 
 .search-results .message-inner {
-	border-top: 1px solid #dee0e3;
+	border-top: 1px solid var(--color);
 }
 
 .hashtag {
-	border-top: 1px solid #dee0e3;
+	border-top: 1px solid var(--color);
 	overflow: auto;
 }
 
@@ -1075,7 +1075,7 @@ a.cover-button-active {
 .message-actions {
 	float: left;
 	width: 100%;
-	margin-bottom: 14px;
+	margin-bottom: 15px;
 }
 
 .message-actions-content {
@@ -1645,9 +1645,6 @@ a.cover-button-active {
 }
 
 .bullets-button {
-	border: 1px solid;
-	border-color: #cccccc #c6c6c6 #b9b9b9;
-	background-color: #F5F5F5;
 	background-image: url(images/icons/bullets.png);
 	background-size: 25px;
 	background-position: center;
@@ -1756,9 +1753,6 @@ a.cover-button-active {
 }
 
 .message_btn {
-	border: 1px solid;
-	border-color: #cccccc #c6c6c6 #b9b9b9;
-	background-color: #F5F5F5;
 	background-image: url(images/icons/message_btn.png);
 	background-size: 25px;
 	background-position: center;
@@ -1936,7 +1930,7 @@ a.cover-button-active {
 .sidebar-header {
 	background: var(--backgroundVentana);
 	padding: 10px;
-	font-size: 13px;
+	font-size: 15px;
 	color: var(--color);
 }
 
@@ -1954,7 +1948,7 @@ a.cover-button-active {
 }
 
 .sidebar-header-link a:hover {
-	color: #666;
+	color: var(--color);
 }
 
 .sidebar-header-light {
@@ -2025,7 +2019,7 @@ a.cover-button-active {
 
 .sidebar-link a {
 	margin-top: -1px;
-	padding: 5px 10px 5px 10px;
+	padding: 13px 10px 13px 13px;
 	display: block;
 	text-decoration: none;
 	color: var(--colorWhiteM);
@@ -2167,7 +2161,7 @@ img.sidebar-status-icon {
 .sidebar-list {
 	margin-top: -1px;
 	padding: 7px 10px;
-	font-size: 12px;
+	font-size: 14px;
 	word-wrap: break-word;
 }
 
@@ -3894,12 +3888,15 @@ a.facebook-button:active {
 
 .search-sidebar {
 	width: 100%;
-	padding: 5px;
-	border: 1px solid #CCC;
-	border-radius: 2px;
+	padding: 10px;
+	border: none;
+	border-radius: 25px;
 	margin: 0;
 	box-sizing: border-box;
 	padding-right: 26px;
+	background: var(--backgroundSearch);
+	color: var(--colorWhiteM);
+	padding-left: 15px;
 }
 
 .search-sidebar:hover, .search-sidebar:focus {
@@ -3912,9 +3909,9 @@ a.facebook-button:active {
 	height: 14px;
 	background-size: 14px;
 	position: absolute;
-	right: 24px;
+	right: 37px;
 	padding: 5px;
-	margin-top: -27px;
+	margin-top: -29px;
 	cursor: pointer;
 }
 
