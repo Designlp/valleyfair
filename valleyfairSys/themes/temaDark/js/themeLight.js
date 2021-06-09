@@ -2,6 +2,7 @@ let change;
 let changer = document.getElementById('changer');
 window.onload=load();
 function load(){
+    changer = document.getElementById('changer');
     if(!localStorage.getItem('change')){
         localStorage.setItem('change','false');
     }else{
@@ -69,7 +70,7 @@ function cambiarColor(){
 
     else{
         //Mod
-        switcher.checked = true;
+        changer.checked = true;
         modificarColor(change);
         document.documentElement.style.setProperty('--background', '#EDF2F7');
         document.documentElement.style.setProperty('--backgroundVentana', '#F7FAFC');
