@@ -9,7 +9,7 @@ function load(){
         change = localStorage.getItem('change');
         if(change === 'true'){
             //changer.checked = true;
-            modificarColor('false');
+            //modificarColor('false');
             document.documentElement.style.setProperty('--background', '#EDF2F7');
             document.documentElement.style.setProperty('--backgroundVentana', '#F7FAFC');
             document.documentElement.style.setProperty('--colorWhiteM', '#5C5C5C');//787878
@@ -26,7 +26,7 @@ function load(){
             document.documentElement.style.setProperty('--backgroundTopBar', '#EDF2F7');
         }
         else{
-            modificarColor('true');
+            //modificarColor('true');
             //changer.checked = false;
             document.documentElement.style.setProperty('--background', '#15202B');
             document.documentElement.style.setProperty('--backgroundVentana', '#192734');
@@ -50,7 +50,7 @@ function load(){
 function cambiarColor(){
     change = localStorage.getItem('change');
     if(change === 'true'){
-        modificarColor(change);
+        //modificarColor(change);
         //changer.checked = false;
         document.documentElement.style.setProperty('--background', '#15202B');
         document.documentElement.style.setProperty('--backgroundVentana', '#192734');
@@ -74,7 +74,7 @@ function cambiarColor(){
     else{
         //Mod
         //changer.checked = true;
-        modificarColor(change);
+        //modificarColor(change);
         document.documentElement.style.setProperty('--background', '#EDF2F7');
         document.documentElement.style.setProperty('--backgroundVentana', '#F7FAFC');
         document.documentElement.style.setProperty('--colorWhiteM', '#5C5C5C');//787878

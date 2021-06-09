@@ -2437,10 +2437,12 @@ textarea {
 .page-input-container input, .page-input-container select, .page-input-container textarea {
 	padding: 5px;
 	border: none;
-	border-radius: 31px;
+	border-radius: 15px;
 	margin: 0;
 	max-width: 200px;
-	background-color: var(--colorWhiteM);
+	background-color: var(--backgroundSearch);
+	color: var(--colorWhiteM);
+	padding: 10px;
 }
 
 .page-input-container input {
