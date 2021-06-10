@@ -4,7 +4,7 @@ function getSettings() {
 	return $querySettings;
 }
 function menu($user) {
-	global $TMPL, $LNG, $CONF, $db, $settings, $plugins;
+	global $TMPL, $LNG, $CONF, $db, $settings, $plugins, $admin_form;
 
 	$admin_url = ((isset($_SESSION['usernameAdmin']) && isset($_SESSION['passwordAdmin'])) ? '<a href="'.$CONF['url'].'/index.php?a=admin" rel="loadpage"><div class="menu_btn" id="admin_btn" title="'.$LNG['admin_panel'].'"><img src="'.$CONF['url'].'/'.$CONF['theme_url'].'/images/icons/admin.png"></div></a>' : '');
 	
@@ -45,7 +45,7 @@ function menu($user) {
 		}
 		
 		$TMPL['admin_url'] = $admin_url;
-		$TMPL['admin_form'] = $admin_form;
+		//$TMPL['admin_form'] = $admin_form;
 		$TMPL['audio_container'] = audioContainer('Notification', $user['sound_new_notification']).audioContainer('Chat', $user['sound_new_chat']);
 		
 		$TMPL['privacy_url'] = permalink($CONF['url'].'/index.php?a=settings&b=privacy');
