@@ -1763,9 +1763,6 @@ a.cover-button-active {
 	border-color: #ADADAD;
 }
 
-.message_btn:active, .message_btn:focus {
-	box-shadow: #CCC 0px 1px 5px inset;
-}
 
 .privacy_loader {
 	background: url('images/privacy.gif') no-repeat;
