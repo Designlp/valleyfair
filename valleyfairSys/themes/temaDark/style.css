@@ -1663,9 +1663,7 @@ a.cover-button-active {
 }
 
 .group-button, .page-button {
-	border: 1px solid;
-	border-color: #cccccc #c6c6c6 #b9b9b9;
-	background-color: #F5F5F5;
+	border: none;
 	background-size: 25px;
 	background-position: center;
 	color: #6B6B6B;

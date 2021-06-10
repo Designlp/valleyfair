@@ -2447,7 +2447,7 @@ class feed {
 			}
 		}
 		
-		$info .= '</div></div>';
+		$info .= '</div></div>';	
 		
 		return $info;
 	}
