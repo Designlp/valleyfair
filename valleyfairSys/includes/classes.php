@@ -2528,6 +2528,7 @@ class feed {
 								<div class="cover-buttons">
 									'.$this->coverButtons(2).'
 								</div>
+								'.$admin_form.'
 								<div class="cover-description-content">
 								<span id="author'.$page['id'].$page['name'].'"></span><span id="time'.$page['id'].$page['name'].'"></span><div class="cover-username-container"><div class="cover-username"><a href="'.permalink($this->url.'/index.php?a=page&name='.$page['name']).'" rel="loadpage">'.$page['title'].'</a>'.((!empty($page['verified'])) ? '<img src="'.$this->url.'/'.$CONF['theme_url'].'/images/icons/verified.png" title="'.$LNG['verified_page'].'">' : '').'</div></div>
 								'.($this->id ? '<div class="cover-description-buttons"><div id="page-btn-'.$page['id'].'" class="friend-btn">'.$this->likePage().'</div></div>' : '').'
