@@ -2306,6 +2306,7 @@ class feed {
 								<div class="cover-buttons cover-buttons-group">
 									'.$this->coverButtons(1).'
 								</div>
+								{$admin_form}
 								<div class="cover-description-content cover-group-content">
 									<div class="cover-username-container"><div class="cover-username"><a href="'.permalink($this->url.'/index.php?a=group&name='.$group['name']).'" rel="loadpage">'.realName($group['title']).'</a></div></div>
 									<div class="cover-description-buttons"><div id="group-btn-'.$group['id'].'" class="friend-btn">'.$this->joinGroup(0).'</div></div>
@@ -2633,7 +2634,7 @@ class feed {
 						$LNG['discussion'] => array('', '', ''),
 						$LNG['members'] => array('&r=', 'members', $this->countGroupMembers($this->group_data['id'], 0)),
 						$LNG['admins'] => array('&r=', 'admins', $this->countGroupMembers($this->group_data['id'], 1)),
-						$admin_form,
+						
 						(in_array($this->group_member_data['permissions'], array(1, 2)) && $this->group_member_data['status'] ? $LNG['requests'] : '') => array('&r=', 'requests', $this->countGroupMembers($this->group_data['id'], 2)),
 						(in_array($this->group_member_data['permissions'], array(1, 2)) && $this->group_member_data['status'] ? $LNG['blocked'] : '') => array('&r=', 'blocked', $this->countGroupMembers($this->group_data['id'], 3)),
 						($this->group_member_data['permissions'] == 2 && $this->group_member_data['status'] ? $LNG['edit'] : '') => array('&r=', 'edit', '')
