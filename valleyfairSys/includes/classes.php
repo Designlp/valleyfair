@@ -2305,8 +2305,8 @@ class feed {
 								'.($group['name'] ? '
 								<div class="cover-buttons cover-buttons-group">
 									'.$this->coverButtons(1).'
-								</div>
-								{$admin_form}
+								</div>'.
+								{$admin_form}.'
 								<div class="cover-description-content cover-group-content">
 									<div class="cover-username-container"><div class="cover-username"><a href="'.permalink($this->url.'/index.php?a=group&name='.$group['name']).'" rel="loadpage">'.realName($group['title']).'</a></div></div>
 									<div class="cover-description-buttons"><div id="group-btn-'.$group['id'].'" class="friend-btn">'.$this->joinGroup(0).'</div></div>
