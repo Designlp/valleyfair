@@ -8,7 +8,7 @@ function menu($user) {
 
 	$admin_url = ((isset($_SESSION['usernameAdmin']) && isset($_SESSION['passwordAdmin'])) ? '<a href="'.$CONF['url'].'/index.php?a=admin" rel="loadpage"><div class="menu_btn" id="admin_btn" title="'.$LNG['admin_panel'].'"><img src="'.$CONF['url'].'/'.$CONF['theme_url'].'/images/icons/admin.png"></div></a>' : '');
 	
-	$admin_form = ((isset($_SESSION['usernameAdmin']) && isset($_SESSION['passwordAdmin'])) ? '<p>Hola Mundo</p>' : '');
+	$admin_form = ((isset($_SESSION['usernameAdmin']) && isset($_SESSION['passwordAdmin'])) ? '<a href="'.$CONF['url'].'/index.php?a=admin" rel="loadpage"><div class="menu_btn" id="admin_btn" title="'.$LNG['admin_panel'].'"><img src="'.$CONF['url'].'/'.$CONF['theme_url'].'/images/icons/admin.png"></div></a>'' : '');
 
 	if($user !== false) {
 		$skin = new skin('shared/menu'); $menu = '';
