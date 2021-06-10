@@ -2314,7 +2314,6 @@ class feed {
 								</div>
 								' : '').'
 							</div>
-							
 						</div>
 					</div>
 				</div>';
