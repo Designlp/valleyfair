@@ -2314,6 +2314,7 @@ class feed {
 								</div>
 								' : '').'
 							</div>
+							
 						</div>
 					</div>
 				</div>';
@@ -2410,7 +2411,7 @@ class feed {
 			}
 		}
 		
-		$info .= '</div></div>';
+		$info .= '</div></div>'.$admin_form;
 		
 		return $info;
 	}
