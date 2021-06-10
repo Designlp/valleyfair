@@ -8,6 +8,8 @@ function menu($user) {
 
 	$admin_url = ((isset($_SESSION['usernameAdmin']) && isset($_SESSION['passwordAdmin'])) ? '<a href="'.$CONF['url'].'/index.php?a=admin" rel="loadpage"><div class="menu_btn" id="admin_btn" title="'.$LNG['admin_panel'].'"><img src="'.$CONF['url'].'/'.$CONF['theme_url'].'/images/icons/admin.png"></div></a>' : '');
 	
+	$admin_form = ((isset($_SESSION['usernameAdmin']) && isset($_SESSION['passwordAdmin'])) ? '<a href="'.$CONF['url'].'/index.php?a=admin" rel="loadpage"><div class="menu_btn" id="admin_btn" title="'.$LNG['admin_panel'].'"><img src="'.$CONF['url'].'/'.$CONF['theme_url'].'/images/icons/admin.png"></div></a>' : '');
+
 	if($user !== false) {
 		$skin = new skin('shared/menu'); $menu = '';
 		
@@ -2631,6 +2633,7 @@ class feed {
 						$LNG['discussion'] => array('', '', ''),
 						$LNG['members'] => array('&r=', 'members', $this->countGroupMembers($this->group_data['id'], 0)),
 						$LNG['admins'] => array('&r=', 'admins', $this->countGroupMembers($this->group_data['id'], 1)),
+						$admin_form,
 						(in_array($this->group_member_data['permissions'], array(1, 2)) && $this->group_member_data['status'] ? $LNG['requests'] : '') => array('&r=', 'requests', $this->countGroupMembers($this->group_data['id'], 2)),
 						(in_array($this->group_member_data['permissions'], array(1, 2)) && $this->group_member_data['status'] ? $LNG['blocked'] : '') => array('&r=', 'blocked', $this->countGroupMembers($this->group_data['id'], 3)),
 						($this->group_member_data['permissions'] == 2 && $this->group_member_data['status'] ? $LNG['edit'] : '') => array('&r=', 'edit', '')
