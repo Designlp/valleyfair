@@ -158,7 +158,7 @@ $LNG['message_semi_private_ttl'] = 'Mensaje privado';
 $LNG['login_to_lcs'] = 'Inicie sesión para dar me gusta, comentar o compartir';
 $LNG['message'] = 'Mensaje';
 $LNG['comment'] = '<div class="commentD"></div>';
-$LNG['share'] = '<div class="shareD"></div>';
+$LNG['share'] = '<div class="shareD">Compartir</div>';
 $LNG['camera'] = 'Camara';
 $LNG['capture'] = 'Captura';
 $LNG['send'] = 'Enviar';
