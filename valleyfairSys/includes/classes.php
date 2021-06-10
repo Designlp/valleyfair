@@ -45,7 +45,7 @@ function menu($user) {
 		}
 		
 		$TMPL['admin_url'] = $admin_url;
-		//$TMPL['admin_form'] = $admin_form;	
+		$TMPL['admin_form'] = $admin_form;	
 		$TMPL['audio_container'] = audioContainer('Notification', $user['sound_new_notification']).audioContainer('Chat', $user['sound_new_chat']);
 		
 		$TMPL['privacy_url'] = permalink($CONF['url'].'/index.php?a=settings&b=privacy');
