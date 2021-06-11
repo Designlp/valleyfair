@@ -1,8 +1,29 @@
 {$message}
 <div class="page-inner"><div class="users-button button-normal"><a href="{$url}/index.php?a=admin&b=manage_groups&delete={$id}&token_id={$token_id}">{$lng->delete}</a></div>{$group}</div>
 <div class="message-divider" style="float: inherit;"></div>
-<form action="{$url}/index.php?a=admin&b=manage_groups&c={$current_name}" method="POST" enctype="multipart/form-data">
+<form>
 	{$token_input}
+	<div>
+		<div class="modal-body">
+			<input id="id" type="hidden"> <!-- ID que vamos a recibir de firebase -->
+			<div class="form-group">                                    
+			  <label>Código</label>
+			  <input id="codigo" type="text" class="form-control" required>
+			</div>    
+			<div class="form-group">
+			  <label>Descripción</label>
+			  <input id="descripcion" type="text" class="form-control" required>
+			</div>
+			<div class="form-group">
+			  <label>Cantidad</label>
+			  <input id="cantidad" type="number" class="form-control" required>
+			</div>                                  
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-dismiss="modal" tabindex="2">Cancelar</button>
+			<button type="submit" id="btnGuardar" class="btn btn-primary" translate="1">Guardar</button>
+		</div>
+	</div>
 	<!-- <div class="page-inner">
 		<div class="page-input-container">
 			<div class="page-input-title">{$lng->name}</div>
@@ -57,3 +78,6 @@
 		<div class="page-input-title"></div><input type="submit" value="{$lng->save_changes}">
 	</div>
 </form>
+
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-database.js"></script>
