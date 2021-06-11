@@ -827,24 +827,24 @@ class updateSettings {
 	function getLanguages() {
 		global $CONF, $LNG, $settings;
 		
-		$languages = scandir('./languages/');
+		$sentences = scandir('./sentences/');
 		
 		$LNGO = $LNG;
 		$by = $LNG['by'];
 		$default = $LNG['default'];
 		$make = $LNG['make_default'];
 		
-		foreach($languages as $language) {
+		foreach($sentences as $language) {
 			if($language != '.' && $language != '..' && substr($language, -4, 4) == '.php') {
 				$language = substr($language, 0, -4);
 				$allowedLanguages[] = $language;
 				
-				include('./languages/'.$language.'.php');
+				include('./sentences/'.$language.'.php');
 				
 				if($settings['language'] == $language) {
 					$state = '<div class="users-button button-active"><a>'.$default.'</a></div>';
 				} else {
-					$state = '<div class="users-button button-normal"><a href="'.$CONF['url'].'/index.php?a=admin&b=languages&language='.$language.'&token_id='.$_SESSION['token_id'].'">'.$make.'</a></div>';
+					$state = '<div class="users-button button-normal"><a href="'.$CONF['url'].'/index.php?a=admin&b=sentences&language='.$language.'&token_id='.$_SESSION['token_id'].'">'.$make.'</a></div>';
 				}
 				
 				$output .= '<div class="users-container">
@@ -7831,28 +7831,28 @@ function sortOnlineUsers($a, $b) {
 }
 function getLanguage($url, $ln = null, $type = null) {
 	global $settings;
-	// Type 1: Output the available languages
+	// Type 1: Output the available sentences
 	
-	// Define the languages folder
-	$lang_folder = __DIR__ .'/../languages/';
+	// Define the sentences folder
+	$lang_folder = __DIR__ .'/../sentences/';
 	
-	// Open the languages folder
+	// Open the sentences folder
 	if($handle = opendir($lang_folder)) {
 		// Read the files (this is the correct way of reading the folder)
 		while(false !== ($entry = readdir($handle))) {
 			// Excluse the . and .. paths and select only .php files
 			if($entry != '.' && $entry != '..' && substr($entry, -4, 4) == '.php') {
 				$name = pathinfo($entry);
-				$languages[] = $name['filename'];
+				$sentences[] = $name['filename'];
 			}
 		}
 		closedir($handle);
 	}
-	// Sort the languages by name
-	sort($languages);
+	// Sort the sentences by name
+	sort($sentences);
 	if($type == 1) {
-		// Add to array the available languages
-		foreach($languages as $lang) {
+		// Add to array the available sentences
+		foreach($sentences as $lang) {
 			// The path to be parsed
 			$path = pathinfo($lang);
 			
@@ -7865,14 +7865,14 @@ function getLanguage($url, $ln = null, $type = null) {
 		$lang = $settings['language']; // Default Language
 		
 		if(isset($_GET['lang'])) {
-			if(in_array($_GET['lang'], $languages)) {
+			if(in_array($_GET['lang'], $sentences)) {
 				$lang = $_GET['lang'];
 				setcookie('lang', $lang, time() +  (10 * 365 * 24 * 60 * 60)); // Expire in one month
 			} else {
 				setcookie('lang', $lang, time() +  (10 * 365 * 24 * 60 * 60)); // Expire in one month
 			}
 		} elseif(isset($_COOKIE['lang'])) {
-			if(in_array($_COOKIE['lang'], $languages)) {
+			if(in_array($_COOKIE['lang'], $sentences)) {
 				$lang = $_COOKIE['lang'];
 			}
 		} else {
@@ -7881,7 +7881,7 @@ function getLanguage($url, $ln = null, $type = null) {
 
 		// If the language file doens't exist, fall back to an existent language file
 		if(!file_exists($lang_folder.$lang.'.php')) {
-			$lang = $languages[0];
+			$lang = $sentences[0];
 		}
 		return $lang_folder.$lang.'.php';
 	}

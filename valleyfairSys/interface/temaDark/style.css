@@ -2628,15 +2628,15 @@ select {
 	color: var(--color);
 }
 
-.footer-languages {
+.footer-sentences {
 	padding-bottom: 5px;
 }
 
-.footer-languages a {
+.footer-sentences a {
 	color: var(--color);
 }
 
-.footer-links span:not(:last-child):after, .footer-languages span:not(:last-child):after {
+.footer-links span:not(:last-child):after, .footer-sentences span:not(:last-child):after {
 	content: " - ";
 }
 

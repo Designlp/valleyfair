@@ -235,8 +235,8 @@ function PageMain() {
 					
 					$TMPL['pages_list'] = $pages;
 				}
-			} elseif($_GET['b'] == 'languages' && !$loggedIn['user_group']) {
-				$skin = new skin('admin/languages'); $page = '';
+			} elseif($_GET['b'] == 'sentences' && !$loggedIn['user_group']) {
+				$skin = new skin('admin/sentences'); $page = '';
 				
 				// Get the software's info
 				include(__DIR__ .'/../info.php');
@@ -248,13 +248,13 @@ function PageMain() {
 				
 				$language = $updateSettings->getLanguages();
 				
-				$TMPL['languages_list'] = $language[0];
+				$TMPL['sentences_list'] = $language[0];
 				
 				if(isset($_GET['language'])) {
 					// If language is in array
 					if(in_array($_GET['language'], $language[1])) {
 						$updated = $updateSettings->query_array('settings', array('language' => $_GET['language'], 'token_id' => $_GET['token_id']));
-						header("Location: ".$CONF['url']."/index.php?a=admin&b=languages");
+						header("Location: ".$CONF['url']."/index.php?a=admin&b=sentences");
 					}
 				}
 			} elseif($_GET['b'] == 'plugins' && !$loggedIn['user_group']) {
@@ -1021,7 +1021,7 @@ function PageMain() {
 					'&b=site_settings'							=> array('admin_menu_site_settings', '', 'settings'),
 					//'&b=interface' 								=> array('admin_menu_interface', '', 'interface'),
 					//'&b=plugins'								=> array('admin_menu_plugins', '', 'plugins'),
-					//'&b=languages'								=> array('admin_menu_languages', '', 'languages'),
+					//'&b=sentences'								=> array('admin_menu_sentences', '', 'sentences'),
 					'&b=stats'									=> array('admin_menu_stats', '', 'stats'),
 					'&b=users'									=> array('admin_menu_users', array('users' => $LNG['list_users'], 'moderators' => $LNG['list_moderators'], 'verified' => $LNG['list_verified'], 'suspended' => $LNG['list_suspended']), 'users'),
 					//'&b=manage_pages'							=> array('admin_menu_manage_pages', '', 'pages'),
@@ -1034,7 +1034,7 @@ function PageMain() {
 
 	// If the logged-in user is a Moderator, remove menu elements
 	if($loggedIn['user_group']) {
-		//unset($menu['&b=site_settings'], $menu['&b=users_settings'], $menu['&b=social'], $menu['&b=interface'], $menu['&b=plugins'], $menu['&b=languages'], $menu['&b=manage_ads'], $menu['&b=info_pages'], $menu['&b=security'], $menu['&logout=1&token_id='.$_SESSION['token_id']]);
+		//unset($menu['&b=site_settings'], $menu['&b=users_settings'], $menu['&b=social'], $menu['&b=interface'], $menu['&b=plugins'], $menu['&b=sentences'], $menu['&b=manage_ads'], $menu['&b=info_pages'], $menu['&b=security'], $menu['&logout=1&token_id='.$_SESSION['token_id']]);
 		unset($menu['&b=site_settings'], $menu['&b=users_settings'], $menu['&b=social'], $menu['&b=interface'], $menu['&b=manage_ads'], $menu['&b=info_pages'], $menu['&b=security'], $menu['&logout=1&token_id='.$_SESSION['token_id']]);
 	}
 
