@@ -2602,7 +2602,7 @@ select {
 	padding: 0 10px;
 	border-top: 1px solid var(--colorBorder);
 	background: var(--backgroundVentana);
-	position: relative;
+	position: absolute;
 	width: 99%;
 	bottom: 0;
 }
