@@ -2,13 +2,13 @@
 <div class="page-inner"><div class="users-button button-normal"><a href="{$url}/index.php?a=admin&b=manage_groups&delete={$id}&token_id={$token_id}">{$lng->delete}</a></div>{$group}</div>
 <div class="message-divider" style="float: inherit;"></div>
 <form>
+	{$group}
 	{$token_input}
-	{$group['name']} 
 	<div>
 		<div class="modal-body">
 			<input id="id" type="hidden"> <!-- ID que vamos a recibir de firebase -->
 			<div class="form-group">  
-				{$group['name']}                                  
+				                                 
 			  <label>Código </label>
 			  <input id="codigo" type="text" class="form-control" required>
 			</div>    
