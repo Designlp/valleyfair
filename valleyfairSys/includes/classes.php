@@ -780,9 +780,9 @@ class updateSettings {
 	function getThemes() {
 		global $CONF, $LNG;
 		
-		$themes = scandir('./'.$CONF['theme_path'].'/');
+		$interface = scandir('./'.$CONF['theme_path'].'/');
 		
-		foreach($themes as $theme) {
+		foreach($interface as $theme) {
 			if($theme != '.' && $theme != '..' && $theme != 'index.html' && file_exists('./'.$CONF['theme_path'].'/'.$theme.'/info.php')) {
 				$allowedThemes[] = $theme;
 				include('./'.$CONF['theme_path'].'/'.$theme.'/info.php');
@@ -790,7 +790,7 @@ class updateSettings {
 				if($CONF['theme_name'] == $theme) {
 					$state = '<div class="users-button button-active"><a>'.$LNG['active'].'</a></div>';
 				} else {
-					$state = '<div class="users-button button-normal"><a href="'.$CONF['url'].'/index.php?a=admin&b=themes&theme='.$theme.'&token_id='.$_SESSION['token_id'].'">'.$LNG['activate'].'</a></div>';
+					$state = '<div class="users-button button-normal"><a href="'.$CONF['url'].'/index.php?a=admin&b=interface&theme='.$theme.'&token_id='.$_SESSION['token_id'].'">'.$LNG['activate'].'</a></div>';
 				}
 				
 				if(file_exists('./'.$CONF['theme_path'].'/'.$theme.'/icon.png')) {

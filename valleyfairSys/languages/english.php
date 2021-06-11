@@ -438,7 +438,7 @@ $LNG['admin_ttl_sidebar'] = 'Menú';
 $LNG['admin_menu_logout'] = 'Cerrar sesión';
 $LNG['admin_ttl_dashboard']			= $LNG['admin_menu_dashboard']		= 'Dashboard';
 $LNG['admin_ttl_site_settings'] 	= $LNG['admin_menu_site_settings'] 	= 'Configuración del sitio';
-$LNG['admin_ttl_themes'] 			= $LNG['admin_menu_themes'] 		= 'Temas';
+$LNG['admin_ttl_interface'] 			= $LNG['admin_menu_interface'] 		= 'Temas';
 $LNG['admin_ttl_plugins'] 			= $LNG['admin_menu_plugins'] 		= 'Complementos';
 $LNG['admin_ttl_languages']			= $LNG['admin_menu_languages'] 		= 'Idiomas';
 $LNG['admin_ttl_stats'] 			= $LNG['admin_menu_stats'] 			= 'Estadísticas';
@@ -701,7 +701,7 @@ $LNG['users'] = 'Usuarios';
 $LNG['moderators'] = 'Moderadores';
 $LNG['shares'] = 'Comparte';
 $LNG['useful_links'] = 'Enlaces útiles';
-$LNG['get_themes'] = 'Obtener más temas';
+$LNG['get_interface'] = 'Obtener más temas';
 $LNG['get_plugins'] = 'Obtenga más complementos';
 $LNG['get_languages'] = 'Obtenga más idiomas';
 

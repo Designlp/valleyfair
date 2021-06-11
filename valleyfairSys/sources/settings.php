@@ -364,7 +364,7 @@ function PageMain() {
 	}
 	
 	$menu = array(	''					=> array('user_menu_general', 'settings'),
-					'&b=avatar'			=> array('user_menu_avatar', 'themes'),
+					'&b=avatar'			=> array('user_menu_avatar', 'interface'),
 					'&b=notifications'	=> array('user_menu_notifications', 'notification'),
 					'&b=privacy'		=> array('user_menu_privacy', 'privacy'),
 					'&b=security'		=> array('user_menu_security', 'security'),

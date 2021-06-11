@@ -21,7 +21,7 @@ $CONF['url'] = 'https://valleyfair.ml/valleyfairSys';
 // The Notifications e-mail
 $CONF['email'] = 'dmercadoff@gmail.com';
 
-// The themes directory
+// The interface directory
 $CONF['theme_path'] = 'interface';
 
 // The plugins directory

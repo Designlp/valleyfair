@@ -157,8 +157,8 @@ function PageMain() {
 					}
 				}
 				
-			} elseif($_GET['b'] == 'themes' && !$loggedIn['user_group']) {
-				$skin = new skin('admin/themes'); $page = '';
+			} elseif($_GET['b'] == 'interface' && !$loggedIn['user_group']) {
+				$skin = new skin('admin/interface'); $page = '';
 				
 				// Get the software's info
 				include(__DIR__ .'/../info.php');
@@ -168,15 +168,15 @@ function PageMain() {
 				$updateSettings = new updateSettings();
 				$updateSettings->db = $db;
 				
-				$themes = $updateSettings->getThemes();
+				$interface = $updateSettings->getThemes();
 				
-				$TMPL['themes_list'] = $themes[0];
+				$TMPL['interface_list'] = $interface[0];
 				
 				if(isset($_GET['theme'])) {
 					// If theme is in array
-					if(in_array($_GET['theme'], $themes[1])) {
+					if(in_array($_GET['theme'], $interface[1])) {
 						$updated = $updateSettings->query_array('settings', array('theme' => $_GET['theme'], 'token_id' => $_GET['token_id']));
-						header("Location: ".$CONF['url']."/index.php?a=admin&b=themes");
+						header("Location: ".$CONF['url']."/index.php?a=admin&b=interface");
 					}
 				}
 			} elseif($_GET['b'] == 'info_pages' && !$loggedIn['user_group']) {
@@ -986,7 +986,7 @@ function PageMain() {
 				
 				// Get the current theme's info
 				include(__DIR__ .'/../'.$CONF['theme_path'].'/'.$CONF['theme_name'].'/info.php');
-				$TMPL['site_loaded'] = sprintf($LNG['site_loaded'], $CONF['url'].'/index.php?a=admin'.($loggedIn['user_group'] ? '' : '&b=themes'), $name, $CONF['url'].'/index.php?a=admin'.($loggedIn['user_group'] ? '' : '&b=plugins'), $countPlugins->num_rows);
+				$TMPL['site_loaded'] = sprintf($LNG['site_loaded'], $CONF['url'].'/index.php?a=admin'.($loggedIn['user_group'] ? '' : '&b=interface'), $name, $CONF['url'].'/index.php?a=admin'.($loggedIn['user_group'] ? '' : '&b=plugins'), $countPlugins->num_rows);
 				
 				// Get the software's info
 				include(__DIR__ .'/../info.php');
@@ -1019,7 +1019,7 @@ function PageMain() {
 
 	$menu = array(	''											=> array('admin_menu_dashboard', '', 'dashboard'),
 					'&b=site_settings'							=> array('admin_menu_site_settings', '', 'settings'),
-					//'&b=themes' 								=> array('admin_menu_themes', '', 'themes'),
+					//'&b=interface' 								=> array('admin_menu_interface', '', 'interface'),
 					//'&b=plugins'								=> array('admin_menu_plugins', '', 'plugins'),
 					//'&b=languages'								=> array('admin_menu_languages', '', 'languages'),
 					'&b=stats'									=> array('admin_menu_stats', '', 'stats'),
@@ -1034,8 +1034,8 @@ function PageMain() {
 
 	// If the logged-in user is a Moderator, remove menu elements
 	if($loggedIn['user_group']) {
-		//unset($menu['&b=site_settings'], $menu['&b=users_settings'], $menu['&b=social'], $menu['&b=themes'], $menu['&b=plugins'], $menu['&b=languages'], $menu['&b=manage_ads'], $menu['&b=info_pages'], $menu['&b=security'], $menu['&logout=1&token_id='.$_SESSION['token_id']]);
-		unset($menu['&b=site_settings'], $menu['&b=users_settings'], $menu['&b=social'], $menu['&b=themes'], $menu['&b=manage_ads'], $menu['&b=info_pages'], $menu['&b=security'], $menu['&logout=1&token_id='.$_SESSION['token_id']]);
+		//unset($menu['&b=site_settings'], $menu['&b=users_settings'], $menu['&b=social'], $menu['&b=interface'], $menu['&b=plugins'], $menu['&b=languages'], $menu['&b=manage_ads'], $menu['&b=info_pages'], $menu['&b=security'], $menu['&logout=1&token_id='.$_SESSION['token_id']]);
+		unset($menu['&b=site_settings'], $menu['&b=users_settings'], $menu['&b=social'], $menu['&b=interface'], $menu['&b=manage_ads'], $menu['&b=info_pages'], $menu['&b=security'], $menu['&logout=1&token_id='.$_SESSION['token_id']]);
 	}
 
 	$i = 1;
