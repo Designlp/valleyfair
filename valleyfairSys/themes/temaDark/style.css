@@ -4555,4 +4555,8 @@ a.facebook-button:active {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+	margin: auto;
+  }
+  .botonFormFirebase{
+	padding: 19px 20px !important;
   }
