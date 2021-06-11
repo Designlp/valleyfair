@@ -2605,9 +2605,9 @@ select {
 	padding: 0 10px;
 	border-top: 1px solid var(--colorBorder);
 	background: var(--backgroundVentana);
-	position: sticky;
+	position: relative;
 	width: 99%;
-	bottom: 0;
+	bottom: -50%;
 }
 
 .footer-container {
