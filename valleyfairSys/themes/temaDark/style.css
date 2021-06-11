@@ -1972,6 +1972,7 @@ a.cover-button-active {
 .sidebar-subscriptions img {
 	width: 100%;
 	display: block;
+	border-radius: 50%;
 }
 
 .sidebar-title-container {
