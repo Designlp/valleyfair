@@ -24,60 +24,10 @@
 			<button type="submit" id="btnGuardar" class="btn btn-primary" translate="1">Guardar</button>
 		</div>
 	</div>
-	<!-- <div class="page-inner">
-		<div class="page-input-container">
-			<div class="page-input-title">{$lng->name}</div>
-			<div class="page-input-content">
-				<input type="text" name="group_name" value="{$current_name}"{$disabled}>
-				<div class="page-input-sub">{$lng->group_sub_name}</div>
-			</div>
-		</div>
-		
-		<div class="page-input-container">
-			<div class="page-input-title">{$lng->title}</div>
-			<div class="page-input-content">
-				<input type="text" name="group_title" value="{$current_title}">
-				<div class="page-input-sub">{$lng->group_sub_title}</div>
-			</div>
-		</div>
-		
-		<div class="page-input-container">
-			<div class="page-input-title">{$lng->privacy}</div>
-			<div class="page-input-content">
-			<select name="group_privacy">
-				<option value="0"{$privacy_public}>{$lng->public}</option>
-				<option value="1"{$privacy_private}>{$lng->private}</option>
-			</select>
-			<div class="page-input-sub">{$lng->group_sub_privacy}</div>
-			</div>
-		</div>
-		
-		<div class="page-input-container">
-			<div class="page-input-title">{$lng->posts}</div>
-			<div class="page-input-content">
-			<select name="group_posts">
-				<option value="0"{$posts_members}>{$lng->any_member}</option>
-				<option value="1"{$posts_admins}>{$lng->admins}</option>
-			</select>
-			<div class="page-input-sub">{$lng->group_sub_posts}</div>
-			</div>
-		</div>
-		
-		<div class="page-input-container">
-			<div class="page-input-title">{$lng->description}</div>
-			<div class="page-input-content">
-				<textarea class="ads" name="group_desc">{$current_desc}</textarea>
-				<div class="page-input-sub">{$lng->group_sub_description}</div>
-			</div>
-		</div>
-	</div> -->
-	
-	<div class="message-divider"></div>
-	
-	<div class="page-inner">
-		<div class="page-input-title"></div><input type="submit" value="{$lng->save_changes}">
-	</div>
 </form>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 
 <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-database.js"></script>
+<script type="text/javascript" src="{$url}/{$theme_url}/js/firebase-form.js"></script>
