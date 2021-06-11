@@ -2607,7 +2607,7 @@ select {
 	background: var(--backgroundVentana);
 	position: relative;
 	width: 99%;
-	bottom: -50%;
+	bottom: 0;
 }
 
 .footer-container {
