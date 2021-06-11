@@ -2141,6 +2141,10 @@ img.sidebar-status-icon {
 	width: 100%;
 	margin: 0;
 	padding: 0;
+	background: var(--backgroundSearch);
+    border-radius: 20px;
+    color: var(--colorWhiteM);
+    padding: 17px;
 }
 
 .sidebar-divider {
@@ -2358,6 +2362,10 @@ img.sidebar-status-icon {
 	overflow: hidden;
 	padding: 0 5px;
 	box-sizing: border-box;
+	background: var(--backgroundSearch);
+	border-radius: 20px;
+	color: var(--colorWhiteM);
+	padding: 17px;
 }
 
 .chat-error {
