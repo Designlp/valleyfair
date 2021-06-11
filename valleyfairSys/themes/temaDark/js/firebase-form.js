@@ -24,7 +24,7 @@ $('form').submit(function (e) {
 	if (idFirebase == '') {
 		idFirebase = coleccionProductos.push().key;
 	};
-	data = { codigo: codigo, descripcion: descripcion, cantidad: cantidad,puntuacion:puntuacion };
+	data = { codigo: codigo, descripcion: descripcion, cantidad: cantidad, puntuacion:puntuacion };
 	actualizacionData = {};
 	actualizacionData[`/${idFirebase}`] = data;
 	coleccionProductos.update(actualizacionData);
