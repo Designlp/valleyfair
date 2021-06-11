@@ -1,21 +1,23 @@
 {$message}
 <div class="page-inner"><div class="users-button button-normal"><a href="{$url}/index.php?a=admin&b=manage_groups&delete={$id}&token_id={$token_id}">{$lng->delete}</a></div>{$group}</div>
 <div class="message-divider" style="float: inherit;"></div>
+
 <form>
-	{$group_title}
 	{$token_input}
-	{$row['id']}
 	<div>
 		<div class="modal-body">
 			<input id="id" type="hidden"> <!-- ID que vamos a recibir de firebase -->
 			<div class="form-group">  
-				                                 
+				  
+				<!-- $TMPL['links'] .= $divider.'<a href="'.permalink($CONF['url'].'/index.php?a='.$value[0]).'" '.($value[2] ? ' rel="loadpage"' : '').'><div class="menu-dd-row'.(($value[3] == 1) ? ' menu-dd-extra' : '').(($value[3] == 2) ? ' menu-dd-mobile' : '').'">'.$value[1].'</div></a>'; -->
+				
+
 			  <label>Código </label>
-			  <input id="codigo" type="text" class="form-control" value="{$current_name}" {$disabled} required>
+			  <input id="codigo" type="text" class="form-control" value="{$value[1]}" {$disabled} required>
 			</div>    
 			<div class="form-group">
 			  <label>Nombre</label>
-			  <input id="descripcion" type="text" class="form-control" value="{$username}" required>
+			  <input id="descripcion" type="text" class="form-control" value="{$currentFirtsName}" required>
 			</div>
 			<div class="form-group">
 			  <label>Cantidad</label>
