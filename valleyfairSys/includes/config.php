@@ -22,7 +22,7 @@ $CONF['url'] = 'https://valleyfair.ml/valleyfairSys';
 $CONF['email'] = 'dmercadoff@gmail.com';
 
 // The themes directory
-$CONF['theme_path'] = 'themes';
+$CONF['theme_path'] = 'interface';
 
 // The plugins directory
 $CONF['plugin_path'] = 'plugins';
