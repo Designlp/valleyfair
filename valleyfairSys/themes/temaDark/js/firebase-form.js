@@ -37,6 +37,7 @@ $('#btnNuevo').click(function () {
 	$('#codigo').val('');
 	$('#descripcion').val('');
 	$('#cantidad').val('');
+	$('input[name="rating"]:checked').val();
 	$('form').trigger('reset');
 	$('#modalAltaEdicion').modal('show');
 	console.log($('#codigo').val(''));

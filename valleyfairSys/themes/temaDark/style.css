@@ -4512,16 +4512,6 @@ a.facebook-button:active {
     z-index: 1;
   }
   
-  .emoji-wrapper:before {
-    top: 0;
-    background: linear-gradient(to bottom, white 0%, white 35%, rgba(255, 255, 255, 0) 100%);
-  }
-  
-  .emoji-wrapper:after {
-    bottom: 0;
-    background: linear-gradient(to top, white 0%, white 35%, rgba(255, 255, 255, 0) 100%);
-  }
-  
   .emoji {
     display: flex;
     flex-direction: column;
@@ -4558,7 +4548,6 @@ a.facebook-button:active {
   
   .feedback {
     max-width: 360px;
-    background-color: #fff;
     width: 100%;
     padding: 30px;
     border-radius: 8px;
@@ -4566,5 +4555,4 @@ a.facebook-button:active {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
   }
