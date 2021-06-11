@@ -19,11 +19,12 @@ $('form').submit(function (e) {
 	let codigo = $('#codigo').val();
 	let descripcion = $('#descripcion').val();
 	let cantidad = $('#cantidad').val();
+	let puntuacion=$('input[name="rating"]:checked').val();
 	let idFirebase = id;
 	if (idFirebase == '') {
 		idFirebase = coleccionProductos.push().key;
 	};
-	data = { codigo: codigo, descripcion: descripcion, cantidad: cantidad };
+	data = { codigo: codigo, descripcion: descripcion, cantidad: cantidad,puntuacion:puntuacion };
 	actualizacionData = {};
 	actualizacionData[`/${idFirebase}`] = data;
 	coleccionProductos.update(actualizacionData);

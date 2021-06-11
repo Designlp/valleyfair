@@ -4560,3 +4560,6 @@ a.facebook-button:active {
   .botonFormFirebase{
 	padding: 19px 20px !important;
   }
+  .botonFormFirebase .FirebaseButtom{
+	  top: -5px;
+  }
