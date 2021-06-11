@@ -113,6 +113,10 @@ input:not([type="checkbox"]), textarea, select, button {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+	background: var(--backgroundSearch);
+	color: var(--colorWhiteM);
+	padding: 10px;
+	border-radius: 20px;
 }
 
 input[type="radio"] {
@@ -2259,8 +2263,7 @@ img.sidebar-status-icon {
 }
 
 .message-form-input {
-	border-bottom: 1px solid #EEE;
-	padding: 5px 10px;
+	padding: 10px 10px;
 	display: none;
 }
 
@@ -2602,7 +2605,7 @@ select {
 	padding: 0 10px;
 	border-top: 1px solid var(--colorBorder);
 	background: var(--backgroundVentana);
-	position: absolute;
+	position: sticky;
 	width: 99%;
 	bottom: 0;
 }
@@ -3198,9 +3201,6 @@ a.facebook-button:active {
 	left: -9999px;
 }
 
-.selected {
-	background-color: #DFDFDF;
-}
 
 #values {
 	float: left;
