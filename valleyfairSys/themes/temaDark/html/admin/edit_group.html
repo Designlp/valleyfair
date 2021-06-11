@@ -1,24 +1,20 @@
 {$message}
 <div class="page-inner"><div class="users-button button-normal"><a href="{$url}/index.php?a=admin&b=manage_groups&delete={$id}&token_id={$token_id}">{$lng->delete}</a></div>{$group}</div>
 <div class="message-divider" style="float: inherit;"></div>
-
 <form>
 	{$token_input}
-	{$links}
-	<div>
+	
+	<!-- <div>
 		<div class="modal-body">
-			<input id="id" type="hidden"> <!-- ID que vamos a recibir de firebase -->
+			<input id="id" type="hidden"> 
 			<div class="form-group">  
-		
-				<a href="'.permalink($CONF['url'].'/index.php?a='.$value[0]).'" '.($value[2] ? ' rel="loadpage"' : '').'</a><div class="menu-dd-row'.(($value[3] == 1) ? ' menu-dd-extra' : '').(($value[3] == 2) ? ' menu-dd-mobile' : '').'">'.$value[1].'</div></a>';
-				
 
-			  <label>Código </label>
+			  <label>Grupo</label>
 			  <input id="codigo" type="text" class="form-control" value="{$current_name}" {$disabled} required>
 			</div>    
 			<div class="form-group">
 			  <label>Nombre</label>
-			  <input id="descripcion" type="text" class="form-control" value="{$currentFirtsName}" required>
+			  <input id="descripcion" type="text" class="form-control" required>
 			</div>
 			<div class="form-group">
 			  <label>Cantidad</label>
@@ -29,27 +25,33 @@
 			<button type="button" class="btn btn-secondary" data-dismiss="modal" tabindex="2">Cancelar</button>
 			<button type="submit" id="btnGuardar" class="btn btn-primary" translate="1">Guardar</button>
 		</div>
-	</div>
+	</div> -->
 
 
 
 	<div class="page-inner">
+		<input id="id" type="hidden"><!-- ID que vamos a recibir de firebase -->
 		<div class="page-input-container">
-			<div class="page-input-title">{$lng->name}</div>
+			<div class="page-input-title">Grupo</div>
 			<div class="page-input-content">
-				<input type="text" name="group_name" value="{$current_name}"{$disabled}>
-				<div class="page-input-sub">{$lng->group_sub_name}</div>
+				<input id="codigo" type="text" class="form-control" value="{$current_name}" {$disabled} required>
 			</div>
 		</div>
 		
 		<div class="page-input-container">
-			<div class="page-input-title">{$lng->title}</div>
+			<div class="page-input-title">Nombre</div>
 			<div class="page-input-content">
-				<input type="text" name="group_title" value="{$current_title}">
-				<div class="page-input-sub">{$lng->group_sub_title}</div>
+				<input id="descripcion" type="text" class="form-control" required>
 			</div>
 		</div>
 		
+		<div class="page-input-container">
+			<div class="page-input-title">Cantidad</div>
+			<div class="page-input-content">
+				<input id="cantidad" type="number" class="form-control" required>
+			</div>
+		</div>
+
 		<div class="page-input-container">
 			<div class="page-input-title">{$lng->privacy}</div>
 			<div class="page-input-content">
@@ -57,7 +59,6 @@
 				<option value="0"{$privacy_public}>{$lng->public}</option>
 				<option value="1"{$privacy_private}>{$lng->private}</option>
 			</select>
-			<div class="page-input-sub">{$lng->group_sub_privacy}</div>
 			</div>
 		</div>
 		
@@ -68,7 +69,6 @@
 				<option value="0"{$posts_members}>{$lng->any_member}</option>
 				<option value="1"{$posts_admins}>{$lng->admins}</option>
 			</select>
-			<div class="page-input-sub">{$lng->group_sub_posts}</div>
 			</div>
 		</div>
 		
@@ -76,8 +76,11 @@
 			<div class="page-input-title">{$lng->description}</div>
 			<div class="page-input-content">
 				<textarea class="ads" name="group_desc">{$current_desc}</textarea>
-				<div class="page-input-sub">{$lng->group_sub_description}</div>
 			</div>
+		</div>
+
+		<div class="page-inner">
+			<div class="page-input-title"></div><button type="submit" id="btnGuardar" class="btn btn-primary" translate="1">Guardar</button>
 		</div>
 	</div>
 </form>

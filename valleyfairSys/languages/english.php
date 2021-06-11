@@ -445,7 +445,7 @@ $LNG['admin_ttl_stats'] 			= $LNG['admin_menu_stats'] 			= 'Estadísticas';
 $LNG['admin_ttl_security'] 			= $LNG['admin_menu_security'] 		= 'Contraseña';
 $LNG['admin_ttl_users'] 			= $LNG['admin_menu_users'] 			= 'Administrar usuarios';
 $LNG['admin_ttl_manage_pages']		= $LNG['admin_menu_manage_pages']	= 'Administrar páginas';
-$LNG['admin_ttl_manage_groups']		= $LNG['admin_menu_manage_groups'] 	= 'Administrar grupos';
+$LNG['admin_ttl_manage_groups']		= $LNG['admin_menu_manage_groups'] 	= 'Formulario del Grupo';
 $LNG['admin_ttl_manage_reports']	= $LNG['admin_menu_manage_reports'] = 'Gestionar informes';
 $LNG['admin_ttl_manage_ads']		= $LNG['admin_menu_manage_ads'] 	= 'Administrar anuncios';
 $LNG['admin_ttl_info_pages']		= $LNG['admin_menu_info_pages'] 	= 'Páginas de información';
