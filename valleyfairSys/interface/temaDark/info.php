@@ -1,12 +1,12 @@
 <?php
 // Theme Name
-$name = 'Dolphin';
+$name = 'Dark_Light';
 
 // Theme Author
-$author = 'phpSocial';
+$author = 'ValleyFair';
 
 // Theme URL
-$url = 'http://phpsocial.com';
+$url = 'https://valleyfair.ml/';
 
 // Theme Version
 $version = '1.4.9';

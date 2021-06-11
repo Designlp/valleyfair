@@ -1,12 +1,12 @@
 <?php
 // Language Name
-$name = 'English';
+$name = 'Español';
 
 // Language Author
-$author = 'phpSocial';
+$author = 'ValleyFair';
 
 // Language URL
-$url = 'http://phpsocial.com';
+$url = 'https://valleyfair.ml/';
 
 $LNG['lang_direction'] = 'ltr';
 

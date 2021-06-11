@@ -1694,9 +1694,6 @@ class PHPMailer
     }
 
     /**
-     * Set the language for error messages.
-     * Returns false if it cannot load the language file.
-     * The default language is English.
      * @param string $langcode ISO 639-1 2-character language code (e.g. French is "fr")
      * @param string $lang_path Path to the language file directory, with trailing separator (slash)
      * @return boolean
@@ -1717,7 +1714,6 @@ class PHPMailer
             $langcode = $renamed_langcodes[$langcode];
         }
 
-        // Define full set of translatable strings in English
         $PHPMAILER_LANG = array(
             'authenticate' => 'SMTP Error: Could not authenticate.',
             'connect_host' => 'SMTP Error: Could not connect to SMTP host.',
@@ -1749,7 +1745,6 @@ class PHPMailer
         }
         $foundlang = true;
         $lang_file = $lang_path . 'phpmailer.lang-' . $langcode . '.php';
-        // There is no English translation file
         if ($langcode != 'en') {
             // Make sure language file path is readable
             if (!is_readable($lang_file)) {
