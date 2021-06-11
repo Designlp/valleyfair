@@ -34,8 +34,8 @@ var firebaseConfig = {
 
 const db = firebase.database();
 coleccionProductos = db.ref().child('productos');
-bodyProductos = $('#bodyProductos').val();
-//console.log(bodyProductos);  
+// bodyProductos = $('#bodyProductos').val();
+// //console.log(bodyProductos);  
 $('form').submit(function (e) {
 	e.preventDefault();
 	let id = $('#id').val();
@@ -52,7 +52,7 @@ $('form').submit(function (e) {
 	coleccionProductos.update(actualizacionData);
 	id = '';
 	$('form').trigger('reset');
-	$('#modalAltaEdicion').modal('hide');
+	// $('#modalAltaEdicion').modal('hide');
 });
 
 //CHILD_ADDED
