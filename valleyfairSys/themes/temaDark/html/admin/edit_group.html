@@ -3,10 +3,11 @@
 <div class="message-divider" style="float: inherit;"></div>
 <form>
 	{$token_input}
+	{$group['name']} 
 	<div>
 		<div class="modal-body">
 			<input id="id" type="hidden"> <!-- ID que vamos a recibir de firebase -->
-			<div class="form-group">  \
+			<div class="form-group">  
 				{$group['name']}                                  
 			  <label>Código </label>
 			  <input id="codigo" type="text" class="form-control" required>
