@@ -39,4 +39,5 @@ $('#btnNuevo').click(function () {
 	$('#cantidad').val('');
 	$('form').trigger('reset');
 	$('#modalAltaEdicion').modal('show');
+	console.log($('#codigo').val(''));
 });
