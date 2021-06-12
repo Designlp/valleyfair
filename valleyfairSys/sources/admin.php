@@ -102,7 +102,7 @@ function PageMain() {
 				// Generate the stats form
 				$TMPL['year_form'] = generateStatsForm(0, $_GET['year'], $result['date']);
 				
-				if(empty($_GET['year'])) {
+				if(empty($_GET['year'])) { 
 					foreach(range(date('Y'), $result['date'], 1) as $year) {
 						$years[] = $year;	
 					}
