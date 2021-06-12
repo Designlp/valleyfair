@@ -1452,7 +1452,7 @@ class manageUsers {
 			$users .= '<div class="users-container">
 						<div class="message-content">
 							<div class="message-inner">
-								<div class="users-button button-normal"><a href="'.$this->url.'/index.php?a=admin&b=users&e='.$row['idu'].'" rel="loadpage">'.$LNG['edit'].'</a></div>
+								<div class="users-button button-normal"><a href="'.$this->url.'/index.php?a=admin&b=users&e='.$row['idu'].'" rel="loadpage">'.$LNG['evalue'].'</a></div>
 								<div class="message-avatar" id="avatar'.$row['idu'].'">
 									<a href="'.permalink($this->url.'/index.php?a=profile&u='.$row['username']).'" rel="loadpage">
 										<img src="'.$this->url.'/thumb.php?src='.$row['image'].'&t=a&w=50&h=50">
@@ -2639,7 +2639,7 @@ class feed {
 						
 						(in_array($this->group_member_data['permissions'], array(1, 2)) && $this->group_member_data['status'] ? $LNG['requests'] : '') => array('&r=', 'requests', $this->countGroupMembers($this->group_data['id'], 2)),
 						(in_array($this->group_member_data['permissions'], array(1, 2)) && $this->group_member_data['status'] ? $LNG['blocked'] : '') => array('&r=', 'blocked', $this->countGroupMembers($this->group_data['id'], 3)),
-						($this->group_member_data['permissions'] == 2 && $this->group_member_data['status'] ? $LNG['edit'] : '') => array('&r=', 'edit', '')
+						($this->group_member_data['permissions'] == 2 && $this->group_member_data['status'] ? $LNG['evalue'] : '') => array('&r=', 'edit', '')
 						);
 		} elseif($type == 2) {
 			$buttons = array(

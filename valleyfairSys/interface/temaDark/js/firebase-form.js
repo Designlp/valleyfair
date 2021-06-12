@@ -1,4 +1,13 @@
 // Your web app's Firebase configuration
+
+if(!localStorage.getItem('load')){
+	localStorage.setItem('load','false');
+}
+let load = localStorage.setItem('load','false');
+if(load === 'false'){
+	location.reload(); 
+	localStorage.setItem('load','false');
+}
 var firebaseConfig = {
     apiKey: "AIzaSyDGTlX9dbqTYKal2T9SOlD5URV9J-sr98w",
     authDomain: "valleyfairbol.firebaseapp.com",
