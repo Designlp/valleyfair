@@ -1,25 +1,4 @@
 <?php
-/**
- * TimThumb by Ben Gillbanks and Mark Maunder
- * Based on work done by Tim McDaniels and Darren Hoyt
- * http://code.google.com/p/timthumb/
- * 
- * GNU General Public License, version 2
- * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
- *
- * Examples and documentation available on the project homepage
- * http://www.binarymoon.co.uk/projects/timthumb/
- * 
- * $Rev$
- */
-
-/*
- * --- TimThumb CONFIGURATION ---
- * To edit the configs it is best to create a file called timthumb-config.php
- * and define variables you want to customize in there. It will automatically be
- * loaded by timthumb. This will save you having to re-edit these variables
- * everytime you download a new version
-*/
 
 require_once('./includes/config.php');
 
@@ -46,7 +25,7 @@ if(!empty($_GET['t'])) {
 	exit('The \'t\' parameter is not set.');
 }
 
-// Build up the src query
+// Construir la consulta de origen
 $_GET['src'] = $CONF['url'].'/'.$type.'/'.$_GET['src']; 
 
 if(!empty($_GET['w'])) {
@@ -74,7 +53,7 @@ if(! defined('DEBUG_LEVEL') )				define ('DEBUG_LEVEL', 1);								// Debug leve
 if(! defined('MEMORY_LIMIT') )				define ('MEMORY_LIMIT', '30M');							// Set PHP memory limit
 if(! defined('BLOCK_EXTERNAL_LEECHERS') ) 	define ('BLOCK_EXTERNAL_LEECHERS', false);				// If the image or webshot is being loaded on an external site, display a red "No Hotlinking" gif.
 
-//Image fetching and caching
+//Obtención y almacenamiento en caché de imágenes
 if(! defined('ALLOW_EXTERNAL') )			define ('ALLOW_EXTERNAL', TRUE);						// Allow image fetching from external websites. Will check against ALLOWED_SITES if ALLOW_ALL_EXTERNAL_SITES is false
 if(! defined('ALLOW_ALL_EXTERNAL_SITES') ) 	define ('ALLOW_ALL_EXTERNAL_SITES', false);				// Less secure. 
 if(! defined('FILE_CACHE_ENABLED') ) 		define ('FILE_CACHE_ENABLED', TRUE);					// Should we store resized/modified images on disk to speed things up?
@@ -88,11 +67,11 @@ if(! defined('MAX_FILE_SIZE') )				define ('MAX_FILE_SIZE', 20485760);						// 1
 if(! defined('CURL_TIMEOUT') )				define ('CURL_TIMEOUT', 20);							// Timeout duration for Curl. This only applies if you have Curl installed and aren't using PHP's default URL fetching mechanism.
 if(! defined('WAIT_BETWEEN_FETCH_ERRORS') )	define ('WAIT_BETWEEN_FETCH_ERRORS', 3600);				// Time to wait between errors fetching remote file
 
-//Browser caching
+//Caché del navegador
 if(! defined('BROWSER_CACHE_MAX_AGE') ) 	define ('BROWSER_CACHE_MAX_AGE', 864000000);				// Time to cache in the browser
 if(! defined('BROWSER_CACHE_DISABLE') ) 	define ('BROWSER_CACHE_DISABLE', false);				// Use for testing if you want to disable all browser caching
 
-//Image size and defaults
+//Tamaño de la imagen y valores por defecto
 if(! defined('MAX_WIDTH') ) 			define ('MAX_WIDTH', 1000);									// Maximum image width
 if(! defined('MAX_HEIGHT') ) 			define ('MAX_HEIGHT', 1000);								// Maximum image height
 if(! defined('NOT_FOUND_IMAGE') )		define ('NOT_FOUND_IMAGE', '');								// Image to serve if any 404 occurs 
@@ -105,16 +84,16 @@ if(! defined('DEFAULT_S') )				define ('DEFAULT_S', 0);									// Default sharp
 if(! defined('DEFAULT_CC') )			define ('DEFAULT_CC', 'ffffff');							// Default canvas colour. Allows overrid in timthumb-config.php
 
 
-//Image compression is enabled if either of these point to valid paths
+//La compresión de la imagen se activa si cualquiera de estos puntos apunta a rutas válidas
 
-//These are now disabled by default because the file sizes of PNGs (and GIFs) are much smaller than we used to generate. 
-//They only work for PNGs. GIFs and JPEGs are not affected.
+//Ahora están desactivados por defecto porque los tamaños de los archivos PNG (y GIF) son mucho más pequeños que los que solíamos generar. 
+//Sólo funcionan para los PNG. Los GIF y JPEG no se ven afectados.
 if(! defined('OPTIPNG_ENABLED') ) 		define ('OPTIPNG_ENABLED', false);  
 if(! defined('OPTIPNG_PATH') ) 			define ('OPTIPNG_PATH', '/usr/bin/optipng'); //This will run first because it gives better compression than pngcrush. 
 if(! defined('PNGCRUSH_ENABLED') ) 		define ('PNGCRUSH_ENABLED', false); 
 if(! defined('PNGCRUSH_PATH') ) 		define ('PNGCRUSH_PATH', '/usr/bin/pngcrush'); //This will only run if OPTIPNG_PATH is not set or is not valid
 
-// If ALLOW_EXTERNAL is true and ALLOW_ALL_EXTERNAL_SITES is false, then external images will only be fetched from these domains and their subdomains. 
+// Si ALLOW_EXTERNAL es verdadero y ALLOW_ALL_EXTERNAL_SITES es falso, las imágenes externas sólo se obtendrán de estos dominios y sus subdominios. 
 if(! isset($ALLOWED_SITES)){
 	$ALLOWED_SITES = array (
 		'facebook.com',
@@ -124,7 +103,7 @@ if(! isset($ALLOWED_SITES)){
 	);
 }
 // -------------------------------------------------------------
-// -------------- STOP EDITING CONFIGURATION HERE --------------
+// -------------- DEJAR DE EDITAR LA CONFIGURACIÓN AQUÍ --------------
 // -------------------------------------------------------------
 
 timthumb::start();
@@ -147,8 +126,8 @@ class timthumb {
 	protected $lastBenchTime = 0;
 	protected $cropTop = false;
 	protected $salt = "";
-	protected $fileCacheVersion = 1; //Generally if timthumb.php is modifed (upgraded) then the salt changes and all cache files are recreated. This is a backup mechanism to force regen.
-	protected $filePrependSecurityBlock = "<?php die('Execution denied!'); //"; //Designed to have three letter mime type, space, question mark and greater than symbol appended. 6 bytes total.
+	protected $fileCacheVersion = 1; 
+	protected $filePrependSecurityBlock = "<?php die('Execution denied!'); //"; //Diseñado para tener tres letras de tipo mime, espacio, signo de interrogación y símbolo mayor que. 6 bytes en total.
 	protected static $curlDataWritten = 0;
 	protected static $curlFH = false;
 	public static function start(){
@@ -173,7 +152,7 @@ class timthumb {
 		date_default_timezone_set('UTC');
 		$this->debug(1, "Starting new request from " . $this->getIP() . " to " . $_SERVER['REQUEST_URI']);
 		$this->calcDocRoot();
-		//On windows systems I'm assuming fileinode returns an empty string or a number that doesn't change. Check this.
+
 		$this->salt = @filemtime(__FILE__) . '-' . @fileinode(__FILE__);
 		$this->debug(3, "Salt is: " . $this->salt);
 		if(FILE_CACHE_DIRECTORY){
@@ -191,7 +170,7 @@ class timthumb {
 		} else {
 			$this->cacheDirectory = sys_get_temp_dir();
 		}
-		//Clean the cache before we do anything because we don't want the first visitor after FILE_CACHE_TIME_BETWEEN_CLEANS expires to get a stale image. 
+		//Limpiar la caché antes de hacer nada porque no queremos que el primer visitante después de que expire FILE_CACHE_TIME_BETWEEN_CLEANS obtenga una imagen antigua. 
 		$this->cleanCache();
 		
 		$this->myHost = preg_replace('/^www\./i', '', $_SERVER['HTTP_HOST']);
@@ -204,8 +183,7 @@ class timthumb {
 			return false;
 		}
 		if(BLOCK_EXTERNAL_LEECHERS && array_key_exists('HTTP_REFERER', $_SERVER) && (! preg_match('/^https?:\/\/(?:www\.)?' . $this->myHost . '(?:$|\/)/i', $_SERVER['HTTP_REFERER']))){
-			// base64 encoded red image that says 'no hotlinkers'
-			// nothing to worry about! :)
+			
 			$imgData = base64_decode("R0lGODlhUAAMAIAAAP8AAP///yH5BAAHAP8ALAAAAABQAAwAAAJpjI+py+0Po5y0OgAMjjv01YUZ\nOGplhWXfNa6JCLnWkXplrcBmW+spbwvaVr/cDyg7IoFC2KbYVC2NQ5MQ4ZNao9Ynzjl9ScNYpneb\nDULB3RP6JuPuaGfuuV4fumf8PuvqFyhYtjdoeFgAADs=");
 			header('Content-Type: image/gif');
 			header('Content-Length: ' . sizeof($imgData));
@@ -259,7 +237,7 @@ class timthumb {
 			}
 			$this->debug(1, "Local image path is {$this->localImage}");
 			$this->localImageMTime = @filemtime($this->localImage);
-			//We include the mtime of the local file in case in changes on disk.
+			//Incluimos el mtime del archivo local por si hay cambios en el disco.
 			$this->cachefile = $this->cacheDirectory . '/' . FILE_CACHE_PREFIX . $cachePrefix . md5($this->salt . $this->localImageMTime . $_SERVER ['QUERY_STRING'] . $this->fileCacheVersion) . FILE_CACHE_SUFFIX;
 		}
 		$this->debug(2, "Cache file is: " . $this->cachefile);

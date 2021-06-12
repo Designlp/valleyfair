@@ -2708,8 +2708,8 @@ select {
 
 .welcome-captcha {
 	background-color: var(--backgroundVentana);
-	background-repeat: no-repeat;
-	background-position: right;
+	background-repeat: no-repeat !important;
+	background-position: right !important;
 }
 
 .welcome-full {
