@@ -291,15 +291,15 @@ class timthumb {
 		if(!empty($_SERVER['HTTP_IF_MODIFIED_SINCE']) ){
 			$this->debug(3, "Got a conditional get");
 			$mtime = false;
-			//We've already checked if the real file exists in the constructor
+			//Ya hemos comprobado si el archivo real existe en el constructor
 			if(! is_file($this->cachefile)){
-				//If we don't have something cached, regenerate the cached image.
+				//Si no tenemos algo en caché, regenera la imagen en caché.
 				return false;
 			}
 			if($this->localImageMTime){
 				$mtime = $this->localImageMTime;
 				$this->debug(3, "Local real file's modification time is $mtime");
-			} else if(is_file($this->cachefile)){ //If it's not a local request then use the mtime of the cached file to determine the 304
+			} else if(is_file($this->cachefile)){ //Si no es una petición local, utiliza el mtime del archivo en caché para determinar el 304
 				$mtime = @filemtime($this->cachefile);
 				$this->debug(3, "Cached file's modification time is $mtime");
 			}
@@ -311,10 +311,10 @@ class timthumb {
 				$this->debug(3, "Got an invalid conditional get modified since time. Returning false.");
 				return false;
 			}
-			if($iftime < $mtime){ //Real file or cache file has been modified since last request, so force refetch.
+			if($iftime < $mtime){  //El archivo real o el archivo de la caché ha sido modificado desde la última petición, así que se debe forzar la recarga.
 				$this->debug(3, "File has been modified since last fetch.");
 				return false;
-			} else { //Otherwise serve a 304
+			} else { //De lo contrario, sirva un 304
 				$this->debug(3, "File has not been modified since last get, so serving a 304.");
 				header ($_SERVER['SERVER_PROTOCOL'] . ' 304 Not Modified');
 				$this->debug(1, "Returning 304 not modified");

@@ -2707,7 +2707,7 @@ select {
 }
 
 .welcome-captcha {
-	background-color: var(--backgroundVentana);
+	background-color: var(--backgroundVentana) !important;
 	background-repeat: no-repeat !important;
 	background-position: right !important;
 }
