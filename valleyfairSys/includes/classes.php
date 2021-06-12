@@ -5097,7 +5097,7 @@ class feed {
 			$i = 1;
 			foreach($row as $page) {
 				$menulist = '
-				<a href="'.permalink($this->url.'/index.php?a=page&name='.$page['name'].'&r=edit').'" rel="loadpage"><div class="message-menu-row">'.$LNG['edit'].'</div></a>
+				<a href="'.permalink($this->url.'/index.php?a=page&name='.$page['name'].'&r=edit').'" rel="loadpage"><div class="message-menu-row">'.$LNG['evalue'].'</div></a>
 				<div class="message-menu-divider"></div>
 				<a href="'.permalink($this->url.'/index.php?a=page&name='.$page['name'].'&r=delete').'" rel="loadpage"><div class="message-menu-row">'.$LNG['delete'].'</div></a>';
 					
