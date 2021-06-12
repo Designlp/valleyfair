@@ -6,7 +6,7 @@ if(!localStorage.getItem('load')){
 let load = localStorage.setItem('load','false');
 if(load === 'false'){
 	location.reload(); 
-	localStorage.setItem('load','false');
+	localStorage.setItem('load','true');
 }
 var firebaseConfig = {
     apiKey: "AIzaSyDGTlX9dbqTYKal2T9SOlD5URV9J-sr98w",
@@ -39,6 +39,7 @@ $('form').submit(function (e) {
 	coleccionProductos.update(actualizacionData);
 	id = '';
 	$('form').trigger('reset');
+	localStorage.setItem('load','false');
 });
 
 //Programación de los botones
