@@ -8,7 +8,7 @@ var firebaseConfig = {
     appId: "1:655740987460:web:b80a912c50dd7a52b9b411"
   };
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
 const db = firebase.database();
 coleccionProductos = db.ref().child('productos');
