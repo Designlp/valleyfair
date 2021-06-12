@@ -66,21 +66,7 @@ if(isset($_SESSION['username']) && isset($_SESSION['password']) || isset($_COOKI
 	}
 }
 
-// $plugins = loadPlugins($db);
-
-// // Load the head plugins
-// foreach($plugins as $plugin) {
-// 	if(array_intersect(array("8"), str_split($plugin['type']))) {
-// 		$TMPL['styles'] .= "\n<link href=\"".$CONF['url']."/plugins/".$plugin['name']."/".$plugin['name'].".css\" rel=\"stylesheet\" type=\"text/css\">";
-// 	}
-// }
-
-foreach($plugins as $plugin) {
-	if(array_intersect(array("9"), str_split($plugin['type']))) {
-		$TMPL['scripts'] .= "\n<script type=\"text/javascript\" src=\"".$CONF['url']."/plugins/".$plugin['name']."/".$plugin['name'].".js\"></script>";
-	}
-}
-
+//Configuracion del contenido de la pagina principal
 $TMPL['site_url'] = $CONF['url'];
 
 if(isAjax()) {
