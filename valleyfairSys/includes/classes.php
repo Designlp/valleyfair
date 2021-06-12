@@ -880,7 +880,7 @@ class updateSettings {
 			$output .= '<div class="users-container">
 				<div class="message-content">
 					<div class="message-inner">
-						<div class="users-button button-normal"><a href="'.$CONF['url'].'/index.php?a=admin&b=info_pages&id='.$row['id'].'" rel="loadpage">'.$LNG['edit'].'</a></div>
+						<div class="users-button button-normal"><a href="'.$CONF['url'].'/index.php?a=admin&b=info_pages&id='.$row['id'].'" rel="loadpage">'.$LNG['evalue'].'</a></div>
 						<div class="message-top message-no-avatar">
 							<div class="message-author">
 								<a href="'.permalink($CONF['url'].'/index.php?a=info&b='.$row['url']).'" target="_blank">'.skin::parse($row['title']).'</a>

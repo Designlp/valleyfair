@@ -3,8 +3,8 @@
 if(!localStorage.getItem('loading')){
 	localStorage.setItem('loading','false');
 }
-let loading = localStorage.setItem('loading','false');
-if(load === 'false'){
+let loading = localStorage.getItem('loading');
+if(loading === 'false'){
 	location.reload(); 
 	localStorage.setItem('loading','true');
 }
