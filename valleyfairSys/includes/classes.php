@@ -2645,7 +2645,7 @@ class feed {
 			$buttons = array(
 						$LNG['timeline'] => array('', '', ''),
 						$LNG['likes'] => array('&r=', 'likes', ''),
-						($this->page_data['by'] == $this->id ? $LNG['edit'] : '') => array('&r=', 'edit', '')
+						($this->page_data['by'] == $this->id ? $LNG['evalue'] : '') => array('&r=', 'edit', '')
 						);
 		} else {
 			global $settings;
