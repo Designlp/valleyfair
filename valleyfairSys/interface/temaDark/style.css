@@ -2330,7 +2330,7 @@ img.sidebar-status-icon {
 }
 
 .chat-container {
-	height: 410px;
+	height: 451px;
 	padding: 0 10px;
 	overflow: auto;
 }
@@ -4307,7 +4307,7 @@ a.facebook-button:active {
 		width: 388px;
 	}
 	#search {
-		width: 130px;
+		width: 126px;
 	}
 }
 

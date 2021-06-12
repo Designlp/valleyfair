@@ -2,7 +2,7 @@
 function PageMain() {
 	global $TMPL, $LNG, $CONF, $db, $loggedIn, $settings, $plugins;
 	require_once('./includes/countries.php');
-	// Prevent user adding himself to a group
+	// Impediendo que el usuario se añada a un grupo
 	unset($_POST['user_group'], $_POST['suspended'], $_POST['verified']);
 	if(isset($_SESSION['username']) && isset($_SESSION['password']) || isset($_COOKIE['username']) && isset($_COOKIE['password'])) {	
 		$verify = $loggedIn->verify();
@@ -15,7 +15,7 @@ function PageMain() {
 			$TMPL['form_url'] = (empty($_GET['b']) ? permalink($CONF['url'].'/index.php?a=settings') : permalink($CONF['url'].'/index.php?a=settings&b='));
 			$TMPL['token_input'] = generateToken($_SESSION['token_id']);
 			
-			// Create the class instance
+			// Crear la instancia de la clase
 			$updateUserSettings = new updateUserSettings();
 			$updateUserSettings->db = $db;
 			$updateUserSettings->url = $CONF['url'];
@@ -33,11 +33,11 @@ function PageMain() {
 				$skin = new skin('settings/delete'); $page = '';
 				
 				if(isset($_POST['current_password'])) {
-					// If the password is valid
+					//Si la contraseña es valida
 					if($updateUserSettings->validate_password($_POST['current_password']) && $_POST['token_id'] == $_SESSION['token_id']) {
 						$userSettings = $updateUserSettings->getSettings();
 
-						// Delete the profile images
+						//Borrar las imagenes de perfil
 						deleteImages(array($userSettings['image']), 1);
 						deleteImages(array($userSettings['cover']), 0);
 						
@@ -45,7 +45,7 @@ function PageMain() {
 						$manageUsers->db = $db;
 						$manageUsers->deleteUser($verify['idu']);
 						
-						// Redirect the user on the home-page after the account has been deleted
+						// Redirigir al usuario en la página de inicio después de la eliminación de la cuenta
 						$loggedIn->logOut();
 						header("Location: ".$CONF['url']."/index.php?a=welcome");
 					} else {
@@ -68,7 +68,7 @@ function PageMain() {
 					$size = $_FILES['avatarselect']['size'][$key];
 					$extArray = explode(',', $settings['format']);
 					
-					// Get the image size
+					// Obtener el tamaño de la imagen
 					list($width, $height) = getimagesize($_FILES['avatarselect']['tmp_name'][0]);
 					$ratio = ($width / $height);
 						if(in_array(strtolower($ext), $extArray) && $size < $maxsize && $size > 0 && !empty($width) && !empty($height)) {

@@ -7,7 +7,7 @@ function PageMain() {
 	}
 	
 	if($settings['fbapp']) {
-		// Generate a session to prevent CSFR
+		// Generar una sesión para evitar el CSFR
 		$_SESSION['state'] = md5(uniqid(rand(), TRUE));
 		
 		// Facebook Login Url
@@ -48,7 +48,7 @@ function PageMain() {
 	}
 	
 	if(isset($_POST['register'])) {
-		// Register usage
+		//Registro
 		$reg = new register();
 		$reg->db = $db;
 		$reg->url = $CONF['url'];
@@ -85,7 +85,7 @@ function PageMain() {
 	}
 	
 	if(isset($_POST['login'])) {
-		// Log-in usage
+		//Logueo
 		$log = new logIn();
 		$log->db = $db;
 		$log->url = $CONF['url'];
@@ -106,7 +106,7 @@ function PageMain() {
 	}
 	
 	if(isset($_GET['activate']) && isset($_GET['username'])) {
-		// Register usage
+		//Registro de uso
 		$reg = new register();
 		$reg->db = $db;
 		$reg->url = $CONF['url'];
@@ -115,7 +115,7 @@ function PageMain() {
 		$TMPL['loginMsg'] = $reg->activate_account($_GET['activate'], $_GET['username']);
 	}
 	
-	// Start displaying the home-page users
+	//Muestra los usuarios mas recientes
 	$result = $db->query("SELECT * FROM `users` WHERE `image` != 'default.png' ORDER BY `idu` DESC LIMIT 10 ");
 	while($row = $result->fetch_assoc()) {
 		$users[] = $row;
@@ -129,7 +129,7 @@ function PageMain() {
 	
 	$TMPL['ad'] = $settings['ad1'];
 	
-	// Load the welcome plugins
+
 	foreach($plugins as $plugin) {
 		if(array_intersect(array("4"), str_split($plugin['type']))) {
 			$data['site_url'] = $CONF['url']; $data['site_title'] = $settings['title']; $data['site_email'] = $CONF['email'];

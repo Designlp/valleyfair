@@ -10,7 +10,7 @@ if ($db->connect_errno) {
 $db->set_charset("utf8");
 $apiVersion = 1.3;
 
-// Allowed $_GET['t'] values 
+// Permite los valores $_GET['t'] 
 $types = array('u', 'm');
 
 echo '{"apiVersion":"'.$apiVersion.'", "data": ';
@@ -18,7 +18,7 @@ if(in_array($_GET['t'], $types)) {
 	if($_GET['t'] == 'u') {
 		$result = getUser($_GET['q']);
 		
-		// Output the result
+		// Obtiene el resultado
 		if(!empty($result['id'])) {
 			$row['image'] = $CONF['url'].'/thumb.php?src='.$row['image'].'&t=a&w=112&h=112';
 			$row['cover'] = $CONF['url'].'/thumb.php?src='.$row['cover'].'&t=c&w=900&h=200';

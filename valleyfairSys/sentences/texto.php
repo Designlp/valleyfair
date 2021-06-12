@@ -1,11 +1,11 @@
 <?php
-// Language Name
+//Nombre del lenguaje
 $name = 'Español';
 
-// Language Author
+//Autor del lenguaje
 $author = 'ValleyFair';
 
-// Language URL
+//URL del creador del lengguaje
 $url = 'https://valleyfair.ml/';
 
 $LNG['lang_direction'] = 'ltr';
