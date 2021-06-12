@@ -1,10 +1,10 @@
 // Your web app's Firebase configuration
-
+let loading;
 if(!localStorage.getItem('loading')){
 	localStorage.setItem('loading','false');
 	console.log(localStorage.getItem('loading'));
 }
-let loading = localStorage.getItem('loading');
+loading = localStorage.getItem('loading');
 if(loading === 'false'){
 	localStorage.setItem('loading','true');
 	console.log(localStorage.getItem('loading'));
@@ -44,6 +44,7 @@ $('form').submit(function (e) {
 	coleccionProductos.update(actualizacionData);
 	id = '';
 	$('form').trigger('reset');
+	window.location.assign("https://valleyfair.ml/valleyfairSys/index.php?a=feed"); 
 });
 
 //Programación de los botones
