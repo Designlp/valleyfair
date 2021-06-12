@@ -582,7 +582,7 @@ $LNG['smtp_sub_username'] = 'El nombre de usuario SMTP';
 $LNG['smtp_password'] = 'Contraseña SMTP';
 $LNG['smtp_sub_password'] = 'La contraseña SMTP';
 
-$LNG['admin_ttl_edit'] = 'Evaluar';
+$LNG['admin_ttl_edit'] = 'Editar';
 $LNG['admin_ttl_edit_profile'] = 'Editar perfil';
 
 $LNG['admin_ttl_delete'] = 'Delete';
@@ -898,7 +898,7 @@ $LNG['title_notifications'] = 'Notificaciones';
 $LNG['title_page'] = 'Crear página';
 $LNG['title_group'] = 'Crea un grupo';
 $LNG['title_admin']	= 'Administrador';
-$LNG['edit'] = 'Editar';
+$LNG['edit'] = 'Evaluar';
 $LNG['delete'] = 'Borrar';
 $LNG['suspended'] = 'Suspendido';
 $LNG['ignore'] = 'Ignorar';

@@ -1,5 +1,5 @@
 // Your web app's Firebase configuration
-var firebaseConfig = {
+/*var firebaseConfig = {
     apiKey: "AIzaSyDGTlX9dbqTYKal2T9SOlD5URV9J-sr98w",
     authDomain: "valleyfairbol.firebaseapp.com",
     projectId: "valleyfairbol",
@@ -42,4 +42,6 @@ $('#btnNuevo').click(function () {
 	$('form').trigger('reset');
 	$('#modalAltaEdicion').modal('show');
 	console.log($('#codigo').val(''));
-});
+});*/
+
+console.log('');
