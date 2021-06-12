@@ -1832,7 +1832,7 @@ class feed {
 			} else {
 				if($this->username == $row['username']) {
 					$menulist = '
-					<div class="message-menu-row" onclick="edit_message('.$row['id'].')" id="edit_text'.$row['id'].'">'.$LNG['edit'].'</div>
+					<div class="message-menu-row" onclick="edit_message('.$row['id'].')" id="edit_text'.$row['id'].'">'.$LNG['evalue'].'</div>
 					<div class="message-menu-row" onclick="deleteModal('.$row['id'].', 1)">'.$LNG['delete'].'</div>
 					'.($row['group'] ? '' : '<div class="message-menu-divider"></div>
 					<div class="message-menu-row" onclick="privacy('.$row['id'].', 1)">'.$LNG['public'].'</div>
