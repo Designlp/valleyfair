@@ -7900,7 +7900,7 @@ function generateToken($type = null) {
 		}
 		return $_SESSION['token_id'];
 	}
-}
+}	
 function getUserIp() {
 	if($_SERVER['REMOTE_ADDR']) {
 		return $_SERVER['REMOTE_ADDR'];

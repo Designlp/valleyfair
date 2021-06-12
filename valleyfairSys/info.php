@@ -1,13 +1,13 @@
 <?php
-// Software Name
+//Nombre del Software
 $name = 'ValleyFair';
 
-// Software Author
+//Nombre del Autor
 $author = 'ValleyFair';
 
-// Software URL
+//URL del Software
 $url = 'https://valleyfair.ml';
 
-// Software Version
-$version = '3.0.8';
+//Version Software
+$version = '1.0';
 ?>

@@ -1,17 +1,18 @@
 <?php
-// Set the header
+
+// Establecer el encabezado
 header("Content-type: image/png");
 
-// Start the session
+// Iniciar la sesión
 session_start();
 
-// The string to select random characters
+// La cadena para seleccionar caracteres aleatorios
 $seed = str_split('abcdefghijklmnopqrstuvwxyz0123456789');
 
-// Randomize the characters
+// Caracteres Random
 shuffle($seed);
 
-// Select the first n characters
+// Selecciona las primeras n caracteres
 $text = null;
 for($i = 1; $i <= 6; $i++) {
 	$text .= $seed[$i];

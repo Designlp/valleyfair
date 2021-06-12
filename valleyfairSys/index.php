@@ -1,8 +1,12 @@
 <?php
+
+//Inicio de sesion
 session_start();
 require_once('./includes/config.php');
 require_once('./includes/skins.php');
 require_once('./includes/classes.php');
+
+//Conexion con la base de datos
 $db = new mysqli($CONF['host'], $CONF['user'], $CONF['pass'], $CONF['name']);
 if ($db->connect_errno) {
     echo "Failed to connect to MySQL: (" . $db->connect_errno . ") " . $db->connect_error;
@@ -62,14 +66,14 @@ if(isset($_SESSION['username']) && isset($_SESSION['password']) || isset($_COOKI
 	}
 }
 
-$plugins = loadPlugins($db);
+// $plugins = loadPlugins($db);
 
-// Load the head plugins
-foreach($plugins as $plugin) {
-	if(array_intersect(array("8"), str_split($plugin['type']))) {
-		$TMPL['styles'] .= "\n<link href=\"".$CONF['url']."/plugins/".$plugin['name']."/".$plugin['name'].".css\" rel=\"stylesheet\" type=\"text/css\">";
-	}
-}
+// // Load the head plugins
+// foreach($plugins as $plugin) {
+// 	if(array_intersect(array("8"), str_split($plugin['type']))) {
+// 		$TMPL['styles'] .= "\n<link href=\"".$CONF['url']."/plugins/".$plugin['name']."/".$plugin['name'].".css\" rel=\"stylesheet\" type=\"text/css\">";
+// 	}
+// }
 
 foreach($plugins as $plugin) {
 	if(array_intersect(array("9"), str_split($plugin['type']))) {
@@ -100,13 +104,11 @@ $TMPL['footer'] = $settings['title'];
 $TMPL['footer_url'] = permalink($CONF['url'].'/index.php?a=info&b=');
 $TMPL['year'] = date('Y');
 $TMPL['info_urls'] = info_urls();
-// $TMPL['powered_by'] = 'Powered by <a href="'.$url.'" target="_blank">'.$name.'</a>.';
 $TMPL['language'] = getLanguage($CONF['url'], null, 1);
 $TMPL['tracking_code'] = $settings['tracking_code'];
 $TMPL['search_users_url'] = permalink($CONF['url'].'/index.php?a=search&q=');
 $TMPL['search_tags_url'] = permalink($CONF['url'].'/index.php?a=search&tag=');
 $TMPL['search_groups_url'] = permalink($CONF['url'].'/index.php?a=search&groups=');
-//$TMPL['search_pages_url'] = permalink($CONF['url'].'/index.php?a=search&pages=');
 $LNG['search_for_people'] = $LNG['search_for_people'].($settings['pages'] ? $LNG['search_pages'] : '').($settings['groups'] ? $LNG['search_groups'] : '');
 
 $skin = new skin('wrapper');
