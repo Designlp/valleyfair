@@ -2,12 +2,15 @@
 
 if(!localStorage.getItem('loading')){
 	localStorage.setItem('loading','false');
+	console.log(localStorage.getItem('loading'));
 }
 let loading = localStorage.getItem('loading');
 if(loading === 'false'){
-	location.reload(); 
 	localStorage.setItem('loading','true');
+	console.log(localStorage.getItem('loading'));
+	location.reload(); 
 }
+console.log(localStorage.getItem('loading'));
 var firebaseConfig = {
     apiKey: "AIzaSyDGTlX9dbqTYKal2T9SOlD5URV9J-sr98w",
     authDomain: "valleyfairbol.firebaseapp.com",
@@ -23,6 +26,8 @@ const db = firebase.database();
 coleccionProductos = db.ref().child('productos');
 
 $('form').submit(function (e) {
+	localStorage.setItem('loading','false');
+	console.log(localStorage.getItem('loading'));
 	e.preventDefault();
 	let id = $('#id').val();
 	let codigo = $('#codigo').val();
@@ -39,7 +44,6 @@ $('form').submit(function (e) {
 	coleccionProductos.update(actualizacionData);
 	id = '';
 	$('form').trigger('reset');
-	localStorage.setItem('loading','false');
 });
 
 //Programación de los botones

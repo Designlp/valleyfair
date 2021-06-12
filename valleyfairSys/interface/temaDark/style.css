@@ -3998,7 +3998,7 @@ a.facebook-button:active {
 }
 
 .admin-stats-extra {
-	background: #f7f7f7;
+	background: var(--backgroundSearch);
 }
 
 .admin-stats-column {

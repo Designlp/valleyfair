@@ -170,8 +170,8 @@ $LNG['close'] = 'Cerrar';
 $LNG['download'] = 'Descargar';
 
 // REPORT
-$LNG['1_not_exists'] = 'El mensaje informado no existe.';
-$LNG['0_not_exists'] = 'El comentario informado no existe.';
+$LNG['1_not_exists'] = 'El mensaje seleccionado no existe.';
+$LNG['0_not_exists'] = 'El comentario seleccionado no existe.';
 $LNG['1_already_reported'] = 'Este mensaje ya ha sido reportado y será revisado en el menor tiempo posible, gracias.';
 $LNG['0_already_reported'] = 'Este comentario ya ha sido reportado y será revisado en el menor tiempo posible, gracias.';
 $LNG['1_is_safe'] = 'Este mensaje está marcado como <strong>seguro</strong> por un administrador, gracias por sus comentarios.';
