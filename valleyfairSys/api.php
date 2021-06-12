@@ -31,12 +31,12 @@ if(in_array($_GET['t'], $types)) {
 		$result = $db->query(sprintf("SELECT `id`, `uid` as `by`, `message`, `type`, `time`, `likes` FROM `messages` WHERE `uid` = '%s' AND `public` = '1' ORDER BY `id` DESC LIMIT 0, 20", $db->real_escape_string($user['id'])));
 		
 		$rows = array();
-		// Store the result
+		// Almacena el resultado
 		while($row = $result->fetch_assoc()) {
 			$rows[]	= $row; 
 		}
 		
-		// Output the result
+		// Obtiene el resultado
 		if(!empty($rows)) {
 			echo json_encode($rows);
 		} else {
@@ -48,11 +48,13 @@ if(in_array($_GET['t'], $types)) {
 }
 echo '}';
 
+
+//Obtiene los datos del usuario
 function getUser($username) {
 	global $db;
 	$sql = $db->query(sprintf("SELECT `idu` as `id`, `username`, `first_name`, `last_name`, `website`, `country`, `location` as `city`, `address`, `image`, `cover`, `verified`, `private` FROM `users` WHERE `username` = '%s'", $db->real_escape_string($username)));
 	$user = $sql->fetch_assoc();
-	// Return if the user is public
+	// Devuelve si el usuario es público
 	if(!$user['private']) {
 		unset($user['private']);
 		return $user;
