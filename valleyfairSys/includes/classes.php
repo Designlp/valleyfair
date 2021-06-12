@@ -880,7 +880,7 @@ class updateSettings {
 			$output .= '<div class="users-container">
 				<div class="message-content">
 					<div class="message-inner">
-						<div class="users-button button-normal"><a href="'.$CONF['url'].'/index.php?a=admin&b=info_pages&id='.$row['id'].'" rel="loadpage">'.$LNG['evalue'].'</a></div>
+						<div class="users-button button-normal"><a href="'.$CONF['url'].'/index.php?a=admin&b=info_pages&id='.$row['id'].'" rel="loadpage">'.$LNG['edit'].'</a></div>
 						<div class="message-top message-no-avatar">
 							<div class="message-author">
 								<a href="'.permalink($CONF['url'].'/index.php?a=info&b='.$row['url']).'" target="_blank">'.skin::parse($row['title']).'</a>
@@ -1452,7 +1452,7 @@ class manageUsers {
 			$users .= '<div class="users-container">
 						<div class="message-content">
 							<div class="message-inner">
-								<div class="users-button button-normal"><a href="'.$this->url.'/index.php?a=admin&b=users&e='.$row['idu'].'" rel="loadpage">'.$LNG['evalue'].'</a></div>
+								<div class="users-button button-normal"><a href="'.$this->url.'/index.php?a=admin&b=users&e='.$row['idu'].'" rel="loadpage">'.$LNG['edit'].'</a></div>
 								<div class="message-avatar" id="avatar'.$row['idu'].'">
 									<a href="'.permalink($this->url.'/index.php?a=profile&u='.$row['username']).'" rel="loadpage">
 										<img src="'.$this->url.'/thumb.php?src='.$row['image'].'&t=a&w=50&h=50">
@@ -1832,7 +1832,7 @@ class feed {
 			} else {
 				if($this->username == $row['username']) {
 					$menulist = '
-					<div class="message-menu-row" onclick="edit_message('.$row['id'].')" id="edit_text'.$row['id'].'">'.$LNG['evalue'].'</div>
+					<div class="message-menu-row" onclick="edit_message('.$row['id'].')" id="edit_text'.$row['id'].'">'.$LNG['edit'].'</div>
 					<div class="message-menu-row" onclick="deleteModal('.$row['id'].', 1)">'.$LNG['delete'].'</div>
 					'.($row['group'] ? '' : '<div class="message-menu-divider"></div>
 					<div class="message-menu-row" onclick="privacy('.$row['id'].', 1)">'.$LNG['public'].'</div>
@@ -2639,13 +2639,13 @@ class feed {
 						
 						(in_array($this->group_member_data['permissions'], array(1, 2)) && $this->group_member_data['status'] ? $LNG['requests'] : '') => array('&r=', 'requests', $this->countGroupMembers($this->group_data['id'], 2)),
 						(in_array($this->group_member_data['permissions'], array(1, 2)) && $this->group_member_data['status'] ? $LNG['blocked'] : '') => array('&r=', 'blocked', $this->countGroupMembers($this->group_data['id'], 3)),
-						($this->group_member_data['permissions'] == 2 && $this->group_member_data['status'] ? $LNG['evalue'] : '') => array('&r=', 'edit', '')
+						($this->group_member_data['permissions'] == 2 && $this->group_member_data['status'] ? $LNG['edit'] : '') => array('&r=', 'edit', '')
 						);
 		} elseif($type == 2) {
 			$buttons = array(
 						$LNG['timeline'] => array('', '', ''),
 						$LNG['likes'] => array('&r=', 'likes', ''),
-						($this->page_data['by'] == $this->id ? $LNG['evalue'] : '') => array('&r=', 'edit', '')
+						($this->page_data['by'] == $this->id ? $LNG['edit'] : '') => array('&r=', 'edit', '')
 						);
 		} else {
 			global $settings;
@@ -5097,7 +5097,7 @@ class feed {
 			$i = 1;
 			foreach($row as $page) {
 				$menulist = '
-				<a href="'.permalink($this->url.'/index.php?a=page&name='.$page['name'].'&r=edit').'" rel="loadpage"><div class="message-menu-row">'.$LNG['evalue'].'</div></a>
+				<a href="'.permalink($this->url.'/index.php?a=page&name='.$page['name'].'&r=edit').'" rel="loadpage"><div class="message-menu-row">'.$LNG['edit'].'</div></a>
 				<div class="message-menu-divider"></div>
 				<a href="'.permalink($this->url.'/index.php?a=page&name='.$page['name'].'&r=delete').'" rel="loadpage"><div class="message-menu-row">'.$LNG['delete'].'</div></a>';
 					
@@ -5152,7 +5152,7 @@ class feed {
 			foreach($row as $group) {
 				if($group['permissions'] == 2) {
 					$menulist = '
-					<a href="'.permalink($this->url.'/index.php?a=group&name='.$group['name'].'&r=edit').'" rel="loadpage"><div class="message-menu-row">'.$LNG['evalue'].'</div></a>
+					<a href="'.permalink($this->url.'/index.php?a=group&name='.$group['name'].'&r=edit').'" rel="loadpage"><div class="message-menu-row">'.$LNG['edit'].'</div></a>
 					<div class="message-menu-divider"></div>
 					<a href="'.permalink($this->url.'/index.php?a=group&name='.$group['name'].'&r=delete').'" rel="loadpage"><div class="message-menu-row">'.$LNG['delete'].'</div></a>';
 				} else {
