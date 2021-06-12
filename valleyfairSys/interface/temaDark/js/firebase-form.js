@@ -44,4 +44,4 @@ $('#btnNuevo').click(function () {
 	console.log($('#codigo').val(''));
 });*/
 
-console.log('');
+console.log('Funciona');
