@@ -582,7 +582,7 @@ $LNG['smtp_sub_username'] = 'El nombre de usuario SMTP';
 $LNG['smtp_password'] = 'Contraseña SMTP';
 $LNG['smtp_sub_password'] = 'La contraseña SMTP';
 
-$LNG['admin_ttl_edit'] = 'Editar';
+$LNG['admin_ttl_edit'] = 'Evaluar';
 $LNG['admin_ttl_edit_profile'] = 'Editar perfil';
 
 $LNG['admin_ttl_delete'] = 'Delete';

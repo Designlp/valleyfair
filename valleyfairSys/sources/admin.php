@@ -429,6 +429,7 @@ function PageMain() {
 					if(!empty($feed->group_data)) {
 						// The disabled attribute for inputs
 						$TMPL['disabled'] = ' disabled';
+						$TMPL['url'] = $CONF['url'];
 						$TMPL['id'] = $feed->group_data['id'];
 						$TMPL['current_name'] = $feed->group_data['name'];
 						$TMPL['current_title'] = $feed->group_data['title'];
