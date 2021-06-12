@@ -33,7 +33,7 @@ function PageMain() {
 		// If the POST username is the same with the result
 		if(mb_strtolower($_POST['username']) == $username || mb_strtolower($_POST['username']) == $email) {
 			
-			// Send the recover e-mail
+			//Mandando el email de recuperamiento
 			sendMail($email, $LNG['recover_mail'], sprintf($LNG['recover_content'], $username, $salted, permalink($CONF['url'].'/index.php?a=recover&r=1'), permalink($CONF['url'].'/index.php?a=recover&r=1')), $CONF['email']);
 			
 			$_SESSION['error'] = notificationBox('info', $LNG['email_reset']);

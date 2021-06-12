@@ -1,4 +1,4 @@
-<?php
+<?php 
 function PageMain() {
 	global $TMPL, $LNG, $CONF, $db, $loggedIn, $settings, $plugins;		
 

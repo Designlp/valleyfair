@@ -37,30 +37,30 @@ function PageMain() {
 	if(empty($settings['pages'])) {
 		$_GET['pages'] = '';
 	}
-	// Allowed types
+	// Tipos permitidos
 	if(isset($_GET['tag'])) {
-		// If the $_GET keyword is empty [hashtag]
+		// Si la palabra clave $_GET está vacía [hashtag]
 		if($_GET['tag'] == '') {
 			header("Location: ".$CONF['url']."/index.php?a=welcome");
 		}
 		$hashtags = $feed->getHashtags(0, $settings['sperpage'], $_GET['tag'], null, $_GET['filter']);
 		$TMPL['messages'] = $hashtags[0];
 	} elseif($_GET['groups']) {
-		// If the $_GET keyword is empty [group]
+		// Si la palabra clave $_GET está vacía [grupo]
 		if($_GET['groups'] == '') {
 			header("Location: ".$CONF['url']."/index.php?a=welcome");
 		}
 		$feed->per_page = $settings['sperpage'];
 		$TMPL['messages'] = $feed->getGroups(0, $_GET['groups']);
 	} elseif($_GET['pages']) {
-		// If the $_GET keyword is empty [page]
+
 		if($_GET['pages'] == '') {
 			header("Location: ".$CONF['url']."/index.php?a=welcome");
 		}
 		$feed->per_page = $settings['sperpage'];
 		$TMPL['messages'] = $feed->getPages(0, $_GET['pages']);
 	} else {
-		// If the $_GET keyword is empty [user]
+		// Si la palabra clave $_GET está vacía [usuario]
 		if($_GET['q'] == '') {
 			header("Location: ".$CONF['url']."/index.php?a=welcome");
 		}

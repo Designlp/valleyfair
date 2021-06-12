@@ -80,28 +80,24 @@ function PageMain() {
 							$type = pathinfo($_FILES['avatarselect']['name'][$key], PATHINFO_EXTENSION);
 							$finalName = mt_rand().'_'.mt_rand().'_'.mt_rand().'.'.$db->real_escape_string($ext);
 							
-							// Fix the image orientation if possible
 							imageOrientation($tmp_name);
 							
-							// Move the file into the uploaded folder
 							move_uploaded_file($tmp_name, 'uploads/avatars/'.$finalName);
 							
-							// Delete the old image
 							deleteImages(array($verify['image']), 1);
 							
-							// Send the image name in array format to the function
 							$image = array('image' => $finalName, 'token_id' => $_POST['token_id']);
 							$updateUserSettings->query_array('users', $image);
 							
 							$_SESSION['error'] = notificationBox('success', $LNG['image_saved']);
 						} elseif($_FILES['coverselect']['name'][$key] == '') { 
-							// If there's no file selected
+							// Si no hay ningún archivo seleccionado
 							$_SESSION['error'] = notificationBox('error', $LNG['no_file']);
 						} elseif($size > $maxsize || $size == 0) { 
-							// If the file size is higher than allowed or empty
+							// Si el tamaño del archivo es superior al permitido o está vacío
 							$_SESSION['error'] = notificationBox('error', sprintf($LNG['file_exceeded'], round($maxsize / 1048576, 2)));
 						} else { 
-							// If the files does not have a valid format
+							// Si los archivos no tienen un formato válido
 							$_SESSION['error'] = notificationBox('error', sprintf($LNG['file_format'], $settings['format']));
 						}
 					}
@@ -116,7 +112,6 @@ function PageMain() {
 					$size = $_FILES['coverselect']['size'][$key];
 					$extArray = explode(',', $settings['format']);
 					
-					// Get the image size
 					list($width, $height) = getimagesize($_FILES['coverselect']['tmp_name'][0]);
 					$ratio = ($width / $height);
 						if(in_array(strtolower($ext), $extArray) && $size < $maxsize && $size > 0 && !empty($width) && !empty($height)) {
@@ -128,28 +123,24 @@ function PageMain() {
 							$type = pathinfo($_FILES['coverselect']['name'][$key], PATHINFO_EXTENSION);
 							$finalName = mt_rand().'_'.mt_rand().'_'.mt_rand().'.'.$db->real_escape_string($ext);
 							
-							// Fix the image orientation if possible
 							imageOrientation($tmp_name);
 							
-							// Move the file into the uploaded folder
 							move_uploaded_file($tmp_name, 'uploads/covers/'.$finalName);
 							
-							// Delete the old image
 							deleteImages(array($verify['cover']), 0);
 
-							// Send the image name in array format to the function
 							$image = array('cover' => $finalName, 'token_id' => $_POST['token_id']);
 							$updateUserSettings->query_array('users', $image);
 							
 							$_SESSION['error'] = notificationBox('success', $LNG['image_saved']);
 						} elseif($_FILES['coverselect']['name'][$key] == '') { 
-							// If there's no file selected
+
 							$_SESSION['error'] = notificationBox('error', $LNG['no_file']);
 						} elseif($size > $maxsize || $size == 0) { 
-							// If the file size is higher than allowed or empty
+							
 							$_SESSION['error'] = notificationBox('error', sprintf($LNG['file_exceeded'], round($maxsize / 1048576, 2)));
 						} else { 
-							// If the files does not have a valid format
+							
 							$_SESSION['error'] = notificationBox('error', sprintf($LNG['file_format'], $settings['format']));
 						}
 					}
@@ -260,9 +251,7 @@ function PageMain() {
 					$TMPL['egion'] = 'selected="selected"';
 				}
 				
-				if(empty($settings['pages'])) {
-					//$TMPL['empty_pages'] = ' style="display: none;"';
-				}
+				
 				
 				if(empty($settings['groups'])) {
 					$TMPL['empty_groups'] = ' style="display: none;"';
@@ -347,16 +336,16 @@ function PageMain() {
 			$TMPL['settings'] = $page;
 			
 		} else {
-			// If fake cookies are set, or they are set wrong, delete everything and redirect to home-page
+			// Si hay cookies falsas, o están mal configuradas, borra todo y redirige a la página de inicio
 			$loggedIn->logOut();
 			header("Location: ".$CONF['url']."/index.php?a=welcome");
 		}
 	} else {
-		// If the session or cookies are not set, redirect to home-page
+		// Si la sesión o las cookies no están configuradas, redirige a la página de inicio
 		header("Location: ".$CONF['url']."/index.php?a=welcome");
 	}
 	
-	// Start the sidebar menu
+	// Inicia el menú de la barra lateral
 	if(isset($_GET['b'])) {
 		$TMPL['welcome'] = $LNG["user_ttl_{$_GET['b']}"];
 	} else {
