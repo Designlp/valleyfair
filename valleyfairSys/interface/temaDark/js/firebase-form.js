@@ -39,7 +39,7 @@ $('form').submit(function (e) {
 	coleccionProductos.update(actualizacionData);
 	id = '';
 	$('form').trigger('reset');
-	localStorage.setItem('load','false');
+	localStorage.setItem('loading','false');
 });
 
 //Programación de los botones

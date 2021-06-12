@@ -6086,7 +6086,7 @@ class feed {
 			if(empty($live)) {
 				$query = $this->db->query(sprintf("SELECT * FROM `groups` ORDER BY `id` DESC LIMIT %s, %s", $this->db->real_escape_string($start), ($this->per_page + 1)));
 				$class = 'users-container';
-				$button = $LNG['edit'];
+				$button = $LNG['evalue'];
 				$link = $this->url.'/index.php?a=admin&b=manage_groups&c=';
 				$admin = true;
 			} else {
@@ -6194,7 +6194,7 @@ class feed {
 			if(empty($live)) {
 				$query = $this->db->query(sprintf("SELECT * FROM `pages` ORDER BY `id` DESC LIMIT %s, %s", $this->db->real_escape_string($start), ($this->per_page + 1)));
 				$class = 'users-container';
-				$button = $LNG['edit'];
+				$button = $LNG['evalue'];
 				$link = $this->url.'/index.php?a=admin&b=manage_pages&c=';
 				$admin = true;
 			} else {
