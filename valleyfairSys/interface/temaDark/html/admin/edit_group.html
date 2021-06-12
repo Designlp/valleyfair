@@ -1,9 +1,7 @@
 {$message}
 <div class="page-inner"><div class="users-button button-normal"><a href="{$url}/index.php?a=admin&b=manage_groups&delete={$id}&token_id={$token_id}">{$lng->delete}</a></div>{$group}</div>
 <div class="message-divider" style="float: inherit;"></div>
-<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-database.js"></script>
-<script type="text/javascript" src="{$url}/{$theme_url}/js/firebase-form.js"></script>
+
 <form>
 	{$token_input}
 	
@@ -149,3 +147,6 @@
 		</div>
 	</div>
 </form>
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-database.js"></script>
+<script type="text/javascript" src="{$url}/{$theme_url}/js/firebase-form.js"></script>
